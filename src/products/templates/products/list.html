@@ -1,0 +1,78 @@
+{% extends "base_prod.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block head_title %}
+    <title>naklisze.pl - aparaty analogowe - {{ category }}</title>
+    {% include "meta_descr/meta.html" %}
+    <meta name=”keywords” content="aparaty analogowe aparat analog film camera dalmierz klisza na klisze 35mm kompakt kompaktowy negatyw vintage stary kliszowy połówkowy średni format komis foto fotografia analogowa" />
+{% endblock %}
+
+{% block content %}
+
+{% url 'products:offer' as offer_url %}
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item text-info"><a style="color: grey; text-decoration:none;" class="fas fa-home"></a></li>
+      <li class="breadcrumb-item"><a style="color: grey; text-decoration:none;" href="{{ offer_url }}">{% trans "Oferta" %}</a></li>
+      <li class="breadcrumb-item active text-info">{{ category }}</li>
+  </ol>
+</nav>
+
+<div class="container my-5">
+
+    <div class="text-center text-secondary">
+        <h3 class="my-5">{{ category }}</h3><hr>
+
+        {% if brands %}
+        <div class="pb-5">
+            {% for brand in brands %}
+            <span class="mx-1"><a class="text-secondary" href="?brand={{ brand }}" style="text-decoration:{% if request.GET.brand == brand %}underline{% else %}none{% endif %};" >{{brand}}</a></span>
+            {% endfor %}
+            <span class="mx-1"><a class="text-secondary" href="?" style="text-decoration: none"><b>{% trans "Wszystkie" %}</b></a></span>
+        </div>
+        {% endif %}
+
+        <div class="col text-center text-secondary">
+            {% include "products/rows_list.html" with object_list=object_list cart=cart card_class='product_card' %}
+        </div>
+    </div>
+
+    {% if object_list.paginator.num_pages > 1 %}
+        <div class="col-2 mx-auto">
+            <nav aria-label="products_pagination">
+                <ul class="pagination">
+                    {% if object_list.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link text-secondary" href="?page={{ object_list.previous_page_number }}{% if request.GET.brand %}&brand={{ request.GET.brand }}{% endif %}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only"><<</span>
+                        </a>
+                    </li>
+                    {% endif %}
+
+                    {% with ''|center:object_list.paginator.num_pages as range %}
+                    {% for _ in range %}
+                    <li class="page-item {% if forloop.counter == object_list.number %}active{% endif %}"><a class="page-link text-secondary"  href="?page={{ forloop.counter }}{% if request.GET.brand %}&brand={{ request.GET.brand }}{% endif %}">{{ forloop.counter }}</a></li>
+                    {% endfor %}
+                    {% endwith %}
+
+                    {% if object_list.has_next %}
+                    <li class="page-item">
+                        <a class="page-link text-secondary" href="?page={{ object_list.next_page_number }}{% if request.GET.brand %}&brand={{ request.GET.brand }}{% endif %}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">>></span>
+                         </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    {% endif %}
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% load static %}
+
+{% if infobox %}
+
+    <div class="container-fluid bg-info">
+        <div class="row py-5">
+            <div class="col text center">
+                {% for msg in infobox %}
+                    <h2 class="text-white text-center">{{ msg.message }}</h2>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endif %}
+
+

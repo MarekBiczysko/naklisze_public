@@ -1,0 +1,30 @@
+{% load static %}
+{% load i18n %}
+
+<div class="jumbotron align-self-start my-1 py-4 bigshadow" style="background: url({% static 'img/girl.jpg' %}) no-repeat center center fixed; background-size: cover; text-align: center;">
+    <div class="container text-left">
+        <form method="POST" action="{{ action_url }}"> {% csrf_token %}
+            {% if next_url %}
+                <input type="hidden" name="next_url" value="{{ next_url }}" />
+            {% endif %}
+
+            {% if address_type %}
+            <input type="hidden" name="address_type" value="{{ address_type }}" />
+            {% endif %}
+
+            <input type="hidden" name="reuse_address" value="reuse_address" />
+
+            {% for address in address_qs %}
+                <label for="adres-{{ address.id }}">
+                    <input id="adres-{{ address.id }}" type="radio" name="address_id" value="{{ address.id }}" >
+                    {% for address_part in address.print_address_html %}
+                    &emsp;{{ address_part }}<br>
+                    {% endfor %}
+                </label><br/><hr>
+            {% endfor %}
+
+            <button type="submit" class="btn btn-secondary my-2 littleshadow">{% trans "Użyj adresu" %}</button>
+        </form>
+    </div>
+
+</div>

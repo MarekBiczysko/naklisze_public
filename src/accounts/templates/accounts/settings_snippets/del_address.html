@@ -1,0 +1,8 @@
+{% load static %}
+{% load i18n %}
+
+<form method="POST" action="{{ action_url }}"> {% csrf_token %}
+    <input type="hidden" name="del_address" value="True" />
+    <input type="hidden" name="address_id" value="{{ address_id }}" />
+    <button type="submit" class="btn btn-secondary my-3">{% trans "Usuń" %}</button>
+</form>

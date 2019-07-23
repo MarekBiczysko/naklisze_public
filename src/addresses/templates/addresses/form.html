@@ -1,0 +1,17 @@
+{% load static %}
+
+<div class="jumbotron bigshadow" style="background: url({% static 'img/girl.jpg' %}) no-repeat center center fixed; background-size: cover;">
+    <form method="POST" {% if action_url %} action="{{ action_url }}" {% endif %}> {% csrf_token %}
+        {% if next_url %}
+            <input type="hidden" name="next_url" value="{{ next_url }}" />
+        {% endif %}
+        {% if address_type %}
+            <input type="hidden" name="address_type" value="{{ address_type }}" />
+        {% endif %}
+
+        {{ form }}
+
+        <button type="submit" class="btn btn-secondary my-2 littleshadow">{{ button }}</button>
+    </form>
+</div>
+

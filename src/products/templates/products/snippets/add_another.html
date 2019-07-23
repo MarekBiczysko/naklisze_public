@@ -1,0 +1,7 @@
+{% load i18n %}
+
+<form class="form" method="POST" action="{% url 'carts:update' %}" > {% csrf_token %}
+    <input type="hidden" name="product" value="{{ product.id }}"/>
+    <input type="hidden" name="add_another_multiple" value="True"/>
+    <button type="submit" class="btn btn-link bg-secondary text-white mx-0 btn-sm littleshadow" style="white-space: nowrap; text-decoration: none;"><i class="fas fa-plus"></i>&nbsp; {% trans "dodaj" %}</button>
+</form>

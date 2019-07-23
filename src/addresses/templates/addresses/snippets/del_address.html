@@ -1,0 +1,7 @@
+{% load static %}
+{% load i18n %}
+
+<form method="POST" action="{{ action_url }}"> {% csrf_token %}
+    <input type="hidden" name="{{ del_address }}" value="{{ del_address }}" />
+    <button type="submit" class="btn btn-secondary littleshadow">{% trans "Zmień" %}</button>
+</form>

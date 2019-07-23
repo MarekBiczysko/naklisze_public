@@ -1,0 +1,12 @@
+{% load static %}
+{% load i18n %}
+
+{% url 'carts:check_availability' as check_availability_url %}
+
+<form method="POST"  action="{{ check_availability_url }}"> {% csrf_token %}
+    {% if next_url %}
+        <input type="hidden" name="next_url" value="{{ next_url }}" />
+    {% endif %}
+
+        <button class="btn btn-outline-info littleshadow" type="submit"><i class="fas fa-credit-card"></i><span>&nbsp; {% trans "Do kasy!" %}</span></button>
+</form>

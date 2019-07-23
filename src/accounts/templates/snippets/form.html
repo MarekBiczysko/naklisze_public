@@ -1,0 +1,21 @@
+{% load static %}
+{% load i18n %}
+{% url 'password_reset' as pass_reset_url %}
+
+<div class="jumbotron bigshadow" style="background: url({% static 'img/girl.jpg' %}) no-repeat center center fixed; background-size: cover;">
+    <form method="POST" {% if action_url %} action="{{ action_url }}" {% endif %}> {% csrf_token %}
+        {% if next_url %}
+            <input type="hidden" name="next_url" value="{{ next_url }}" />
+        {% endif %}
+
+        <div class="row">{{ form }} </div>
+
+        <div class="row">
+            <button type="submit" class="btn btn-secondary my-3 littleshadow">{{ button }}</button>
+            {% if login %}
+                <p class="text-secondary mx-4 mt-4"><a href="{{ pass_reset_url }}">{% trans "Zapomniałeś hasła?" %}</a></p>
+            {% endif %}
+        </div>
+
+    </form>
+</div>

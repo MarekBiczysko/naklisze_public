@@ -1,0 +1,16 @@
+<div class="container my-3">
+    <div class="row my-4">
+        {% for obj in object_list %}
+            <div class="col mx-0 px-1">
+                {% include "products/snippets/card.html" with instance=obj cart=cart description=description card_class=card_class %}
+            </div>
+                {% if forloop.counter|divisibleby:4 %}
+    <!-- close row-->
+    </div>
+                <div class="col-12 mx-auto"><hr/></div>
+                <!-- open new row-->
+                <div class="row my-4">
+                {% endif %}
+        {% endfor %}
+    </div>
+</div>

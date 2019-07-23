@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% load i18n %}
+{% load djmoney %}
+{% load tags %}
+
+{% block head_title %}
+    <title>naklisze.pl - {% trans "O nas" %}</title>
+    {% include "meta_descr/meta.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="container pt-5 mt-5">
+    <div class="row">
+        <div class="col">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item text-secondary"><a class="breadcrumb" href="#about_us">{% trans "O nas" %}</a></li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary"><a class="breadcrumb" href="#cameras_info">{% trans "Nasze aparaty" %}</a></li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary"><a class="breadcrumb" href="#shipping_info">{% trans "Warunki wysyłki" %}</a></li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary"><a class="breadcrumb" href="#contact_form">{% trans "Kontakt" %}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5" id="about_us">
+    <div class="text-center text-secondary">
+        <p class="text-info text-center text-nowrap"><i class="fas fa-user-astronaut fa-5x mx-3 my-3"></i></p>
+        <h3>{% trans "O nas" %}</h3><hr>
+    </div>
+
+    <div class="row my-5">
+        <div class="column">
+            <p class="text-justify">
+                {% trans "Sklep naklisze.pl jest odpowiedzią na chaos panujący na polskim internetowym rynku używanych aparatów fotograficznych." %}
+            </p>
+            <p class="text-justify">
+                {% blocktrans %}
+                W obecnej sytuacji osoba nie posiadająca wiedzy technicznej, a chcąca dokonać zakupu sprawnego aparatu analogowego stoi przed sporym problemem.
+                Zakup aparatu na jednym z popularnych serwisów ogłoszeniowo/aukcyjnych najczęściej jest loterią, której wynik znany jest dopiero po wywołaniu pierwszego negatywu.
+                {% endblocktrans %}
+            </p>
+            <p class="text-justify">
+                {% blocktrans %}
+                Aparaty oferowane w naklisze.pl są zawsze sprawdzane pod kątem technicznym, jeśli aparat posiada światłomierz wykonywana jest najczęściej też próbna klisza, z której sample widoczne są w opisie danego egzemplarza.
+                {% endblocktrans %}
+            </p>
+            <p class="text-justify">
+                {% blocktrans %}
+                Pamiętajmy, starych i nadal działających aparatów jest mało, a będzie coraz mniej:)
+                {% endblocktrans %}
+            </p>
+
+            <blockquote class="blockquote text-right my-5 py-3">
+            <p class="my-1">
+                “The camera is an excuse to be someplace you otherwise don’t belong. It gives me both a point of connection and a point of separation.”
+            </p>
+            <footer class="blockquote-footer"><cite title="Source Title">Susan Meiselas</cite></footer>
+            </blockquote>
+
+        </div>
+    </div>
+</div>
+
+<div class="container my-5" id="cameras_info">
+    <div class="text-center text-secondary">
+         <p class="text-info text-center text-nowrap"><i class="fas fa-camera-retro fa-5x mx-3 my-3"></i></p>
+        <h3>{% trans "Nasze aparaty" %}</h3><hr>
+    </div>
+
+    <div class="row my-5">
+        <div class="column">
+            <p class="text-justify">
+                {% blocktrans %}
+                Staramy się zagwarantować maksimum pewności co do stanu techniczego aparatów, oczywiście należy pamiętać, że często jest to sprzęt cechujący się ponad 50-letnim wiekiem.
+                {% endblocktrans %}
+            </p>
+            <p class="text-justify">
+                {% blocktrans %}
+                W związku z tym pewne drobne usterki mogą zostać przeoczone lub pojawić się w trakcie transportu, każdy taki przypadek rozpatrujemy indywidualnie z chęcią zachowania satysfakcji klienta.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+    <div class="row my-5 border border-light rounded">
+        <div class="col text-center text-dark">
+            <h4 class="text-secondary my-5 py-1">{% trans "Skala stanu technicznego/wizualnego aparatów" %}</h4>
+            <p class="text-justify text-dark mt-3">
+                {% blocktrans %}
+                Poniższa skala jest to umowny opis wizualnego jak i techniczego stanu zachowania oferowanego przez nas sprzętu.
+                Staramy się aby ta ocena była szczera i w jak najlepszy sposób oddawała rzeczywistą kondycję aparatów.
+                {% endblocktrans %}
+            </p>
+            <p class="text-left"><span class="font-weight-bold">4-6</span>  : {% trans "Znaczący defekt wizualny lub brak drobnej funkcjonalności technicznej (np. uszkodzony samowyzwalacz, licznik klatek) zawarty w opisie aparatu." %}</p>
+            <p class="text-left"><span class="font-weight-bold">7-8</span>  : {% trans "Bardzo dobry stan wizualny i techniczny, minimalne defekty zawarte w opisie aparatu." %}</p>
+            <p class="text-left"><span class="font-weight-bold">9</span>    : {% trans "Aparat używany, w doskonałym stanie technicznym i wizualnym." %}</p>
+            <p class="text-left"><span class="font-weight-bold">10</span>   : {% trans "Aparat fabrycznie nowy, nie posiadający żadnych defektów wizualnych ani technicznych." %}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5" id="shipping_info">
+    <div class="text-center text-secondary">
+        <p class="text-info text-center text-nowrap"><i class="far fa-paper-plane fa-5x mx-3 my-3"></i></p>
+        <h3>{% trans "Warunki wysyłki" %}</h3><hr>
+    </div>
+
+    <div class="row my-5">
+        <div class="column">
+            <p class="text-justify">
+                {% blocktrans %}
+                Wysyłka odbywa się do 3 dni po zaksięgowaniu wpłaty na koncie.
+                Wysyłka krajowa - za pośrednictwem kuriera, koszt wysyłki jest stały i wynosi {% endblocktrans %}{% local_shipping_price %}.
+                {% blocktrans %}
+                Wysyłka zagraniczna - wewnątrz UE za pośrednictwem kuriera (czas dostawy do tygodnia), poza UE za pośrednictwem Poczty Polskiej (czas dostawy do 3 tygodni).
+                Koszt wysyłki zagranicznej jest stały i wynosi {% endblocktrans %}{% international_shipping_price %}.
+                {% blocktrans %}
+                Zawartość paczki jest starannie zapakowana w karton i zabezpieczona wypełnieniem.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container border rounded littleshadow py-5 my-5 bg-light" id="contact_form">
+{% include "contact/view.html" %}
+</div>
+
+{% endblock %}
+

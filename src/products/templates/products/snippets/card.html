@@ -1,0 +1,90 @@
+{% load i18n %}
+{% load tags %}
+{% load static %}
+
+<script src="{% static 'js/product_card.js' %}"></script>
+
+<!--Card Regular-->
+<div class="card card-cascade {{ card_class }} my-3">
+
+    {% if instance.promo_active %}
+        <div class="price">
+            <p class="text-secondary pricetext" style="top:-25px; right:10px;"><strike>{% get_regular_price instance.prices %}</strike></p>
+            <p class="text-success pricetext font-weight-bold" style="right:10px;"><i class="fas fa-gem mx-1"></i>{% get_promo_price instance.prices %}</p>
+        </div>
+
+        {% else %}
+        <div class="price">
+            <p class="text-dark pricetext" style="top:-10px; right:10px;"><i class="fas fa-gem mx-1"></i>{% get_regular_price instance.prices %}</p>
+        </div>
+    {% endif %}
+
+    <!--Card image-->
+    <div class="view overlay hm-white-slight text-center">
+         <a href="{{ instance.get_absolute_url }}">
+            <img src="{{ instance.title_image }}"
+                 title="{{ instance.title }}"
+                 alt="{{ instance.description }}"
+                 style="border-radius: 2%; max-height: 170px; {% if instance.selled == True %} opacity: 0.15; {% endif %}"
+                 class="img-fluid">
+            <div class="mask"></div>
+        </a>
+    </div>
+    <!--/.Card image-->
+
+    <!--Card content-->
+    <div class="product-card-body card-body text-center">
+
+        <!--Title-->
+        <h5 class="card-title text-dark">
+            {{ instance.title }}
+            {% if request.user.is_superuser %}
+                <span class="small text-secondary font-italic"> ({{instance.no_of_views}})</span>
+            {% endif %}
+        </h5>
+
+        {% if instance.is_camera %}
+
+            <div class="text-left text-dark">{% trans "Rocznik" %}: <span class="text-secondary">{{ instance.production_date }}</span></div>
+            <div class="text-left text-dark">{% trans "Stan aparatu" %}: <span class="text-secondary">{{ instance.quality }}</span></div>
+
+        {% else %}
+
+            {% for attr in instance.print_attr %}
+        <div class="text-left text-dark">{{ attr.0 }}: <span class="text-secondary">{{ attr.1 }}</span></div>
+            {% endfor %}
+
+        {% endif %}
+
+
+        {% if card_class == "product_card" %}
+            <div class="description my-2">
+                <div class="card-text small">{{ instance.description|linebreaks|truncatewords:120 }}</div>
+            </div>
+        {% endif %}
+        
+
+    </div>
+
+    {% if card_class != "product_card_cart" %}
+        <div class="card-footer bg-white" style="height:4rem;">
+
+            {% if instance.selled == True %}
+                <div class="text-secondary text-center"><i class="fas fa-ban"></i>   {% trans "Sprzedany" %}</div>
+            {% else %}
+
+                {% if instance.id in cart.product_list and card_class != "product_card_cart"%}
+                    <div class="text-success"><i class="fas fa-thumbs-up"></i> {% trans "W koszyku" %}</div>
+                {% else %}
+                <div class="mx-auto">
+                    {% include "products/snippets/add_to_cart.html" with product=instance cart=cart type='card' %}
+                </div>
+                {% endif %}
+
+            {% endif %}
+        </div>
+    {% endif %}
+    <!--/.Card content-->
+</div>
+<!--/.Card Regular-->
+

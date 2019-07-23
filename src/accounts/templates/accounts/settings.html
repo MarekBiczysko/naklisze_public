@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+{% load static %}
+
+{% url 'regulations' as regulations_url %}
+{% url 'about' as about_url %}
+
+
+<div class="container my-5">
+
+    <div class="text-center text-secondary my-5"><h1>{% trans "Twoje konto" %}</h1></div>
+
+    <ul id="settings-nav" class="nav nav-tabs nav-justified" role="tablist">
+
+        <li class="nav-item active">
+            <a class="nav-link active text-secondary" href="#data" id="data-tab" role="tab" data-toggle="tab" aria-controls="data" aria-expanded="true">
+            {% trans "Dane" %}
+            </a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            {% trans "Pomoc" %}
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="{{ about_url }}#contact_form" id="dropdown-contact-tab" aria-controls="dropdownContact">{% trans "Kontakt" %}</a>
+                <a class="dropdown-item text-secondary" href="{{ regulations_url }}" id="dropdown-regulations-tab" aria-controls="dropdownRegulations">{% trans "Regulamin" %}</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            {% trans "Zakupy" %}
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="#dropdown-orders" role="tab" id="dropdown-orders-tab" data-toggle="tab" aria-controls="dropdownOrders">{% trans "Zamówienia" %}</a>
+                <a class="dropdown-item text-secondary" href="#dropdown-addresses" role="tab" id="dropdown-addresses-tab" data-toggle="tab" aria-controls="dropdownAddresses">{% trans "Adresy" %}</a>
+                <a class="dropdown-item text-secondary" href="#dropdown-payment" role="tab" id="dropdown-payment-tab" data-toggle="tab" aria-controls="dropdownPayment">{% trans "Płatność" %}</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link text-secondary" href="#recent" id="recent-tab" role="tab" data-toggle="tab" aria-controls="recent" aria-expanded="true">{% trans "Ostatnio przeglądane produkty" %}</a>
+        </li>
+
+    </ul>
+
+    <!-- Content Panel -->
+    <div id="clothing-nav-content" class="tab-content">
+
+        <div role="tabpanel" class="tab-pane fade" id="recent" aria-labelledby="recent-tab">
+            <h4 class="text-secondary my-5">{% trans "Produkty, które Cię zainteresowały" %}:</h4>
+            <div class="col-lg-6 mx-auto">
+                <ul class="list-group list-group-flush">
+                {% for product in viewed_products %}
+                <li class="list-group-item"><a class="text-dark" href="{{ product.get_absolute_url }}">{{ product.order_title }}</a></li>
+
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="dropdown-orders" aria-labelledby="dropdown-orders-tab">
+            <h4 class="text-secondary my-5">{% trans "Twoje zamówienia:" %}</h4>
+
+            <div class="col-lg-8 mx-auto">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">{% trans "Nr zamówienia" %}</th>
+                            <th scope="col">{% trans "Data" %}</th>
+                            <th scope="col">{% trans "Koszt" %}</th>
+                            <th scope="col">{% trans "Status" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          {% for order in orders %}
+                          {% include "accounts/settings_snippets/order_modal.html" with modal_id="order{{ order.id }}" order=order %}
+                            <tr>
+                                <th scope="row">
+                                  <button class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#order{{ order.id }}">{{ order.order_id }}</button>
+                                </th>
+
+                                <td>{{ order.timestamp|date:'Y-m-d' }}</td>
+                                <td>{{ order.total }}</td>
+                                <td>{{ order.get_status_display }}</td>
+                            </tr>
+                          {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="dropdown-addresses" aria-labelledby="dropdown-addresses-tab">
+            <div class="row my-2">
+                <div class="col-lg-6 text-center">
+                    <h4 class="text-secondary my-5">{% trans "Adresy Wysyłki" %}</h4>
+                    {% for address in shipping_addresses %}
+                    <div class="row">
+                        <div class="col">
+                            {% for address_part in address.print_address_html %}
+                                &emsp;{{ address_part }}<br>
+                            {% endfor %}
+                        </div>
+                        <div class="col">
+                            {% include "accounts/settings_snippets/del_address.html" with action_url=request.build_absolute_uri address_id=address.id %}
+                        </div>
+                    </div>
+                    <hr>
+
+                    {% endfor %}
+                </div>
+                <div class="col-lg-6 text-center">
+                     <h4 class="text-secondary my-5">{% trans "Dane kupującego" %}</h4>
+                    {% for address in billing_addresses %}
+                        <div class="row">
+                            <div class="col">
+                                {% for address_part in address.print_address_html %}
+                                    &emsp;{{ address_part }}<br>
+                                {% endfor %}
+                            </div>
+                            <div class="col">
+                                {% include "accounts/settings_snippets/del_address.html" with action_url=request.build_absolute_uri address_id=address.id %}
+                            </div>
+                        </div>
+                        <hr>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="dropdown-payment" aria-labelledby="dropdown-payment-tab">
+            <h4 class="text-secondary my-5">{% trans "Dane do płatności" %}:</h4>
+            <p>{% trans "Nr konta" %}: 94 1140 2004 0000 3102 7763 7066</p>
+            <p>{% trans "Kwota i tytuł przelewu są przesyłane razem z podsumowaniem zamówienia na adres e-mail użytkownika" %}.</p>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade  show active" id="data" aria-labelledby="data-tab">
+            {% include "accounts/settings_snippets/user_data_form.html" with form=form %}
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+

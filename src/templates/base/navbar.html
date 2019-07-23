@@ -1,0 +1,179 @@
+{% load static %}
+{% load tags %}
+{% load i18n %}
+
+{% url 'products:list' 'range' as range_list_url %}
+{% url 'products:list' 'compact' as compact_list_url %}
+{% url 'products:list' 'half' as half_list_url %}
+{% url 'products:list' 'medium' as medium_list_url %}
+{% url 'products:multiple_list' 'straps' as straps_list_url %}
+{% url 'products:multiple_list' 'buttons' as buttons_list_url %}
+{% url 'products:offer' as offer_url %}
+
+{% url 'home_page' as home_url %}
+{% url 'about' as about_url %}
+{% url 'accounts:login' as login_url %}
+{% url 'accounts:register' as register_url %}
+{% url 'accounts:logout' as logout_url %}
+{% url 'accounts:settings' as settings_url %}
+{% url 'carts:home' as cart_url %}
+{% url 'search:query' as search_url %}
+
+{% url 'analytics:panel' as panel_url %}
+
+
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light" style="padding-top: 35px; padding-bottom: 35px;">
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapseLinks" aria-controls="navCollapseLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand ml-auto d-md-none text-right" href="{{ home_url }}" ><img alt="naklisze.pl" style="max-width:50%; min-width:90px;" src="{% static 'img/logo.png' %}"/></a>
+
+
+    <div class="collapse navbar-collapse" id="navCollapseLinks">
+
+        <div id="dropdowned" class="d-md-none"></div>
+
+        <ul class="navbar-nav ml-3 mr-auto">
+
+            <li class="nav-item {% if request.path == about_url %} active {% endif %} mx-2">
+                <a class="nav-link" style="white-space: nowrap" href="{{ about_url }}">{% trans "O nas" %}</a>
+            </li>
+                <li role="separator" class="dropdown-divider"></li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown {% if request.path == prod_list_url %} active {% endif %} mx-2">
+                <a class="nav-link dropdown-toggle" style="white-space: nowrap" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="wiggle d-none d-md-inline-block">&#x1F525</span>{% trans "Aparaty" %}
+                </a>
+
+                <div id="offer-dropdown" class="dropdown-menu mx-auto text-center text-md-left littleshadow"  aria-labelledby="dropdownMenuLink">
+
+
+
+                    <div class="nav-item {% if request.path == prod_list_url %} active {% endif %}">
+
+                        <a class="nav-link pl-2" href="{{ offer_url }}">{% trans "Wprowadzenie" %}</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="nav-link pl-2" href="{{ range_list_url }}">{% trans "Dalmierze" %}</a>
+                        <a class="nav-link pl-2" href="{{ compact_list_url }}">{% trans "Kompakty" %}</a>
+                        <a class="nav-link pl-2" href="{{ half_list_url }}">{% trans "Połówkowe" %}</a>
+                        <!--<a class="nav-link pl-2" href="{{ medium_list_url }}">{% trans "Średni format" %}</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="nav-link pl-2" href="{{ straps_list_url }}">{% trans "Paski" %}</a>-->
+                        <!--<a class="nav-link pl-2" href="{{ buttons_list_url }}">{% trans "Przyciski spustu" %}</a>-->
+                    </div>
+
+                </div>
+            </li>
+            <li role="separator" class="dropdown-divider"></li>
+
+            <li class="mx-3">
+                <div class="nav-item">
+                    <a class="nav-link" style="white-space: nowrap" href="{{ search_url }}"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+            </li>
+
+        </ul>
+
+        <a class="navbar-brand d-none d-md-block" href="{{ home_url }}" ><img alt="naklisze.pl" id="navbar-brand" class="mx-auto" src="{% static 'img/logo.png' %}"/></a>
+
+
+        <ul class="navbar-nav ml-3 ml-md-auto">
+
+            <li role="separator" class="dropdown-divider"></li>
+
+            <li class="mx-2 text-md-right">
+                <div class="nav-item {% if request.path == cart_url %} active {% endif %} ">
+                    <a class="nav-link" style="white-space: nowrap" href="{{ cart_url }}"><i class="fas fa-shopping-cart mx-1"></i>
+                        ({% if request.session.cart_items_count %}{{ request.session.cart_items_count }}{% else %}0{% endif %})
+                    </a>
+                </div>
+            </li>
+
+                 <li role="separator" class="dropdown-divider"></li>
+
+            <li class="nav-item dropdown {% if request.path == login_url or request.path == register_url%} active {% endif %} mx-2 text-md-right">
+                <a class="nav-link dropdown-toggle mr-lg-2" style="white-space: nowrap" href="#" data-toggle="dropdown"><i class="fas fa-user mx-1"></i>
+                {% if request.user.is_authenticated %} {{ request.user }} {% else %} {% trans "Konto" %} {% endif %}
+                </a>
+
+
+                    <div class="dropdown-menu mx-auto dropdown-menu-right text-center text-md-left littleshadow">
+
+                        {% if not request.user.is_authenticated %}
+                            <div class="nav-item {% if request.path == login_url %} active {% endif %}">
+                                <a class="nav-link pl-2" href="{{ login_url }}"><i class="fas fa-user-circle mr-2"></i>{% trans "Zaloguj" %}</a>
+                            </div>
+                        {% endif %}
+
+                            <div class="nav-item {% if request.path == register_url %} active {% endif %}">
+                                <a class="nav-link pl-2" href="{{ register_url }}"><i class="fas fa-user-plus mr-2"></i>{% trans "Utwórz konto" %}</a>
+                            </div>
+
+                            <div class="nav-item">
+                                <a class="nav-link pl-2" href="{{ settings_url }}"><i class="fas fa-cog mr-2"></i>{% trans "Ustawienia" %}</a>
+                            </div>
+
+                        {% if request.user.is_authenticated or request.session.guest_email_id %}
+                        <div class="dropdown-divider"></div>
+                            <div class="nav-item">
+                                <a class="nav-link pl-2" href="{{ logout_url }}"><i class="fas fa-power-off mr-2"></i>{% trans "Wyloguj" %}</a>
+                            </div>
+                        {% endif%}
+
+                        {% if request.user.is_staff %}
+                            <div class="dropdown-divider"></div>
+                            <a class="nav-link pl-2" href="{{ panel_url }}"><i class="fas fa-chart-line mr-2"></i>Panel</a>
+                        {% endif %}
+
+                    </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav text-right">
+
+            <li role="separator" class="dropdown-divider"></li>
+
+            <li class="mr-lg-3">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="white-space: nowrap" href="#" data-toggle="dropdown">
+                        <i class="text-info fas fa-globe-americas mx-1"></i>
+                        {% current_language %}
+                    </a>
+                    <div class="dropdown-menu mx-auto dropdown-menu-right text-center text-md-left littleshadow">
+
+                        {% for lang in settings.LANGUAGES %}
+                            <div class="nav-item text-center">
+                                <a class="nav-link pl-2" href="{% url 'lang' lang.0 %}">{{lang.1}}</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " style="white-space: nowrap" href="#" data-toggle="dropdown">
+                        <i class="text-info fas fa-coins mx-1"></i>
+                    {{ request.session|get:"currency" }}
+                    </a>
+                    <div class="dropdown-menu mx-auto dropdown-menu-right text-center text-md-left littleshadow">
+                        <div class="nav-item text-center">
+                            <a class="nav-link pl-2" href="{% url 'currency' 'EUR' %}"><i class="fas fa-euro-sign mx-1"></i>EUR</a>
+                        </div>
+                        <div class="nav-item text-center">
+                            <a class="nav-link pl-2" href="{% url 'currency' 'USD' %}"><i class="fas fa-dollar-sign mx-1"></i>USD</a>
+                        </div>
+                        <div class="nav-item text-center">
+                            <a class="nav-link pl-2" href="{% url 'currency' 'PLN' %}"><i class="fas fa-grin-stars mx-1"></i>PLN</a>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>

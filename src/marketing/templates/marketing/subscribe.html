@@ -1,0 +1,36 @@
+{% load i18n %}
+
+<form method="POST" action="{% url 'marketing:subscribe' %}"> {% csrf_token %}
+        <div class="container">
+        <div class="row">
+            <div class="col">
+
+                {% if not user.is_authenticated %}
+                <input class="form-control mb-3" required type="text" name="guest_email" placeholder="e-mail" aria-label="guest_email">
+                {% else %}
+                <p>&nbsp</p>
+                {% endif %}
+
+                <button class="btn btn-default btn-outline-info text-white" type="submit" data-toggle="collapse" data-target="#collapseCheckbox" aria-expanded="false" aria-controls="collapseCheckbox">
+                    {% trans "Zapisz się" %}
+                </button>
+
+            </div>
+        </div>
+        <div class="collapse row" id="collapseCheckbox">
+            <div class="col mt-2">
+                <div class="card card-body" style="position: absolute; height: 150px; width: 100%; left: 50%; transform: translateX(-50%); overflow-y: scroll; overflow-x: scroll">
+                    <span>
+                        <input type="checkbox" required id="accept">
+                        <small>
+                        {% trans "Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Marek Biczysko – naklisze.pl i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia." %}
+                        {% trans "Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany przeze mnie adres e-mail informacji handlowej w rozumieniu art. 10 ust. 1 ustawy z dnia 18 lipca 2002 roku o świadczeniu usług drogą elektroniczną." %}
+                        </small>
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>

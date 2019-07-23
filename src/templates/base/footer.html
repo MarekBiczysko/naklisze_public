@@ -1,0 +1,71 @@
+{% load static %}
+{% load i18n %}
+
+{% url 'regulations' as regulations_url %}
+{% url 'cookies' as cookies_url %}
+{% url 'about' as about_url %}
+
+<!--Footer-->
+<footer class="page-footer bg-light center-on-small-only mdb-color py-0 my-0" style="">
+
+    <!--Footer Links-->
+    <div class="container pt-4">
+        <div class="row">
+
+            <div class="col-5 pt-lg-5 mx-auto">
+
+                    <p><a class="text-secondary" style="text-decoration: none;" href="{{ regulations_url }}">{% trans "Regulamin" %}</a></p>
+                    <p><a class="text-secondary" style="text-decoration: none;" href="{{ cookies_url }}">{% trans "Polityka prywatności i cookies" %}</a></p>
+                    <p><a class="text-secondary" style="text-decoration: none;" href="{{ about_url }}#shipping_info">{% trans "Wysyłka" %}</a></p>
+                    <p><a class="text-secondary" style="text-decoration: none;" href="{{ about_url }}#cameras_info">{% trans "Jakość produktów" %}</a></p>
+
+            </div>
+
+            <!--Second column
+            <div class="col pt-lg-5 mr-lg-auto">
+                    <h6 class="title mb-lg-4 font-bold d-none d-md-block">Polecamy</h6>
+
+                    <p><a class="text-secondary" style="text-decoration: none;" href="#!">Link</a></p>
+                    <p><a class="text-secondary" style="text-decoration: none;" href="#!">Link</a></p>
+                    <p><a class="text-secondary" style="text-decoration: none;" href="#!">Link</a></p>
+            </div>
+            <!--/.Second column-->
+
+
+
+            <div class="col-4 pt-lg-5 mx-auto text-center">
+                <div class="social-section text-md-left">
+                    <p><a href="{{ about_url }}#shipping_info" style="text-decoration: none;position: relative;white-space:nowrap;" class="text-secondary mx-1"><i class="far fa-comments fa-2x"></i><span class="d-none d-md-block" style="position:absolute; top:-10px; left:50px;">{% trans "Formularz kontaktowy" %}</span></a></p>
+                    <p><a class="text-secondary mx-1" style="text-decoration: none;position: relative;white-space:nowrap;" href="mailto:naklisze@gmail.com"><i class="far fa-envelope fa-2x"></i><span class="d-none d-md-block" style="position:absolute; top:-10px; left:50px;">{% trans "Wyślij e-mail" %}</span></a></p>
+                </div>
+            </div>
+
+            <div class="col-3 pt-lg-5 mx-auto text-center">
+                <p class="d-none d-md-block text-secondary">{% trans "Obserwuj nas" %}</p>
+                <!--Social buttons visible on < LG -->
+                <div class="social-section d-block d-lg-none">
+                    {% include "base/snippets/social_links.html" with btn_size="fa-2x"%}
+                </div>
+
+                <!--Social buttons visible on > LG  -->
+                <div class="social-section d-none d-lg-block mt-4">
+                    <span class="d-flex justify-content-around">
+                        {% include "base/snippets/social_links.html" with btn_size="fa-2x"%}
+                    </span>
+                </div>
+            </div>
+
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright pt-5">
+        <div class="container-fluid text-center">
+            <p class="text-muted">© 2018 Copyright: naklisze.pl</p>
+        </div>
+    </div>
+    <!--/.Copyright-->
+    </div>
+
+</footer>
+<!--/.Footer-->

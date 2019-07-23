@@ -1,0 +1,34 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    {% block head_title %}{% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      {% include "base/css.html" %}
+      {% include "base/google_analytics.html" %}
+  </head>
+
+  <body>
+
+    {% include "base/js.html" %}
+
+    {% include "base/navbar.html" %}
+
+    {% include "base/msg_bar.html" %}
+
+    {% block content %}{% endblock %}
+
+    {% include "base/footer.html" %}
+
+    {% include "base/cookies.html" %}
+
+    {% include "base/snippets/messanger.html" %}
+
+  </body>
+
+</html>
+

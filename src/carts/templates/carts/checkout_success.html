@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+    {% load static %}
+
+    {% url 'accounts:register' as register_url %}
+    {% url 'accounts:settings' as settings_url %}
+
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.2';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+            {% include "carts/snippets/breadcrumbs.html" with page="Sukces" %}
+
+            <div class="container my-5">
+                <div class="row my-5">
+                    <div class="col">
+                        <h2 class="text-secondary my-5">{% trans "Dziękujemy" %},</h2>
+                        <p>{% trans "Zamówienie o numerze" %} <strong>{{ success_order_id }}</strong> {% trans "zostało przekazane do realizacji" %}.</p>
+                        <p>{% trans "Potwierdzenie zamówienia jak i wszystkie niezbędne do realizacji informacje zostały wysłane na adres email" %}: <strong>{{ success_user_email }}</strong></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-secondary my-3">{% trans "Prosimy o dokonanie wpłaty zgodnie z poniższymi danymi" %}:</h4>
+                        <p>{% trans "Nr konta" %}:<strong class="mx-2">94 1140 2004 0000 3102 7763 7066</strong></p>
+                        <p>{% trans "Kwota" %}:<strong class="mx-2">{{ success_order_total }}</strong></p>
+                        <p>{% trans "Tytuł przelewu" %}:<strong class="mx-2">{{ success_user_email }}/{{ success_order_id }}</strong></p>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col">
+                        {% if request.user.is_authenticated %}
+                        <a class="text-dark text-nowrap" style="text-decoration: none;" href="{{ settings_url }}">
+                            {% trans "Status zamówienia możesz śledzić w panelu użytkownika" %}<i class="fas fa-cog fa-2x mx-2 text-info"></i></a>
+                        {% else %}
+                        <a class="text-dark text-nowrap" style="text-decoration: none;" href="{{ register_url }}">
+                            {% trans "Aby śledzić status Twojego zamówienia utwórz konto na adres e-mail" %}: {{ success_user_email }} <i class="fas fa-user-plus fa-2x mx-3 text-info"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="col">
+                        <div>{% trans "Polub nasz Fanpage i obserwuj nas na Instagramie!" %}</div>
+                        <div>
+                            <div class="fb-like" data-href="http://facebook.com/naklisze" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                            <span>
+                                <a href="https://www.instagram.com/naklisze.pl/" aria-label="Instagram - naklisze.pl" rel="noreferrer" class="btn socialbtn" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+{% endblock %}
+

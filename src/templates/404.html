@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container my-5 py-5">
+    <div class="row">
+        <div class="col text-center">
+            <h1>{% trans "Nie znaleziono podanej strony" %}</h1>
+            <p>{% trans "Błąd 404" %}</p>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,170 @@
+{% extends "base_prod.html" %}
+{% load i18n %}
+
+{% block head_title %}
+    <title>naklisze.pl - aparaty analogowe - oferta</title>
+    {% include "meta_descr/meta.html" %}
+{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+{% url 'products:list' 'range' as range_list_url %}
+{% url 'products:list' 'compact' as compact_list_url %}
+{% url 'products:list' 'half' as half_list_url %}
+{% url 'products:list' 'medium' as medium_list_url %}
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item text-info"><a style="color: grey" class="fas fa-home"></a></li>
+      <li class="breadcrumb-item active text-info">{% trans "Oferta" %}</li>
+  </ol>
+</nav>
+
+
+
+<div id="carouselOffer" class="carousel slide py-5 my-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselOffer" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselOffer" data-slide-to="1"></li>
+        <li data-target="#carouselOffer" data-slide-to="2"></li>
+        <li data-target="#carouselOffer" data-slide-to="3"></li>
+    </ol>
+
+  <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+
+                <div class="container littleshadow bighovershadow">
+                    <div class="row mx-3 my-3 py-3 carouselOffer" style="min-height: 500px">
+                        <div class="col-xs-12 col-lg-6 order-1 mb-3">
+                            <div class="text-center">
+                                <h3>{% trans "Aparaty dalmierzowe" %}</h3>
+                                <p class="text-justify mt-5">
+                                    {% blocktrans %}
+                                    Aparat dalmierzowy (ang. "rangefinder camera") to rodzaj aparatu fotograficznego, który wykorzystuje dalmierz. Jest to sposób ustawiania ostrości, uzyskiwany przez nałożenie się dwóch obrazów w wizjerze (obraz stereoskopowy).
+                                    {% endblocktrans %}
+                                </p>
+                                <p class="text-justify">
+                                    {% blocktrans %}
+                                    Mechanizm ustawiania ostrości w dalmierzach polega na manipulacji pierścieniem ostrości w taki sposób, by dwa obrazy pokryły się w wizjerze.
+                                    Kultowym producentem i pierwowzorem tego typu aparatów jest Leica, której produkty były z pomyślnością kopiowane przez Związek Radziecki pod postacią marki Zorki.
+                                    {% endblocktrans %}
+                                </p>
+                                <a class="btn btn-default btn-outline-info text-dark mt-2 littleshadow" href="{{ range_list_url }}" role="button">Zobacz ofertę</a>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-6 order-2 my-auto">
+                            <img style="max-width:100%;" src="{% static 'img/offer/range.jpg' %}" class="img-responsive rounded d-block" />
+                        </div>
+                    </div>
+            </div>
+
+      </div>
+
+      <div class="carousel-item">
+
+            <div class="container littleshadow bighovershadow">
+                <div class="row mx-3 my-3 py-3" style="min-height: 500px">
+                    <div class="col-xs-12 col-lg-6 order-lg-2 mb-3">
+                        <div class="text-center">
+                            <h3>{% trans "Aparaty połówkowe" %}</h3>
+                            <p class="text-justify mt-5">
+                                {% blocktrans %}
+                                Aparaty połówkowe (ang. "half-frame camera) charakteryzują się tym, że wykorzystują tylko połowę domyślnego obszaru klatki dla danego typu negatywu.
+                                W przypadku najpopularniejszego formatu 135, z formatu klatki 24x36mm wykorzystywana jest pionowa połowa o rozmiarze 18x24mm.
+                                {% endblocktrans %}
+                            </p>
+                            <p class="text-justify">
+                                {% blocktrans %}
+                                Pierwowzorem aparatów połówkowych był model 'Pen' japońskiej marki Olympus, a okres największej popularności to lata 60-70.
+                                Wraz z postępem miniaturyzacji aparatów kompaktowych o standardowym rozmiarze klatki 135 aparaty zaczęły odchodzić w zapomnienie.
+                                Największą zaletą tego typu aparatów jest możliwość wykonania dwukrotnie większej liczby ekspozycji na jednej rolce filmu, nawet ponad 72 zdjęcia dla filmu 36 klatkowego.
+                                {% endblocktrans %}
+                            </p>
+                            <a class="btn btn-default btn-outline-info text-dark mt-2 littleshadow" href="{{ half_list_url }}" role="button">Zobacz ofertę</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 order-lg-1 my-auto">
+                        <img style="max-width:100%;" src="{% static 'img/offer/half.jpg' %}" class="rounded d-block" />
+                    </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="carousel-item">
+
+            <div class="container littleshadow bighovershadow">
+               <div class="row mx-3 my-3 py-3" style="min-height: 500px">
+                    <div class="col-xs-12 col-lg-6 order-1 mb-3">
+                        <div class="text-center">
+                            <h3>{% trans "Aparaty kompaktowe" %}</h3>
+                            <p class="text-justify mt-5">
+                                {% blocktrans %}
+                                Aparaty kompaktowe, potocznie kompakt (ang. "compact camera") – typ popularnego aparatu fotograficznego o niewielkich rozmiarach, zwartej budowie i uproszczonej obsłudze.
+                                Jest on najczęściej wyposażony w niewymienny obiektyw stałoogniskowy lub zmiennoogniskowy.
+                                {% endblocktrans %}
+                            </p>
+                            <p class="text-justify">
+                                {% blocktrans %}
+                                Ustawienie ostrości dokonywane jest przez układ Auto Focus lub często manualnie na podstawie tabeli odległości lub piktogramów.
+                                W połowie lat 90. powstał dział fotografii zwany łomografią (lomografią), jego nazwa pochodzi od marki radzieckich aparatów fotograficznych Łomo, a najpopularniejszym przedstawicielem jest wyprodukowana w ponad 20 milionach egzemplarzy Smiena 8m.
+                                {% endblocktrans %}
+                            </p>
+                            <a class="btn btn-default btn-outline-info text-dark mt-2 littleshadow" href="{{ compact_list_url }}" role="button">Zobacz ofertę</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 order-2 my-auto">
+                        <img style="max-width:100%;" src="{% static 'img/offer/compact.jpg' %}" class="rounded d-block" />
+                    </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="carousel-item">
+
+            <div class="container littleshadow bighovershadow">
+               <div class="row mx-3 my-3 py-3" style="min-height: 500px">
+                    <div class="col-xs-12 col-lg-6 order-lg-2 mb-3">
+                        <div class="text-center">
+                            <h3>{% trans "Aparaty Średnioformatowe" %}</h3>
+                            <p class="text-justify mt-5">
+                                {% blocktrans %}
+                                Aparaty fotograficzne na błony zwojowe o szerokości 60 mm bez perforacji.
+                                Najczęstsze formaty klatek stosowanych w tych aparatach to: 6×4,5 cm, 6×6 cm, 6×7 cm, 6×8 cm, 6×9 cm.
+                                {% endblocktrans %}
+                            </p>
+                            <p class="text-justify">
+                                {% blocktrans %}
+                                Błony zwojowe średnioformatowe są konfekcjonowane w dwóch podstawowych rozmiarach, o symbolu 120- mogące pomieścić 12 klatek formatu 6×6 cm i o symbolu 220- mogące pomieścić 24 klatki formatu 6×6 cm.
+                                {% endblocktrans %}
+                            </p>
+                            <a class="btn btn-default btn-outline-info text-dark mt-2 littleshadow" href="{{ medium_list_url }}" role="button">Zobacz ofertę</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 order-lg-1 my-auto">
+                        <img style="max-width:100%;" src="{% static 'img/offer/medium.jpg' %}" class="rounded d-block" />
+                        <p></p>
+                    </div>
+
+                </div>
+          </div>
+      </div>
+
+  </div>
+
+
+  <a class="carousel-control-prev" href="#carouselOffer" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only text-dark"><i class="fas fa-angle-left text-dark"></i></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselOffer" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only"><i class="fas fa-angle-right"></i></span>
+  </a>
+</div>
+
+{% endblock %}

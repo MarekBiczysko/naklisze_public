@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /analytics/*
+Disallow: /orders/*
+Disallow: /regulations/
+Disallow: /cookies/
+Disallow: /accounts/*
+Disallow: /marketing/*
+Disallow: /geo/*
+Disallow: /cart/*
+Disallow: /lang/*
+Disallow: /currency/*
+Sitemap: https://naklisze.pl/sitemap.xml

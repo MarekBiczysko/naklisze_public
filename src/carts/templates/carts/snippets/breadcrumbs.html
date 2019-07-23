@@ -1,0 +1,100 @@
+{% load i18n %}
+
+<div class="container my-5 pt-5">
+    <div class="row my-2">
+        <div class="col">
+            <ul class="list-inline text-center">
+
+                {% if page == "Koszyk" %}
+
+                <li class="list-inline-item text-info"><strong>{% trans "Koszyk" %}</strong></li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Konto" %}</li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Adres" %}</li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Dane" %}</li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Podsumowanie" %}</li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Sukces" %}</li>
+
+                {% elif page == "Konto" %}
+
+                <li class="list-inline-item text-info">{% trans "Koszyk" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info"><strong>{% trans "Konto" %}</strong></li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Adres" %}</li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Dane" %}</li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Podsumowanie" %}</li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Sukces" %}</li>
+
+                {% elif page == "Adres" %}
+
+
+                <li class="list-inline-item text-info">{% trans "Koszyk" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info">{% trans "Konto" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info"><strong>{% trans "Adres" %}</strong></li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Dane" %}</li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Podsumowanie" %}</li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Sukces" %}</li>
+
+                {% elif page == "Dane" %}
+
+                <li class="list-inline-item text-info">{% trans "Koszyk" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info">{% trans "Konto" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info">{% trans "Adres" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info"><strong>{% trans "Dane" %}</strong></li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Podsumowanie" %}</li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Sukces" %}</li>
+
+                {% elif page == "Podsumowanie" %}
+
+                <li class="list-inline-item text-info">{% trans "Koszyk" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info">{% trans "Konto" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info">{% trans "Adres" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info">{% trans "Dane" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info"><strong>{% trans "Podsumowanie" %}</strong></li>
+                <li class="list-inline-item text-secondary">&bull;</li>
+                <li class="list-inline-item text-secondary">{% trans "Sukces" %}</li>
+
+                {% elif page == "Sukces" %}
+
+                <li class="list-inline-item text-info">{% trans "Koszyk" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info">{% trans "Konto" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info">{% trans "Adres" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info">{% trans "Dane" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info">{% trans "Podsumowanie" %}</li>
+                <li class="list-inline-item text-info">&bull;</li>
+                <li class="list-inline-item text-info"><strong>{% trans "Sukces" %}</strong></li>
+
+                {% endif %}
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+

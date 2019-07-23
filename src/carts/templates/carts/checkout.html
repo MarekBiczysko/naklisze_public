@@ -1,0 +1,246 @@
+{% extends "base_prod.html" %}
+{% load i18n %}
+{% load djmoney %}
+{% load tags %}
+
+{% block head_title %}
+<title>naklisze.pl</title>
+{% endblock %}
+
+{% block content %}
+
+    {% load static %}
+
+    <script src="{% static 'js/checkout.js' %}"></script>
+
+    {% url 'carts:update' as update_cart_url %}
+    {% url 'accounts:login' as login_url %}
+    {% url 'accounts:guest_register' as guest_register_url %}
+    {% url 'accounts:register' as register_url %}
+    {% url 'carts:checkout_address_create' as checkout_address_create_url %}
+    {% url 'carts:checkout_address_reuse' as checkout_address_reuse_url %}
+    {% url 'carts:check_availability' as check_availability_url %}
+
+    {% if not billing_profile %}
+
+        {% include "carts/snippets/breadcrumbs.html" with page="Konto" %}
+
+        <div class="container py-lg-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-secondary">{% trans "Zaloguj się" %}</h2>
+                    {% trans "Zaloguj" as btn %}
+                    {% include "snippets/form.html" with form=login_form next_url=request.build_absolute_uri button=btn action_url=login_url login=True %}
+                    <h4 class="text-info my-3"><a class="text-info font-weight-bold text-center" href="{{ register_url }}">{% trans "Załóż konto" %}</a> {% trans "aby otrzymać 5% rabatu na każdy produkt!" %}</h4>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-secondary">{% trans "Kontynuuj jako gość" %}</h2>
+                    {% trans "Dalej" as btn %}
+                    {% include "snippets/form.html" with form=guest_form next_url=request.build_absolute_uri button=btn action_url=guest_register_url %}
+                </div>
+            </div>
+        </div>
+
+    {% else %}
+
+        {% if not object.shipping_address or not object.billing_address %}
+
+
+            {% if not object.shipping_address %}
+
+            {% include "carts/snippets/breadcrumbs.html" with page="Adres" %}
+
+            <div class="container my-5">
+                <div class="row">
+                     {% if address_qs %}
+                        <div class="col-lg-6 mx-auto">
+                            <h2 class="text-secondary">{% trans "Wybierz adres z listy" %}</h2>
+                            {% include "addresses/snippets/reuse_address.html" with address_qs=address_qs next_url=request.build_absolute_uri action_url=checkout_address_reuse_url %}
+                        </div>
+                     {% endif %}
+                    <div class="col-lg-6 mx-auto">
+                        <h2 class="text-secondary">{% trans "Adres wysyłki" %}</h2>
+                        {% trans "Dalej" as btn %}
+                        {% include "addresses/form.html" with form=address_form next_url=request.build_absolute_uri button=btn action_url=checkout_address_create_url %}
+                    </div>
+                </div>
+            </div>
+
+            {% elif not object.billing_address %}
+
+                {% include "carts/snippets/breadcrumbs.html" with page="Dane" %}
+
+                <div class="container my-5">
+                    <div class="row">
+                        {% if address_qs %}
+                            <div class="col-lg-6 mx-auto">
+                                <h2 class="text-secondary">{% trans "Wybierz dane z listy" %}</h2>
+                                {% include "addresses/snippets/reuse_address.html" with address_qs=address_qs next_url=request.build_absolute_uri action_url=checkout_address_reuse_url address_type="billing" %}
+                            </div>
+                        {% endif %}
+
+                        <div class="col-lg-6 mx-auto">
+                            <h2 class="text-secondary">{% trans "Dane Kupującego" %}</h2>
+                            {% trans "Dalej" as btn %}
+                            {% include "addresses/form.html" with form=address_form next_url=request.build_absolute_uri button=btn action_url=checkout_address_create_url address_type="billing"%}
+                        </div>
+                    </div>
+                </div>
+
+            {% endif %}
+
+        {% else %}
+
+            {% include "carts/snippets/breadcrumbs.html" with page="Podsumowanie" %}
+
+            <div class="container my-5">
+
+                <div class="row my-3">
+
+                    <div class="col-sm-6 my-1">
+                        <div class="card littleshadow">
+                            <div class="card-header">
+                                {% trans "Dane Kupującego" %}
+                            </div>
+                            <div class="card-body">
+                                {% for address_part in object.billing_address.print_address_html %}
+                                    <p class="card-text">{{ address_part }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="card-footer">
+                                {% include "addresses/snippets/del_address.html" with action_url=request.build_absolute_uri del_address="del_billing_address" %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 my-1">
+                        <div class="card littleshadow">
+                            <div class="card-header">
+                                {% trans "Adres wysyłki" %}
+                            </div>
+                            <div class="card-body">
+                                {% for address_part in object.shipping_address.print_address_html %}
+                                    <p class="card-text">{{ address_part }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="card-footer my-0">
+                                {% include "addresses/snippets/del_address.html" with action_url=request.build_absolute_uri del_address="del_billing_address" %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-md-4 my-1">
+                        <form method="POST" action="{{request.build_absolute_uri}}" id="shippingTypeForm"> {% csrf_token %}
+                            <div class="card littleshadow">
+                                <div class="card-header">
+                                    {% trans "Podsumowanie" %}:
+                                </div>
+                                <div class="card-body">
+
+                                    <div class="my-3">
+                                        <dl>
+                                        <dt>{% trans "Koszt produktów" %}:</dt>
+                                        <dd>{{ object.products_cost }}</dd>
+                                        <dt>{% trans "Koszt przesyłki" %}:</dt>
+                                        <dd>{{ object.shipping_price }}</dd>
+                                        {% if object.logged_user_promo > 0 %}
+                                        <dt>{% trans "Rabat" %}:</dt>
+                                        <dd>{{ object.logged_user_promo }} %</dd>
+                                        {% endif %}
+                                        <dt><strong>{% trans "Całkowity koszt zamówienia" %}:</strong></dt>
+                                        <dd class="text-info"><strong>{{ object.total }}</strong></dd>
+                                        </dl>
+                                    </div>
+
+                                        <h6 class="card-title">{% trans "Typ wysyłki" %}:</h6>
+                                        <div class="form-check">
+                                            <input class="form-check-input shipping-type-radio" type="radio" name="shippingType" id="localShipping" value="local" {% if object.shipping_type == "local" %} checked {% endif %}>
+                                            <label class="form-check-label" for="localShipping">
+                                                {% trans "Przesyłka krajowa (PL)" %}
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input shipping-type-radio" type="radio" name="shippingType" id="internationalShipping" value="international" {% if object.shipping_type == "international" %} checked {% endif %}>
+                                            <label class="form-check-label" for="internationalShipping">
+                                                {% trans "Przesyłka międzynarodowa" %}
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input shipping-type-radio" type="radio" name="shippingType" id="selfShipping" value="self" {% if object.shipping_type == "self" %} checked {% endif %}>
+                                            <label class="form-check-label" for="selfShipping">
+                                                {% trans "Odbiór osobisty (Wrocław)" %}
+                                            </label>
+                                        </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                <div class="col-md-8 my-1">
+                    <div class="card littleshadow">
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">{% trans "Produkt" %}</th>
+                                      <th scope="col">{% trans "Cena" %}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                      {% for product in basket_products %}
+                                        <tr>
+                                          <th scope="row">{{ forloop.counter }}</th>
+                                            <td><p class="text-dark">{{ product.order_title }}</p></td>
+                                            {% if product.promo_active%}
+                                            <td>{% get_promo_price product.prices %}&emsp;<strike>{% get_regular_price product.prices %}</strike></td>
+                                            {% else %}
+                                            <td>{% get_regular_price product.prices %}</td>
+                                            {% endif %}
+                                        </tr>
+                                      {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <form method="POST" action="{{ check_availability_url }}"> {% csrf_token %}
+                    <input type="hidden" name="next_url" value="{{ request.build_absolute_uri }}" />
+                    <input type="hidden" name="make_checkout" value="True" />
+
+                    <div class="row my-3">
+                        <div class="col-md-6 my-1 text-center">
+                            <div class="card littleshadow" style="height:100%">
+                                <div class="card-header">
+                                    {% trans "Dodaj komentarz" %}
+                                </div>
+                                <div class="card-body">
+                                    <textarea style="height:200px" maxlength="500" rows="5" class="form-control" name="comment"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 my-1 text-center" >
+                            <div class="card littleshadow border border-info" style="height:100%">
+                                <div class="card-header">
+                                    {% trans "Potwierdź zakup" %}
+                                </div>
+                                <div class="card-body">
+                                    {% include "carts/snippets/checkout_end_button.html"%}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+        </div>
+
+        {% endif %}
+
+    {% endif %}
+
+{% endblock %}

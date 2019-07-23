@@ -1,0 +1,21 @@
+{% load static %}
+{% load i18n %}
+
+{% url 'regulations' as regulations_url %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-outline-info my-4" type="submit"><i class="fas fa-handshake fa-3x my-3 mx-3"></i></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <span class="text-secondary justify-content-center">
+                <input type="checkbox" required id="accept"><label for="accept"></label>
+            &emsp;  {% trans "Akceptuję" %} <a href="{{ regulations_url }}" target="_blank">{% trans "regulamin sklepu" %}</a>{% trans " wraz z obowiązkiem zapłaty za zamówienie" %}</label>
+            </span>
+        </div>
+    </div>
+</div>
+

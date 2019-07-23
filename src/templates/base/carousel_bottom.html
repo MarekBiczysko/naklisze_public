@@ -1,0 +1,20 @@
+{% load static %}
+
+
+<div id="carouselBottom" class="carousel" data-ride="carousel" data-interval="30000">
+  <div class="carousel-inner">
+
+      {% for _ in 'xxxxxxxxxxxxxxxxx' %}
+        {% with number=forloop.counter|stringformat:"s" %}
+        {% with img_url="img/carousel_bottom/"|add:number|add:".jpg" %}
+
+        <div class="carousel-item car_bottom">
+            <img class="d-block w-100 img-fluid" data-src="{% static img_url %}" alt="{{ forloop.counter }}">
+        </div>
+
+        {% endwith %}
+        {% endwith %}
+      {% endfor %}
+
+  </div>
+</div>

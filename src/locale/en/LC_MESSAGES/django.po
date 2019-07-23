@@ -1,0 +1,3347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-15 19:26+0100\n"
+"PO-Revision-Date: 2018-08-21 19:40+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#: accounts/forms.py:13
+msgid ""
+"<small>„Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu "
+"ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy "
+"z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych "
+"przez Marek Biczysko – naklisze.pl i oświadczam, iż podanie przeze mnie "
+"danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie "
+"żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia. "
+"Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany przeze mnie "
+"adres e-mail informacji handlowej w rozumieniu art. 10 ust. 1 ustawy z dnia "
+"18 lipca 2002 roku o świadczeniu usług drogą elektroniczną.“</small>"
+msgstr ""
+"<small>„I consent to the processing of my personal data within the meaning "
+"of the Act of 29 August 1997 of the Personal Data Protection Act and of 16 "
+"July 2004 year of Telecommunications Law for marketing purposes by Marek "
+"Biczysko – naklisze.pl and I declare that the provision of personal data by "
+"me is voluntary and that I have been informed of the right to request "
+"access, alteration and deletion of my personal data.I agree to receive "
+"electronically at the address indicated by me commercial content within the "
+"meaning of Article 10 law 1 of the Act of July 18, 2002 on the provision of "
+"electronic services.“</small> "
+
+#: accounts/forms.py:14
+msgid ""
+"<small>„Oświadczam, iż ukończyłam/em 16 rok życia i zgadzam się na "
+"przetwarzanie moich danych osobowych przez Marek Biczysko - naklisze.pl, w "
+"celu prowadzenia konta w sklepie. Podanie danych jest dobrowolne. Podstawą "
+"przetwarzania danych jest moja zgoda. Mam prawo wycofania zgody w dowolnym "
+"momencie. Dane osobowe będą przetwarzane do czasu odwołania zgody. Mam prawo "
+"żądania od administratora dostępu do moich danych osobowych, ich "
+"sprostowania, usunięcia lub ograniczenia przetwarzania, a także prawo "
+"wniesienia skargi do organu nadzorczego. Strona stosuje profilowanie "
+"użytkowników m.in. za pośrednictwem plików cookies, w tym analitycznych, o "
+"czym więcej w Polityce Prywatności.”</small><hr>"
+msgstr ""
+"<small>„ I declare that I am 16 or older and agree to processing my personal "
+"data by Marek Biczysko - naklisze.pl, in order to create an account in the "
+"store. Providing data is voluntary.The foundation of data processing is my "
+"agreement, I have the right to withdraw consent in any moment. Personal data "
+"will be processed until permission is revoked. I have the right to request "
+"from the administrator to access my personal data, their rectification, "
+"deletion or limitation of processing, as well as the law to filing a "
+"complaint to the supervisory body. The website applies profiling users, "
+"among others, via cookie files, including analytical ones, more in the "
+"Privacy Policy.”</small><hr>"
+
+#: accounts/forms.py:18
+msgid "Nazwa użytkownika"
+msgstr "Username"
+
+#: accounts/forms.py:39 accounts/forms.py:126 sklep/forms.py:25
+msgid "Twój E-Mail"
+msgstr "Your Email address"
+
+#: accounts/forms.py:49 accounts/forms.py:147
+msgid "Subskrypcja newslettera"
+msgstr "Newsletter subscription"
+
+#: accounts/forms.py:57 accounts/forms.py:88
+msgid "Twój Login"
+msgstr "Your Login"
+
+#: accounts/forms.py:65 accounts/forms.py:96
+msgid "Twoje hasło"
+msgstr "Your password"
+
+#: accounts/forms.py:69 accounts/forms.py:99 accounts/forms.py:111
+msgid "Hasło"
+msgstr "Password"
+
+#: accounts/forms.py:82
+msgid "Niepoprawny użytkownik"
+msgstr "Invalid user"
+
+#: accounts/forms.py:92
+msgid "Nazwa"
+msgstr "Name"
+
+#: accounts/forms.py:108
+msgid "Potwierdź hasło"
+msgstr "Confirm your password"
+
+#: accounts/forms.py:136 sklep/forms.py:46
+msgid "Akceptuję poniższą zgodę"
+msgstr "I accept the following approval"
+
+#: accounts/forms.py:157
+msgid "Użytkownik już istnieje"
+msgstr "User already exist"
+
+#: accounts/forms.py:165
+msgid "Niezgodność podanych haseł"
+msgstr "Incompatibility of given passwords"
+
+#: accounts/forms.py:173
+msgid "Email znajduje się już w bazie"
+msgstr "Email is already in the database"
+
+#: accounts/templates/accounts/acc_active_email.html:4
+#: templates/home_page.html:39 templates/home_page.html:41
+msgid "Witaj"
+msgstr "Hello"
+
+#: accounts/templates/accounts/acc_active_email.html:6
+msgid "Kliknij w poniższy link, aby dokończyć proces aktywacji konta"
+msgstr "Click the link below to complete the account activation process"
+
+#: accounts/templates/accounts/acc_active_email.html:10
+#: carts/templates/carts/checkout_success_email.html:82
+msgid "Pozdrawiamy"
+msgstr "Best Regards"
+
+#: accounts/templates/accounts/settings.html:14
+msgid "Twoje konto"
+msgstr "Your account"
+
+#: accounts/templates/accounts/settings.html:20
+#: carts/templates/carts/snippets/breadcrumbs.html:16
+#: carts/templates/carts/snippets/breadcrumbs.html:30
+#: carts/templates/carts/snippets/breadcrumbs.html:45
+#: carts/templates/carts/snippets/breadcrumbs.html:59
+#: carts/templates/carts/snippets/breadcrumbs.html:73
+#: carts/templates/carts/snippets/breadcrumbs.html:87
+msgid "Dane"
+msgstr "Data"
+
+#: accounts/templates/accounts/settings.html:27
+msgid "Pomoc"
+msgstr "Help"
+
+#: accounts/templates/accounts/settings.html:30 templates/about.html:25
+msgid "Kontakt"
+msgstr "Contact"
+
+#: accounts/templates/accounts/settings.html:31 templates/base/footer.html:17
+msgid "Regulamin"
+msgstr "Regulations"
+
+#: accounts/templates/accounts/settings.html:37
+msgid "Zakupy"
+msgstr "Shopping"
+
+#: accounts/templates/accounts/settings.html:40
+msgid "Zamówienia"
+msgstr "Orders"
+
+#: accounts/templates/accounts/settings.html:41
+msgid "Adresy"
+msgstr "Addresses"
+
+#: accounts/templates/accounts/settings.html:42
+msgid "Płatność"
+msgstr "Payment"
+
+#: accounts/templates/accounts/settings.html:47
+msgid "Ostatnio przeglądane produkty"
+msgstr "Recently viewed products"
+
+#: accounts/templates/accounts/settings.html:56
+msgid "Produkty, które Cię zainteresowały"
+msgstr "Products that interest you"
+
+#: accounts/templates/accounts/settings.html:68
+msgid "Twoje zamówienia:"
+msgstr "Your orders:"
+
+#: accounts/templates/accounts/settings.html:74
+msgid "Nr zamówienia"
+msgstr "Order number"
+
+#: accounts/templates/accounts/settings.html:75
+msgid "Data"
+msgstr "Date"
+
+#: accounts/templates/accounts/settings.html:76
+msgid "Koszt"
+msgstr "Cost"
+
+#: accounts/templates/accounts/settings.html:77
+msgid "Status"
+msgstr "Status"
+
+#: accounts/templates/accounts/settings.html:102
+msgid "Adresy Wysyłki"
+msgstr "Shipping address"
+
+#: accounts/templates/accounts/settings.html:119
+#: carts/templates/carts/checkout_success_email.html:39
+msgid "Dane kupującego"
+msgstr "Buyer’s details"
+
+#: accounts/templates/accounts/settings.html:138
+msgid "Dane do płatności"
+msgstr "Payment details"
+
+#: accounts/templates/accounts/settings.html:139
+#: carts/templates/carts/checkout_success.html:35
+#: carts/templates/carts/checkout_success_email.html:61
+msgid "Nr konta"
+msgstr "Account number"
+
+#: accounts/templates/accounts/settings.html:140
+msgid ""
+"Kwota i tytuł przelewu są przesyłane razem z podsumowaniem zamówienia na "
+"adres e-mail użytkownika"
+msgstr ""
+"The amount and title of the transfer are sent together with the order "
+"summary to the user's email address"
+
+#: accounts/templates/accounts/settings_snippets/del_address.html:7
+msgid "Usuń"
+msgstr "Remove"
+
+#: accounts/templates/accounts/settings_snippets/order_modal.html:9
+msgid "Szczegóły zamówienia nr"
+msgstr "Details of order number"
+
+#: accounts/templates/accounts/settings_snippets/order_modal.html:21
+msgid "Zakupione produkty"
+msgstr "Bought products"
+
+#: accounts/templates/accounts/settings_snippets/user_data_form.html:27
+msgid "Zmień nazwę"
+msgstr "Change name"
+
+#: accounts/templates/accounts/settings_snippets/user_data_form.html:28
+#: templates/registration/password_change_form.html:8
+msgid "Zmień hasło"
+msgstr "Change password"
+
+#: accounts/templates/accounts/settings_snippets/user_data_form.html:35
+msgid "Eksportuj wszystkie zgromadzone na Twój temat dane do pliku PDF"
+msgstr "Export all data collected about you to a PDF file"
+
+#: accounts/templates/snippets/form.html:16
+msgid "Zapomniałeś hasła?"
+msgstr "Forgot your password?"
+
+#: accounts/views.py:80 carts/templates/carts/checkout.html:35
+msgid "Kontynuuj jako gość"
+msgstr "Continue as guest"
+
+#: accounts/views.py:81 carts/templates/carts/checkout.html:36
+#: carts/templates/carts/checkout.html:61
+#: carts/templates/carts/checkout.html:82
+msgid "Dalej"
+msgstr "Next"
+
+#: accounts/views.py:86 accounts/views.py:120 accounts/views.py:196
+#: addresses/views.py:39 addresses/views.py:66 sklep/views.py:90
+msgid "Formularz został wypełniony niepoprawnie!"
+msgstr "The form has been filled incorrectly!"
+
+#: accounts/views.py:96
+msgid "Utworzono konto gościa z adresem e-mail "
+msgstr "Created guest account for e-mail "
+
+#: accounts/views.py:113
+msgid "Zaloguj się na konto"
+msgstr "Log in to your account"
+
+#: accounts/views.py:114 carts/templates/carts/checkout.html:30
+#: templates/base/navbar.html:108
+msgid "Zaloguj"
+msgstr "Log in"
+
+#: accounts/views.py:134
+msgid "Pomyślnie zalogowano użytkownika "
+msgstr "User is logged in successfully "
+
+#: accounts/views.py:145
+msgid "Niepoprawne hasło!"
+msgstr "Wrong password!"
+
+#: accounts/views.py:151
+msgid ""
+"Konto nieaktywne, czy dokonałeś aktywacji? Sprawdź instrukcję wysłaną na "
+"adres e-mail:"
+msgstr ""
+"Inactive account, did you activate it? Check the instructions sent to the e-"
+"mail address:"
+
+#: accounts/views.py:158
+msgid "Kliknij w "
+msgstr "Click on "
+
+#: accounts/views.py:158
+msgid " aby ponownie przesłać link aktywacyjny."
+msgstr " To send activation link again."
+
+#: accounts/views.py:169
+msgid "Zakończono sesję gościa"
+msgstr "Guest session closed."
+
+#: accounts/views.py:173
+msgid "Pomyślnie wylogowano użytkownika"
+msgstr "The user has been successfully logged out"
+
+#: accounts/views.py:190
+msgid "Utwórz nowe konto"
+msgstr "Create new account"
+
+#: accounts/views.py:191
+msgid "Zarejestruj"
+msgstr "Register"
+
+#: accounts/views.py:209
+msgid "Utworzono konto dla użytkownika "
+msgstr "An account has been created for the user "
+
+#: accounts/views.py:209
+msgid ""
+", aktywuj swoje konto postępując zgodnie z instrukcjami wysłanymi na adres e-"
+"mail "
+msgstr ""
+", activate your account by following the instructions sent to your e-mail "
+"address "
+
+#: accounts/views.py:232 marketing/views.py:16 marketing/views.py:22
+msgid "Zostałeś dodany do naszego Newslettera!"
+msgstr "You have been added to our Newsletter!"
+
+#: accounts/views.py:239
+msgid "Aktywuj swoje konto w naklisze.pl"
+msgstr "Activate your naklisze.pl account"
+
+#: accounts/views.py:254
+msgid "Nastąpił błąd przy wysyłaniu wiadomości aktywacyjnej"
+msgstr "There was an error when sending an activation message"
+
+#: accounts/views.py:271
+msgid "Aktywowano konto użytkownika "
+msgstr "Activated account for user "
+
+#: accounts/views.py:271
+msgid ", możesz się już zalogować"
+msgstr ", you can log in now"
+
+#: accounts/views.py:277
+msgid "Niepoprawny link aktywacji konta!"
+msgstr "Incorrect account activation link!"
+
+#: addresses/forms.py:27
+msgid "* Imię"
+msgstr "* Name"
+
+#: addresses/forms.py:32
+msgid "* Nazwisko"
+msgstr "* Surname"
+
+#: addresses/forms.py:37 addresses/forms.py:74
+msgid "Nazwa firmy"
+msgstr "Company Name"
+
+#: addresses/forms.py:42
+msgid "* Ulica"
+msgstr "* Street"
+
+#: addresses/forms.py:47
+msgid "* Nr domu/mieszkania"
+msgstr "* House number"
+
+#: addresses/forms.py:52
+msgid "* Kod pocztowy"
+msgstr "* Postal Code"
+
+#: addresses/forms.py:57
+msgid "* Miasto"
+msgstr "* City"
+
+#: addresses/forms.py:62
+msgid "* Kraj"
+msgstr "* Country"
+
+#: addresses/forms.py:67
+msgid "* Nr telefonu"
+msgstr "* Phone number"
+
+#: addresses/forms.py:72
+msgid "Imię"
+msgstr "Name"
+
+#: addresses/forms.py:73
+msgid "Nazwisko"
+msgstr "Surname"
+
+#: addresses/forms.py:75
+msgid "Ulica"
+msgstr "Street"
+
+#: addresses/forms.py:76
+msgid "Nr domu/mieszkania"
+msgstr "House number"
+
+#: addresses/forms.py:77
+msgid "Kod pocztowy"
+msgstr "Postal code"
+
+#: addresses/forms.py:78
+msgid "Miasto"
+msgstr "City"
+
+#: addresses/forms.py:79
+msgid "Kraj"
+msgstr "Country"
+
+#: addresses/forms.py:80
+msgid "Nr telefonu"
+msgstr "Phone Number"
+
+#: addresses/templates/addresses/snippets/del_address.html:6
+msgid "Zmień"
+msgstr "Change"
+
+#: addresses/templates/addresses/snippets/reuse_address.html:26
+msgid "Użyj adresu"
+msgstr "Use this address"
+
+#: carts/templates/carts/checkout.html:29
+#: templates/registration/password_reset_complete.html:12
+msgid "Zaloguj się"
+msgstr "Log in"
+
+#: carts/templates/carts/checkout.html:32
+msgid "Załóż konto"
+msgstr "Create account"
+
+#: carts/templates/carts/checkout.html:32
+#, python-format
+msgid "aby otrzymać 5%% rabatu na każdy produkt!"
+msgstr "to receive 5%% discount for every product!"
+
+#: carts/templates/carts/checkout.html:55
+msgid "Wybierz adres z listy"
+msgstr "Choose address from list"
+
+#: carts/templates/carts/checkout.html:60
+#: carts/templates/carts/checkout.html:117
+#: carts/templates/carts/checkout_success_email.html:43
+msgid "Adres wysyłki"
+msgstr "Shipping address"
+
+#: carts/templates/carts/checkout.html:75
+msgid "Wybierz dane z listy"
+msgstr "Chose data from list"
+
+#: carts/templates/carts/checkout.html:81
+#: carts/templates/carts/checkout.html:101
+msgid "Dane Kupującego"
+msgstr "Buyer’s details"
+
+#: carts/templates/carts/checkout.html:136
+#: carts/templates/carts/snippets/breadcrumbs.html:18
+#: carts/templates/carts/snippets/breadcrumbs.html:32
+#: carts/templates/carts/snippets/breadcrumbs.html:47
+#: carts/templates/carts/snippets/breadcrumbs.html:61
+#: carts/templates/carts/snippets/breadcrumbs.html:75
+#: carts/templates/carts/snippets/breadcrumbs.html:89
+msgid "Podsumowanie"
+msgstr "Summary"
+
+#: carts/templates/carts/checkout.html:142
+#: carts/templates/carts/checkout_success_email.html:28 orders/models.py:150
+msgid "Koszt produktów"
+msgstr "Products cost"
+
+#: carts/templates/carts/checkout.html:144
+#: carts/templates/carts/checkout_success_email.html:30 orders/models.py:151
+msgid "Koszt przesyłki"
+msgstr "Shipping cost"
+
+#: carts/templates/carts/checkout.html:147
+#: carts/templates/carts/checkout_success_email.html:32 orders/models.py:152
+msgid "Rabat"
+msgstr "Discount"
+
+#: carts/templates/carts/checkout.html:150
+#: carts/templates/carts/checkout_success_email.html:35
+msgid "Całkowity koszt zamówienia"
+msgstr "Order total cost"
+
+#: carts/templates/carts/checkout.html:155
+msgid "Typ wysyłki"
+msgstr "Shipping type"
+
+#: carts/templates/carts/checkout.html:159
+msgid "Przesyłka krajowa (PL)"
+msgstr "Domestic shipment (Poland)"
+
+#: carts/templates/carts/checkout.html:165
+msgid "Przesyłka międzynarodowa"
+msgstr "International shipment"
+
+#: carts/templates/carts/checkout.html:171
+msgid "Odbiór osobisty"
+msgstr "Self-pickup"
+
+#: carts/templates/carts/checkout.html:187 carts/templates/carts/home.html:37
+msgid "Produkt"
+msgstr "Product"
+
+#: carts/templates/carts/checkout.html:188 carts/templates/carts/home.html:38
+#: products/templates/products/detail.html:91
+msgid "Cena"
+msgstr "Price"
+
+#: carts/templates/carts/checkout.html:218
+msgid "Dodaj komentarz"
+msgstr "Add comment"
+
+#: carts/templates/carts/checkout.html:229
+msgid "Potwierdź zakup"
+msgstr "Confirm purchase"
+
+#: carts/templates/carts/checkout_success.html:27
+msgid "Dziękujemy"
+msgstr "Thanks"
+
+#: carts/templates/carts/checkout_success.html:28
+#: carts/templates/carts/checkout_success_email.html:14
+msgid "Zamówienie o numerze"
+msgstr "Order number"
+
+#: carts/templates/carts/checkout_success.html:28
+#: carts/templates/carts/checkout_success_email.html:14
+msgid "zostało przekazane do realizacji"
+msgstr "has been forwarded for completion"
+
+#: carts/templates/carts/checkout_success.html:29
+msgid ""
+"Potwierdzenie zamówienia jak i wszystkie niezbędne do realizacji informacje "
+"zostały wysłane na adres email"
+msgstr ""
+"The order confirmation and all necessary information has been sent to the "
+"email address"
+
+#: carts/templates/carts/checkout_success.html:34
+#: carts/templates/carts/checkout_success_email.html:59
+msgid "Prosimy o dokonanie wpłaty zgodnie z poniższymi danymi"
+msgstr "Please make a payment in accordance with the following details"
+
+#: carts/templates/carts/checkout_success.html:36
+#: carts/templates/carts/checkout_success_email.html:63
+msgid "Kwota"
+msgstr "Amount"
+
+#: carts/templates/carts/checkout_success.html:37
+#: carts/templates/carts/checkout_success_email.html:65
+msgid "Tytuł przelewu"
+msgstr "Transfer title"
+
+#: carts/templates/carts/checkout_success.html:44
+msgid "Status zamówienia możesz śledzić w panelu użytkownika"
+msgstr "You can track the order status in the user panel"
+
+#: carts/templates/carts/checkout_success.html:47
+msgid "Aby śledzić status Twojego zamówienia utwórz konto na adres e-mail"
+msgstr ""
+"To track the status of your order, create an account to an email address"
+
+#: carts/templates/carts/checkout_success.html:54
+msgid "Polub nasz Fanpage i obserwuj nas na Instagramie!"
+msgstr "Follow us!"
+
+#: carts/templates/carts/checkout_success_email.html:12
+msgid "Dziękujemy za zakup"
+msgstr "Thank you for the purchase"
+
+#: carts/templates/carts/checkout_success_email.html:17
+msgid "Zawartość zamówienia"
+msgstr "Contents of the order"
+
+#: carts/templates/carts/checkout_success_email.html:51
+msgid "Komentarz"
+msgstr "Comment"
+
+#: carts/templates/carts/checkout_success_email.html:69
+msgid "Jeśli posiadasz konto, status swojego zamówienia możesz śledzić w"
+msgstr "If you have an account, you can track the status of your order in"
+
+#: carts/templates/carts/checkout_success_email.html:69
+msgid "panelu użytkownika"
+msgstr "the user panel"
+
+#: carts/templates/carts/checkout_success_email.html:73
+msgid "W przeciwnym przypadku możesz utworzyć konto na na adres e-mail"
+msgstr "Otherwise, you can create an account to an email address"
+
+#: carts/templates/carts/checkout_success_email.html:73
+msgid "klikając tutaj"
+msgstr "By clicking here"
+
+#: carts/templates/carts/checkout_success_email.html:78
+msgid ""
+"Zamówienie zostanie wysłane kurierem w przeciągu 3 dni roboczych od "
+"zaksięgowania wpłaty"
+msgstr ""
+"The order will be sent by courier within 3 working days after the payment "
+"has been posted"
+
+#: carts/templates/carts/checkout_success_email.html:90
+msgid ""
+"W załączniku znajduję się regulamin sklepu oraz formularz reklamacji produktu"
+msgstr ""
+"Store regulations and product complaint form are attached to this email"
+
+#: carts/templates/carts/home.html:68
+msgid "Suma"
+msgstr "Sum"
+
+#: carts/templates/carts/home.html:85
+msgid "Twój koszyk jest pusty"
+msgstr "Your cart is empty"
+
+#: carts/templates/carts/snippets/breadcrumbs.html:10
+#: carts/templates/carts/snippets/breadcrumbs.html:24
+#: carts/templates/carts/snippets/breadcrumbs.html:39
+#: carts/templates/carts/snippets/breadcrumbs.html:53
+#: carts/templates/carts/snippets/breadcrumbs.html:67
+#: carts/templates/carts/snippets/breadcrumbs.html:81
+msgid "Koszyk"
+msgstr "Cart"
+
+#: carts/templates/carts/snippets/breadcrumbs.html:12
+#: carts/templates/carts/snippets/breadcrumbs.html:26
+#: carts/templates/carts/snippets/breadcrumbs.html:41
+#: carts/templates/carts/snippets/breadcrumbs.html:55
+#: carts/templates/carts/snippets/breadcrumbs.html:69
+#: carts/templates/carts/snippets/breadcrumbs.html:83
+#: templates/base/navbar.html:100
+msgid "Konto"
+msgstr "Account"
+
+#: carts/templates/carts/snippets/breadcrumbs.html:14
+#: carts/templates/carts/snippets/breadcrumbs.html:28
+#: carts/templates/carts/snippets/breadcrumbs.html:43
+#: carts/templates/carts/snippets/breadcrumbs.html:57
+#: carts/templates/carts/snippets/breadcrumbs.html:71
+#: carts/templates/carts/snippets/breadcrumbs.html:85
+msgid "Adres"
+msgstr "Address"
+
+#: carts/templates/carts/snippets/breadcrumbs.html:20
+#: carts/templates/carts/snippets/breadcrumbs.html:34
+#: carts/templates/carts/snippets/breadcrumbs.html:49
+#: carts/templates/carts/snippets/breadcrumbs.html:63
+#: carts/templates/carts/snippets/breadcrumbs.html:77
+#: carts/templates/carts/snippets/breadcrumbs.html:91
+msgid "Sukces"
+msgstr "Success"
+
+#: carts/templates/carts/snippets/checkout_end_button.html:16
+msgid "Akceptuję"
+msgstr "I accept"
+
+#: carts/templates/carts/snippets/checkout_end_button.html:16
+msgid "regulamin sklepu"
+msgstr "Shop regulations"
+
+#: carts/templates/carts/snippets/checkout_end_button.html:16
+msgid " wraz z obowiązkiem zapłaty za zamówienie"
+msgstr " along with the obligation to pay for the order"
+
+#: carts/templates/carts/snippets/checkout_start_button.html:11
+msgid "Do kasy!"
+msgstr "To checkout!"
+
+#: carts/views.py:49
+msgid "Wystąpił błąd, produkt nie istnieje w bazie"
+msgstr "An error occurred, the product does not exist in the database"
+
+#: carts/views.py:66
+msgid "Brak dostępnych kolejnych produktów tego typu"
+msgstr "No further products of this type available"
+
+#: carts/views.py:75
+msgid "Produkt został dodany do koszyka"
+msgstr "Product was added to the cart"
+
+#: carts/views.py:279
+msgid "Produkt "
+msgstr "Product "
+
+#: carts/views.py:279
+msgid " został usunięty z karty"
+msgstr " was removed from the cart"
+
+#: carts/views.py:295
+msgid ""
+"Ktoś Cię ubiegł, jeden z wybranych przez Ciebie produktów jest już "
+"niedostępny :("
+msgstr ""
+"Someone was faster, one of your chosen products is no longer available:("
+
+#: carts/views.py:301
+msgid "Potwierdzenie zamówienia nr "
+msgstr "Confirmation of the order number "
+
+#: marketing/templates/marketing/subscribe.html:15
+msgid "Zapisz się"
+msgstr "Sign up"
+
+#: marketing/templates/marketing/subscribe.html:26
+msgid ""
+"Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z "
+"dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 "
+"lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Marek "
+"Biczysko – naklisze.pl i oświadczam, iż podanie przeze mnie danych osobowych "
+"jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do "
+"moich danych osobowych, ich zmiany oraz usunięcia."
+msgstr ""
+"I consent to the processing of my personal data within the meaning of the "
+"Act of 29 August 1997 of the Personal Data Protection Act and of 16 July "
+"2004 year of Telecommunications Law for marketing purposes by Marek Biczysko "
+"– naklisze.pl and I declare that the provision of personal data by me is "
+"voluntary and that I have been informed of the right to request access, "
+"alteration and deletion of my personal data."
+
+#: marketing/templates/marketing/subscribe.html:27
+msgid ""
+"Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany przeze mnie "
+"adres e-mail informacji handlowej w rozumieniu art. 10 ust. 1 ustawy z dnia "
+"18 lipca 2002 roku o świadczeniu usług drogą elektroniczną."
+msgstr ""
+"I give my consent to receiving electronic mail to a commercially indicated "
+"email address within the meaning of art. Article 10 Law 1 of the Act of 18 "
+"July 2002 year on the provision of electronic services."
+
+#: marketing/views.py:18
+msgid "Niepoprawny e-mail"
+msgstr "Wrong e-mail"
+
+#: orders/models.py:19
+msgid "Stworzone"
+msgstr "Created"
+
+#: orders/models.py:20
+msgid "Zatwierdzone"
+msgstr "Confirmed"
+
+#: orders/models.py:21
+msgid "Zapłacone"
+msgstr "Paid"
+
+#: orders/models.py:22
+msgid "Wysłane"
+msgstr "Shipped"
+
+#: orders/models.py:23
+msgid "Zwrot"
+msgstr "Return"
+
+#: orders/models.py:140
+msgid "Zamówienie nr:"
+msgstr "Order number:"
+
+#: orders/models.py:141 orders/models.py:148
+msgid "Adres dostawy:"
+msgstr "Shipping address:"
+
+#: orders/models.py:142 orders/models.py:155
+msgid "Status:"
+msgstr "Status:"
+
+#: orders/models.py:143
+msgid "Całkowity koszt:"
+msgstr "Total cost:"
+
+#: orders/models.py:147
+msgid "Data zamówienia:"
+msgstr "Order date:"
+
+#: orders/models.py:149
+msgid "Dane kupującego:"
+msgstr "Buyer’s details:"
+
+#: orders/models.py:153
+msgid "Całkowity koszt"
+msgstr "Total cost:"
+
+#: orders/models.py:154
+msgid "Komentarz:"
+msgstr "Comment:"
+
+#: orders/models.py:156
+msgid "Dane przesyłki:"
+msgstr "Shipping info:"
+
+#: products/models.py:30 products/templates/products/offer.html:43
+msgid "Aparaty dalmierzowe"
+msgstr "Rangefinder cameras"
+
+#: products/models.py:31 products/templates/products/offer.html:73
+msgid "Aparaty połówkowe"
+msgstr "Half-frame cameras"
+
+#: products/models.py:32 products/templates/products/offer.html:103
+msgid "Aparaty kompaktowe"
+msgstr "Compact cameras"
+
+#: products/models.py:33
+msgid "Aparaty średnioformatowe"
+msgstr "Medium format cameras"
+
+#: products/models.py:34 templates/base/navbar.html:65
+msgid "Paski"
+msgstr "Straps"
+
+#: products/models.py:35 templates/base/navbar.html:66
+msgid "Przyciski spustu"
+msgstr "Trigger Buttons"
+
+#: products/models.py:277
+msgid "Aparat"
+msgstr "Camera"
+
+#: products/models.py:319
+msgid "Numer seryjny"
+msgstr "Serial number"
+
+#: products/models.py:320
+msgid "Stan"
+msgstr ""
+
+#: products/models.py:321
+msgid "Lata produkcji"
+msgstr "Production period"
+
+#: products/models.py:389
+msgid "Kolor"
+msgstr "Colour"
+
+#: products/schemes/txt_data_button.py:5
+msgid "czarny"
+msgstr "black"
+
+#: products/schemes/txt_data_button.py:6
+msgid "czerwony"
+msgstr "red"
+
+#: products/schemes/txt_data_button.py:7
+msgid "srebrny"
+msgstr "silver"
+
+#: products/schemes/txt_data_button.py:8
+msgid "złoty"
+msgstr "gold"
+
+#: products/schemes/txt_data_button.py:9
+msgid "zestaw 4 kolorów"
+msgstr "set of 4 colours"
+
+#: products/schemes/txt_data_strap.py:5
+msgid "sznurowany"
+msgstr "laced"
+
+#: products/schemes/txt_data_strap.py:6
+msgid "skórzany cienki czarny"
+msgstr "leather thin black"
+
+#: products/schemes/txt_data_strap.py:7
+msgid "skórzany cienki brązowy"
+msgstr "leather thin brown"
+
+#: products/schemes/txt_data_strap.py:8
+msgid "skórzany średni czarny"
+msgstr "leather medium black"
+
+#: products/schemes/txt_data_strap.py:9
+msgid "skórzany średni brązowy"
+msgstr "leather medium brown"
+
+#: products/schemes/txt_data_strap.py:10
+msgid "skórzany gruby czarny"
+msgstr "leather thick black"
+
+#: products/schemes/txt_data_strap.py:11
+msgid "skórzany gruby ciemny brązowy"
+msgstr "leather thick dark brown"
+
+#: products/schemes/txt_data_strap.py:12
+msgid "skórzany gruby jasny brązowy"
+msgstr "leather thick light brown"
+
+#: products/schemes/txt_data_strap.py:16
+msgid "Nadgarstkowy"
+msgstr "Wrist"
+
+#: products/schemes/txt_data_strap.py:17
+msgid "Na szyję"
+msgstr "Neck"
+
+#: products/templates/products/detail.html:20
+#: products/templates/products/list.html:18
+#: products/templates/products/offer.html:22 templates/base/navbar.html:49
+msgid "Oferta"
+msgstr "Offer"
+
+#: products/templates/products/detail.html:46
+msgid "W zestawie"
+msgstr "Included"
+
+#: products/templates/products/detail.html:65
+msgid "Dobry wybór"
+msgstr "Good choice"
+
+#: products/templates/products/detail.html:72
+msgid "kolejny do koszyka"
+msgstr "another"
+
+#: products/templates/products/detail.html:76
+msgid "Produkt znajduje się w Twoim koszyku"
+msgstr "The product is in your cart"
+
+#: products/templates/products/detail.html:84
+msgid "Produkt jest już niedostępny"
+msgstr "Product is unavailable"
+
+#: products/templates/products/detail.html:84
+msgid "Powiadomimy Cię gdy ponownie znajdzie się w naszej ofercie"
+msgstr "We will notify you when it will be in our offer again"
+
+#: products/templates/products/detail.html:114
+msgid "Opis i zdjęcia"
+msgstr "Description and photos"
+
+#: products/templates/products/detail.html:189
+msgid "Dane techniczne"
+msgstr "Technical data"
+
+#: products/templates/products/detail.html:212
+msgid "Sample"
+msgstr "Samples"
+
+#: products/templates/products/detail.html:221
+msgid "Przykładowe zdjęcia wykonane tym egzemplarzem aparatu"
+msgstr "Sample photos taken with this camera"
+
+#: products/templates/products/detail.html:242
+msgid "Dodatkowe informacje"
+msgstr "Additional information"
+
+#: products/templates/products/list.html:33
+msgid "Wszystkie"
+msgstr "All"
+
+#: products/templates/products/offer.html:45
+msgid ""
+"\n"
+"                                    Aparat dalmierzowy (ang. \"rangefinder "
+"camera\") to rodzaj aparatu fotograficznego, który wykorzystuje dalmierz. "
+"Jest to sposób ustawiania ostrości, uzyskiwany przez nałożenie się dwóch "
+"obrazów w wizjerze (obraz stereoskopowy).\n"
+"                                    "
+msgstr ""
+"\n"
+"                                    Rangefinder camera  is a kind of camera "
+"that is equipped with rangefinder. It is a way of focusing, achieved by "
+"overlaying two images in the viewfinder (stereoscopic image).\n"
+"                                    "
+
+#: products/templates/products/offer.html:50
+msgid ""
+"\n"
+"                                    Mechanizm ustawiania ostrości w "
+"dalmierzach polega na manipulacji pierścieniem ostrości w taki sposób, by "
+"dwa obrazy pokryły się w wizjerze.\n"
+"                                    Kultowym producentem i pierwowzorem tego "
+"typu aparatów jest Leica, której produkty były z pomyślnością kopiowane "
+"przez Związek Radziecki pod postacią marki Zorki.\n"
+"                                    "
+msgstr ""
+"\n"
+"                                    The focus mechanism on rangefinders is "
+"to manipulate the focus ring so that two images covered in the viewfinder.\n"
+"                                    The cult manufacturer and the creator of "
+"this type of cameras is Leica, whose products were successfully copied by "
+"the Soviet Union in the form of the brand Zorki."
+
+#: products/templates/products/offer.html:75
+msgid ""
+"\n"
+"                                Aparaty połówkowe (ang. \"half-frame camera) "
+"charakteryzują się tym, że wykorzystują tylko połowę domyślnego obszaru "
+"klatki dla danego typu negatywu.\n"
+"                                W przypadku najpopularniejszego formatu 135, "
+"z formatu klatki 24x36mm wykorzystywana jest pionowa połowa o rozmiarze "
+"18x24mm.\n"
+"                                "
+msgstr ""
+"\n"
+"                                Half-frame cameras are characterized by the "
+"fact that they use only half of the default frame area for a given negative "
+"type.\n"
+"                                For the most common format 135, the 24x36mm "
+"frame format uses a vertical half of 18x24mm size.\n"
+"                                "
+
+#: products/templates/products/offer.html:81
+msgid ""
+"\n"
+"                                Pierwowzorem aparatów połówkowych był model "
+"'Pen' japońskiej marki Olympus, a okres największej popularności to lata "
+"60-70.\n"
+"                                Wraz z postępem miniaturyzacji aparatów "
+"kompaktowych o standardowym rozmiarze klatki 135 aparaty zaczęły odchodzić w "
+"zapomnienie.\n"
+"                                Największą zaletą tego typu aparatów jest "
+"możliwość wykonania dwukrotnie większej liczby ekspozycji na jednej rolce "
+"filmu, nawet ponad 72 zdjęcia dla filmu 36 klatkowego.\n"
+"                                "
+msgstr ""
+"\n"
+"                                The prototype of the half-camera was the "
+"'Pen’ model of the Japanese brand Olympus, and its period of greatest "
+"popularity is the summer of 60-70.\n"
+"                                With the progress of the miniaturization "
+"compact cameras with a standard frame size of 135, the cameras began to go "
+"into oblivion.\n"
+"                                The biggest advantage of this type of camera "
+"is the ability to perform twice as many exposures per roll of film, even "
+"over 72 photos for a 36 frame film.\n"
+"                                "
+
+#: products/templates/products/offer.html:105
+msgid ""
+"\n"
+"                                Aparaty kompaktowe, potocznie kompakt (ang. "
+"\"compact camera\") – typ popularnego aparatu fotograficznego o niewielkich "
+"rozmiarach, zwartej budowie i uproszczonej obsłudze.\n"
+"                                Jest on najczęściej wyposażony w niewymienny "
+"obiektyw stałoogniskowy lub zmiennoogniskowy.\n"
+"                                "
+msgstr ""
+"\n"
+"                                Compact cameras, colloquially \"Compacts” is "
+"a type of a popular camera with small size, compact structure and simplified "
+"handling.\n"
+"                                It is most often equipped with a non-"
+"removable fixed or varifocal lens.\n"
+"                                "
+
+#: products/templates/products/offer.html:111
+msgid ""
+"\n"
+"                                Ustawienie ostrości dokonywane jest przez "
+"układ Auto Focus lub często manualnie na podstawie tabeli odległości lub "
+"piktogramów.\n"
+"                                W połowie lat 90. powstał dział fotografii "
+"zwany łomografią (lomografią), jego nazwa pochodzi od marki radzieckich "
+"aparatów fotograficznych Łomo, a najpopularniejszym przedstawicielem jest "
+"wyprodukowana w ponad 20 milionach egzemplarzy Smiena 8m.\n"
+"                                "
+msgstr ""
+"\n"
+"                                The focus setting is done by Auto focus or "
+"often manually based on the distance table or pictogram.\n"
+"                                In the mid-90, Lomography photography trend "
+"was created, its name derives from the brand of Soviet cameras Łomo, and the "
+"most popular representative is produced in more than 20 million copies Smena "
+"8m.\n"
+"                                "
+
+#: products/templates/products/offer.html:133
+msgid "Aparaty Średnioformatowe"
+msgstr "Medium format cameras"
+
+#: products/templates/products/offer.html:135
+msgid ""
+"\n"
+"                                Aparaty fotograficzne na błony zwojowe o "
+"szerokości 60 mm bez perforacji.\n"
+"                                Najczęstsze formaty klatek stosowanych w "
+"tych aparatach to: 6×4,5 cm, 6×6 cm, 6×7 cm, 6×8 cm, 6×9 cm.\n"
+"                                "
+msgstr ""
+"\n"
+"                                Cameras for coiled membranes of 60 mm width "
+"without perforation.\n"
+"                                The most common frame formats used in these "
+"cameras are: 6 × 4.5 cm, 6 × 6 cm, 6 × 7 cm, 6 × 8 cm, 6 × 9 cm.\n"
+"                                "
+
+#: products/templates/products/offer.html:141
+msgid ""
+"\n"
+"                                Błony zwojowe średnioformatowe są "
+"konfekcjonowane w dwóch podstawowych rozmiarach, o symbolu 120- mogące "
+"pomieścić 12 klatek formatu 6×6 cm i o symbolu 220- mogące pomieścić 24 "
+"klatki formatu 6×6 cm.\n"
+"                                "
+msgstr ""
+"\n"
+"                                The medium format films are assembled in two "
+"basic sizes, with the symbol 120-capable of holding 12 frames of 6 × 6 cm "
+"format and having a symbol of 220-which can accommodate 24 frames of 6 × 6 "
+"cm format.\n"
+"                                "
+
+#: products/templates/products/snippets/add_another.html:6
+msgid "dodaj"
+msgstr "Add"
+
+#: products/templates/products/snippets/add_to_cart.html:4
+msgid "Do koszyka"
+msgstr "Add to cart"
+
+#: products/templates/products/snippets/card.html:45
+msgid "Rocznik"
+msgstr "Years"
+
+#: products/templates/products/snippets/card.html:46
+msgid "Stan aparatu"
+msgstr "Condition"
+
+#: products/templates/products/snippets/card.html:70
+msgid "Sprzedany"
+msgstr "Sold"
+
+#: products/templates/products/snippets/card.html:74
+msgid "W koszyku"
+msgstr "In the cart"
+
+#: products/views.py:103
+msgid "Brak produktu w bazie"
+msgstr "Product not in database"
+
+#: search/templates/search/view.html:10
+msgid "Nazwa produktu"
+msgstr "Product name"
+
+#: search/templates/search/view.html:15
+msgid "Wyniki wyszukiwania dla frazy"
+msgstr "Search results for phrase"
+
+#: search/templates/search/view.html:18 templates/home_page.html:23
+#: templates/home_page.html:86
+msgid "Polecamy"
+msgstr "Hot"
+
+#: sklep/forms.py:8
+msgid ""
+"<small>„Oświadczam, iż ukończyłam/em 16 rok życia i zgadzam się na "
+"przetwarzanie moich danych osobowych przez Marek Biczysko - naklisze.pl, w "
+"celu obsługi zapytania użytkownika. Podanie danych jest dobrowolne. Podstawą "
+"przetwarzania danych jest moja zgoda. Mam prawo wycofania zgody w dowolnym "
+"momencie. Dane osobowe będą przetwarzane do czasu obsługi zapytania. Mam "
+"prawo żądania od administratora dostępu do moich danych osobowych, ich "
+"sprostowania, usunięcia lub ograniczenia przetwarzania, a także prawo "
+"wniesienia skargi do organu nadzorczego. Strona stosuje profilowanie "
+"użytkowników m.in. za pośrednictwem plików cookies, w tym analitycznych, o "
+"czym więcej w Polityce Prywatności.”</small>"
+msgstr ""
+"<small>„ I declare that I am 16 or older and agree to processing my personal "
+"data by Marek Biczysko - naklisze.pl, in order to create an account in the "
+"store. Providing data is voluntary.The foundation of data processing is my "
+"agreement, I have the right to withdraw consent in any moment. Personal data "
+"will be processed until permission is revoked. I have the right to request "
+"from the administrator to access my personal data, their rectification, "
+"deletion or limitation of processing, as well as the law to filing a "
+"complaint to the supervisory body. The website applies profiling users, "
+"among others, via cookie files, including analytical ones, more in the "
+"Privacy Policy.”</small><hr>"
+
+#: sklep/forms.py:16
+msgid "Twoje imię i nazwisko"
+msgstr "Your first name and surname"
+
+#: sklep/forms.py:19
+msgid "Dane kontaktowe"
+msgstr "Contact details"
+
+#: sklep/forms.py:28
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: sklep/forms.py:34 sklep/forms.py:37
+msgid "Treść wiadomości"
+msgstr "Message text"
+
+#: sklep/views.py:78
+msgid "Pomyślnie wysłano wiadomość"
+msgstr "Messages have been successfully"
+
+#: sklep/views.py:83
+msgid "Nastąpił błąd przy wysyłaniu wiadomości"
+msgstr "There was an error with sending message"
+
+#: templates/400.html:11
+msgid "Coś poszło nie tak"
+msgstr "Something went wrong"
+
+#: templates/400.html:12 templates/500.html:11
+msgid "Pracujemy nad naprawą"
+msgstr "We’re on it"
+
+#: templates/403.html:11
+msgid "Nie masz tutaj dostępu"
+msgstr "You don’t have access here"
+
+#: templates/403.html:12
+msgid "Błąd 403"
+msgstr "Error 403"
+
+#: templates/404.html:11
+msgid "Nie znaleziono podanej strony"
+msgstr "The page specified was not found"
+
+#: templates/404.html:12
+msgid "Błąd 404"
+msgstr "Error 404"
+
+#: templates/500.html:10
+msgid "Błąd po stronie serwera"
+msgstr "Server side error"
+
+#: templates/about.html:9 templates/about.html:19 templates/about.html:34
+#: templates/base/navbar.html:42
+msgid "O nas"
+msgstr "About us"
+
+#: templates/about.html:21 templates/about.html:73
+msgid "Nasze aparaty"
+msgstr "Our cameras"
+
+#: templates/about.html:23 templates/about.html:110
+msgid "Warunki wysyłki"
+msgstr "Shipping conditions"
+
+#: templates/about.html:40
+msgid ""
+"Sklep naklisze.pl jest odpowiedzią na chaos panujący na polskim internetowym "
+"rynku używanych aparatów fotograficznych."
+msgstr ""
+"Webshop naklisze.pl  is a response to the chaos of the Polish internet "
+"market of used cameras."
+
+#: templates/about.html:43
+msgid ""
+"\n"
+"                W obecnej sytuacji osoba nie posiadająca wiedzy technicznej, "
+"a chcąca dokonać zakupu sprawnego aparatu analogowego stoi przed sporym "
+"problemem.\n"
+"                Zakup aparatu na jednym z popularnych serwisów ogłoszeniowo/"
+"aukcyjnych najczęściej jest loterią, której wynik znany jest dopiero po "
+"wywołaniu pierwszego negatywu.\n"
+"                "
+msgstr ""
+"\n"
+"                In the current situation, a person without technical "
+"knowledge, wanting to buy a smooth analog camera is facing a big problem.\n"
+"                Buying a camera on one of the popular advertising/auction "
+"sites is usually a lottery."
+
+#: templates/about.html:49
+msgid ""
+"\n"
+"                Aparaty oferowane w naklisze.pl są zawsze sprawdzane pod "
+"kątem technicznym, jeśli aparat posiada światłomierz wykonywana jest "
+"najczęściej też próbna klisza, z której sample widoczne są w opisie danego "
+"egzemplarza.\n"
+"                "
+msgstr ""
+"\n"
+"                The cameras offered in the naklisze.pl are always checked "
+"for technical issues, if the camera is equipped with light-meter, usually a "
+"sample film is performed and developed, from which the samples are shown in "
+"the description of the particular camera."
+
+#: templates/about.html:54
+msgid ""
+"\n"
+"                Pamiętajmy, starych i nadal działających aparatów jest mało, "
+"a będzie coraz mniej:)\n"
+"                "
+msgstr ""
+"\n"
+"               Remember, there are fewer and fewer old and still running "
+"cameras on the market:)"
+
+#: templates/about.html:79
+msgid ""
+"\n"
+"                Staramy się zagwarantować maksimum pewności co do stanu "
+"techniczego aparatów, oczywiście należy pamiętać, że często jest to sprzęt "
+"cechujący się ponad 50-letnim wiekiem.\n"
+"                "
+msgstr ""
+"\n"
+"                We strive to guarantee maximum certainty as to the state of "
+"cameras quality, of course it is important to remember that this is often an "
+"over 50-year-old stuff."
+
+#: templates/about.html:84
+msgid ""
+"\n"
+"                W związku z tym pewne drobne usterki mogą zostać przeoczone "
+"lub pojawić się w trakcie transportu, każdy taki przypadek rozpatrujemy "
+"indywidualnie z chęcią zachowania satysfakcji klienta.\n"
+"                "
+msgstr ""
+"\n"
+"                Therefore, some minor defects may be overlooked or occur "
+"during the transport, each case is considered individually with the desire "
+"to maintain customer satisfaction."
+
+#: templates/about.html:92
+msgid "Skala stanu technicznego/wizualnego aparatów"
+msgstr "Technical/visual quality scale"
+
+#: templates/about.html:94
+msgid ""
+"\n"
+"                Poniższa skala jest to umowny opis wizualnego jak i "
+"techniczego stanu zachowania oferowanego przez nas sprzętu.\n"
+"                Staramy się aby ta ocena była szczera i w jak najlepszy "
+"sposób oddawała rzeczywistą kondycję aparatów.\n"
+"                "
+msgstr ""
+"\n"
+"                The following scale is a contractual description of the "
+"visual and technical quality of the equipment offered by us.\n"
+"                We strive to make this assessment sincere and in the best "
+"way to ensure the actual condition of the cameras."
+
+#: templates/about.html:99
+msgid ""
+"Znaczący defekt wizualny lub brak drobnej funkcjonalności technicznej (np. "
+"uszkodzony samowyzwalacz, licznik klatek) zawarty w opisie aparatu."
+msgstr ""
+"A significant visual defect or lack of fine technical functionality (e.g. a "
+"damaged self-timer, a frame counter), enclosed in the camera description."
+
+#: templates/about.html:100
+msgid ""
+"Bardzo dobry stan wizualny i techniczny, minimalne defekty zawarte w opisie "
+"aparatu."
+msgstr ""
+"Very good visual and technical condition, minimal defects included in the "
+"description of the  camera."
+
+#: templates/about.html:101
+msgid "Aparat używany, w doskonałym stanie technicznym i wizualnym."
+msgstr "The camera is used, in excellent technical and visual condition."
+
+#: templates/about.html:102
+msgid ""
+"Aparat fabrycznie nowy, nie posiadający żadnych defektów wizualnych ani "
+"technicznych."
+msgstr "The camera is brand new, without any visual or technical defects."
+
+#: templates/about.html:116
+msgid ""
+"\n"
+"                Wysyłka odbywa się do 3 dni po zaksięgowaniu wpłaty na "
+"koncie.\n"
+"                Wysyłka krajowa - za pośrednictwem kuriera, koszt wysyłki "
+"jest stały i wynosi "
+msgstr ""
+"\n"
+"                Shipping via courier takes place up to 3 days after the "
+"payment.\n"
+"                The cost of shipping is fixed and amounts to "
+
+#: templates/about.html:119
+msgid ""
+"\n"
+"                Wysyłka zagraniczna - wewnątrz UE za pośrednictwem kuriera "
+"(czas dostawy do tygodnia), poza UE za pośrednictwem Poczty Polskiej (czas "
+"dostawy do 3 tygodni).\n"
+"                Koszt wysyłki zagranicznej jest stały i wynosi "
+msgstr ""
+"\n"
+"               International shipment - inside the EU via courier (delivery "
+"time up to one week), outside the EU via Poczta Polska (up to 3 weeks).\n"
+"The cost of international shipping is fixed and amounts to "
+
+#: templates/about.html:122
+msgid ""
+"\n"
+"                Zawartość paczki jest starannie zapakowana w karton i "
+"zabezpieczona wypełnieniem.\n"
+"                "
+msgstr ""
+"\n"
+"The contents of the package are carefully packed in a box and protected by a "
+"fill.\n"
+"                "
+
+#: templates/base/cookies.html:8
+msgid "\"Korzystając z serwisu akceptujesz Politykę Prywatności i Cookies\""
+msgstr ""
+"\"By using this Site you are accepting and consenting to the practices set "
+"out in the Privacy and Cookie Policy.\""
+
+#: templates/base/cookies.html:9
+msgid "\"Dowiedz się więcej\""
+msgstr "\"Read more\""
+
+#: templates/base/cookies_policy.html:9
+msgid "POLITYKA PRYWATNOŚCI SKLEPU INTERNETOWEGO"
+msgstr "PRIVACY POLICY OF THE ONLINE STORE"
+
+#: templates/base/cookies_policy.html:13 templates/regulations.html:33
+msgid "POSTANOWIENIA OGÓLNE"
+msgstr "GENERAL PROVISIONS"
+
+#: templates/base/cookies_policy.html:17
+msgid ""
+"\n"
+"            <li>Administratorem danych osobowych zbieranych za pośrednictwem "
+"Sklepu internetowego  naklisze.pl jest Marek Biczysko wykonujący działalność "
+"gospodarczą pod firmą MAREK BICZYSKO wpisaną do Centralnej Ewidencji i "
+"Informacji o Działalności Gospodarczej Rzeczypospolitej Polskiej prowadzonej "
+"przez ministra właściwego do spraw gospodarki, miejsce wykonywania "
+"działalności oraz adres do doręczeń: ul. Lotnicza 145 lok. B60, 54-132 "
+"Wrocław, NIP: 7511717671, REGON: 380218730, adres poczty elektronicznej (e-"
+"mail): naklisze@gmail.com, numer telefonu: +48 880110460, zwany dalej "
+"\"Administratorem\" i będący jednocześnie „Usługodawcą”.\n"
+"            </li>\n"
+"            <li>Dane osobowe zbierane przez Administratora za pośrednictwem "
+"strony internetowej są przetwarzane zgodnie z Rozporządzeniem Parlamentu "
+"Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie "
+"ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w "
+"sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE "
+"(ogólne rozporządzenie o ochronie danych), zwane dalej RODO\n"
+"            </li>\n"
+"            <li>Wszelkie wyrazy lub wyrażenia pisane w treści niniejszej "
+"Polityki Prywatności z dużej litery należy rozumieć zgodnie z ich definicją "
+"zawartą w Regulaminie Sklepu internetowego naklisze.pl.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"            <li> The administrator of personal data collected via the "
+"naklisze.pl Online Store is Marek Biczysko doing business under the name "
+"MAREK BICZYSKO entered into the Central Register and Information on Economic "
+"Activity of the Republic of Poland kept by the minister responsible for "
+"economy, place of business and address for delivery : ul. Lotnicza 145 B60, "
+"54-132 Wrocław, NIP: 7511717671, REGON: 380218730, e-mail address: "
+"naklisze@gmail.com, telephone number: +48 880110460, hereinafter referred to "
+"as „Administrator” and being also „Service Provider”.\n"
+"            </li>\n"
+"            <li> Personal data collected by the Administrator via the "
+"website are processed in accordance with the Regulation of the European "
+"Parliament and of the Council (EU) 2016/679 of 27 April 2016 on the "
+"protection of individuals with regard to the processing of personal data and "
+"on the free movement such data and the repeal of Directive 95/46 / EC "
+"(general regulation on data protection), hereinafter referred to as the "
+"RODO\n"
+"            </li>\n"
+"            <li> Any words or phrases written in the content of this Privacy "
+"Policy with a capital letter should be understood in accordance with their "
+"definition contained in the Regulations of the naklisze.pl Online Store.\n"
+"            </li>\n"
+"            "
+
+#: templates/base/cookies_policy.html:29
+msgid "RODZAJ PRZETWARZANYCH DANYCH OSOBOWYCH, CEL I ZAKRES ZBIERANIA DANYCH"
+msgstr "TYPE OF PROCESSED PERSONAL DATA, PURPOSE AND SCOPE OF DATA COLLECTION"
+
+#: templates/base/cookies_policy.html:33
+msgid ""
+"\n"
+"            <li>CEL PRZETWARZANIA I PODSTAWA PRAWNA. Administrator "
+"przetwarza dane osobowe Usługobiorców Sklepu naklisze.pl w przypadku:\n"
+"                <ol>\n"
+"                    <li type=\"a\">rejestracji Konta w Sklepie, w celu "
+"utworzenia indywidualnego konta i zarządzania tym Kontem, na podstawie art. "
+"6 ust. 1 lit. b RODO (realizacja umowy o świadczenie usługi drogą "
+"elektroniczną zgodnie z Regulaminem Sklepu),\n"
+"                    </li>\n"
+"                    <li type=\"a\">składania zamówienia w Sklepie, w celu "
+"wykonania umowy sprzedaży, na podstawie art. 6 ust. 1 lit. b RODO "
+"(realizacja umowy sprzedaży),\n"
+"                    </li>\n"
+"                    <li type=\"a\">zapisania się do Newslettera w celu "
+"przesyłania informacji handlowych drogą elektroniczną. Dane osobowe są "
+"przetwarzane po wyrażeniu odrębnej zgody, na podstawie art. 6 ust. 1 lit. a) "
+"RODO.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li>RODZAJ PRZETWARZANYCH DANYCH OSOBOWYCH. W przypadku:\n"
+"\n"
+"                <ol>\n"
+"                    <li type=\"a\">Konta Usługobiorca podaje:\n"
+"                        <ol>\n"
+"                            <li type=\"disc\">Imię i nazwisko,\n"
+"                            </li>\n"
+"                            <li type=\"disc\">Login,\n"
+"                            </li>\n"
+"                            <li type=\"disc\">Adres,\n"
+"                            </li>\n"
+"                            <li type=\"disc\">Adres e-mail.\n"
+"                            </li>\n"
+"                        </ol>\n"
+"                    </li>\n"
+"                    <li type=\"a\">Zamówienia Usługobiorca podaje:\n"
+"                        <ol>\n"
+"                            <li type=\"disc\">Imię i nazwisko,\n"
+"                            </li>\n"
+"                            <li type=\"disc\">Adres,\n"
+"                            </li>\n"
+"                            <li type=\"disc\">Adres e-mail,\n"
+"                            </li>\n"
+"                            <li type=\"disc\">Numer telefonu,\n"
+"                            </li>\n"
+"                        </ol>\n"
+"                    </li>\n"
+"                    <li type=\"a\">\n"
+"                        <ol>\n"
+"                            <li type=\"disc\">Imię i nazwisko,\n"
+"                            </li>\n"
+"                            <li type=\"disc\">adres e-mail.\n"
+"                            </li>\n"
+"                        </ol>\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"\n"
+"            <li>OKRES ARCHIWIZACJI DANYCH OSOBOWYCH. Dane osobowe "
+"Usługobiorców przechowywane są przez Administratora:\n"
+"                <ol>\n"
+"                    <li type=\"a\">w przypadku, gdy podstawą przetwarzania "
+"danych jest wykonanie umowy, tak długo, jak jest to niezbędne do wykonania "
+"umowy, a po tym czasie przez okres odpowiadający okresowi przedawnienia "
+"roszczeń. Jeżeli przepis szczególny nie stanowi inaczej, termin "
+"przedawnienia wynosi 6 lat, a dla roszczeń o świadczenia okresowe oraz "
+"roszczeń związanych z prowadzeniem działalności gospodarczej - trzy lata.\n"
+"                    </li>\n"
+"                    <li type=\"a\">w przypadku, gdy podstawą przetwarzania "
+"danych jest zgoda, tak długo, aż zgoda nie zostanie odwołana, a po odwołaniu "
+"zgody przez okres czasu odpowiadający okresowi przedawnienia roszczeń jakie "
+"może podnosić Administrator i jakie mogą być podnoszone wobec niego. Jeżeli "
+"przepis szczególny nie stanowi inaczej, termin przedawnienia wynosi 6 lat, "
+"a dla roszczeń o świadczenia okresowe oraz roszczeń związanych "
+"z prowadzeniem działalności gospodarczej - trzy lata.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"\n"
+"            <li>Podczas korzystania ze Sklepu mogą być pobierane dodatkowe "
+"informacje, w szczególności: adres IP przypisany do komputera Usługobiorcy "
+"lub zewnętrzny adres IP dostawcy Internetu, nazwa domeny, rodzaj "
+"przeglądarki, czas dostępu, typ systemu operacyjnego.\n"
+"            </li>\n"
+"\n"
+"            <li>Od Usługobiorców mogą być także gromadzone dane nawigacyjne, "
+"w tym informacje o linkach i odnośnikach, w które zdecydują się kliknąć lub "
+"innych czynnościach, podejmowanych w Sklepie. Podstawą prawną tego rodzaju "
+"czynności jest prawnie uzasadniony interes Administratora (art. 6 ust. 1 "
+"lit. f RODO), polegający na ułatwieniu korzystania z usług świadczonych "
+"drogą elektroniczną oraz na poprawie funkcjonalności tych usług.\n"
+"            </li>\n"
+"\n"
+"            <li>Podanie danych osobowych przez Usługobiorcę jest "
+"dobrowolne.\n"
+"            </li>\n"
+"            <li>Dane osobowe będą przetwarzane także w sposób "
+"zautomatyzowany w formie profilowania, o ile Usługobiorca wyrazi na to zgodę "
+"na podstawie art. 6 ust. 1 lit. a) RODO. Konsekwencją profilowania będzie "
+"przypisanie danej osobie profilu w celu podejmowania dotyczących jej decyzji "
+"bądź analizy lub przewidywania jej preferencji, zachowań i postaw.\n"
+"            </li>\n"
+"\n"
+"            <li>Administrator dokłada szczególnej staranności w celu ochrony "
+"interesów osób, których dane dotyczą, a w szczególności zapewnia, że "
+"zbierane przez niego dane są:\n"
+"                <ol>\n"
+"                    <li type=\"a\">przetwarzane zgodnie z prawem,\n"
+"                    </li>\n"
+"                    <li type=\"a\">zbierane dla oznaczonych, zgodnych z "
+"prawem celów i niepoddawane dalszemu przetwarzaniu niezgodnemu z tymi "
+"celami,\n"
+"                    </li>\n"
+"                    <li type=\"a\">merytorycznie poprawne i adekwatne w "
+"stosunku do celów, w jakich są przetwarzane oraz przechowywane w postaci "
+"umożliwiającej identyfikację osób, których dotyczą, nie dłużej niż jest to "
+"niezbędne do osiągnięcia celu przetwarzania.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"<li> PROCESSING PURPOSE AND LEGAL BASIS. The Administrator processes the "
+"personal data of the Customers of the naklisze.pl Store in the case of:\n"
+"                <ol>\n"
+"                    <li type = \"a\"> Account registration in the Store, in "
+"order to create an individual account and manage this Account, pursuant to "
+"art. 6 par. 1 lit. b RODO (implementation of the contract for the provision "
+"of electronic services in accordance with the Store Regulations),\n"
+"                    </li>\n"
+"                    <li type = \"a\"> placing an order in the store, in "
+"order to perform a sales contract, pursuant to art. 6 par. 1 lit. b RODO "
+"(implementation of the contract of sale),\n"
+"                    </li>\n"
+"                    <li type = \"a\"> subscribing to the Newsletter for the "
+"purpose of sending commercial information by electronic means. Personal data "
+"are processed after expressing separate consent, pursuant to art. 6 par. 1 "
+"lit. a) RODO.\n"
+"                    </li>\n"
+"                </oL>\n"
+"            </li>\n"
+"            <li> TYPE OF PROCESSED PERSONAL DATA. In case of:\n"
+"\n"
+"                <ol>\n"
+"                    <li type = \"a\"> Account. The Customer provides:\n"
+"                        <ol>\n"
+"                            <li type = \"disc\"> Name and surname,\n"
+"                            </li>\n"
+"                            <li type = \"disc\"> Login,\n"
+"                            </li>\n"
+"                            <li type = \"disc\"> Address,\n"
+"                            </li>\n"
+"                            <li type = \"disc\"> Email address.\n"
+"                            </li>\n"
+"                        </ol>\n"
+"                    </li>\n"
+"                    <li type = \"a\"> Customer orders:\n"
+"                        <ol>\n"
+"                            <li type = \"disc\"> Name and surname,\n"
+"                            </li>\n"
+"                            <li type = \"disc\"> Address,\n"
+"                            </li>\n"
+"                            <li type = \"disc\"> Email address,\n"
+"                            </li>\n"
+"                            <li type = \"disc\"> Phone number,\n"
+"                            </li>\n"
+"                        </ol>\n"
+"                    </li>\n"
+"                    <li type = \"a\">\n"
+"                        <ol>\n"
+"                            <li type = \"disc\"> Name and surname,\n"
+"                            </li>\n"
+"                            <li type = \"disc\"> email address.\n"
+"                            </li>\n"
+"                        </ol>\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"\n"
+"            <li> PERIOD OF ARCHIVING OF PERSONAL DATA. The personal data of "
+"the Service Users are kept by the Administrator:\n"
+"                <ol>\n"
+"                    <li type = \"a\"> if the basis for data processing is "
+"the performance of the contract, as long as it is necessary for the "
+"performance of the contract, and after that for the period corresponding to "
+"the period of limitation of claims. Unless a special rule provides "
+"otherwise, the period of limitation is six years, and for claims for "
+"periodic benefits and claims related to running a business - three years.\n"
+"                    </li>\n"
+"                    <li type = \"a\"> if the basis for data processing is "
+"consent, until the consent is canceled, and after the consent is revoked for "
+"a period of time corresponding to the period of limitation of claims that "
+"can be raised by the Administrator and which can be raised against him. "
+"Unless a special rule provides otherwise, the period of limitation is six "
+"years, and for claims for periodic benefits and claims related to running a "
+"business - three years.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"\n"
+"            <li> When using the Store, additional information may be "
+"downloaded, in particular: the IP address assigned to the Recipient’s "
+"computer or the external IP address of the Internet provider, domain name, "
+"browser type, access time, type of operating system.\n"
+"            </li>\n"
+"\n"
+"            <li> Navigators may also collect navigation data, including "
+"information about links and links in which they choose to click or other "
+"activities undertaken in the Store. The legal basis for this type of "
+"activity is the legitimate interest of the Administrator (Article 6 (1) (f) "
+"of the RODO), consisting in facilitating the use of services provided "
+"electronically and improving the functionality of these services.\n"
+"            </li>\n"
+"\n"
+"            <li> Providing personal data by the Customer is voluntary.\n"
+"            </li>\n"
+"            <li> Personal data will also be processed in an automated way in "
+"the form of profiling, provided that the Service Provider gives its consent "
+"based on art. 6 par. 1 lit. a) RODO. The consequence of profiling will be "
+"the assignment of a profile to a given person in order to take decisions "
+"regarding him or to analyze or predict his preferences, behaviors and "
+"attitudes.\n"
+"            </li>\n"
+"\n"
+"<li> Administrator exercises special diligence to protect the interests of "
+"data subjects, and in particular ensures that the data collected by him "
+"are:\n"
+"                 <ol>\n"
+"                     <li type = \"a\"> processed in accordance with the "
+"law,\n"
+"                     </li>\n"
+"                     <li type = \"a\"> collected for marked, legitimate "
+"purposes and not subject to further processing incompatible with these "
+"purposes,\n"
+"                     </li>\n"
+"                     <li type = \"a\"> factually correct and adequate in "
+"relation to the purposes for which they are processed and stored in a form "
+"allowing identification of persons they concern, no longer than it is "
+"necessary to achieve the purpose of processing.\n"
+"                     </li>\n"
+"                 </ol>\n"
+"             </li>\n"
+"             "
+
+#: templates/base/cookies_policy.html:117
+msgid "UDOSTĘPNIENIE DANYCH OSOBOWYCH"
+msgstr "DISCLOSURE OF PERSONAL DATA"
+
+#: templates/base/cookies_policy.html:121
+msgid ""
+"\n"
+"            <li>Dane osobowe Usługobiorców przekazywane są dostawcom usług, "
+"z których korzysta Administrator przy prowadzeniu Sklepu. Dostawcy usług, "
+"którym przekazywane są dane osobowe, w zależności od uzgodnień umownych "
+"i okoliczności, albo podlegają poleceniom Administratora co do celów "
+"i sposobów przetwarzania tych danych (podmioty przetwarzające) albo "
+"samodzielnie określają cele i sposoby ich przetwarzania (administratorzy).\n"
+"            </li>\n"
+"            <li>W celu zarządzania listą użytkowników, Usługodawca korzysta "
+"z serwisu Mailchimp, na którym przechowywana jest część danych użytkowników. "
+"Mailchimp to usługa do zarządzania listą adresową i wysyłania wiadomości "
+"email dostarczana przez Mailchimp Inc. z siedzibą w USA. Mailchimp ma swoją "
+"własną politykę prywatności, które jest dostępna <span><a href=\"https://"
+"mailchimp.com/legal/privacy/\">tutaj</a></span>.\n"
+"            "
+msgstr ""
+"\n"
+"            <li> The personal data of the Service Users are transferred to "
+"service providers used by the Administrator while running the Store. Service "
+"providers to whom personal data are transferred, depending on contractual "
+"arrangements and circumstances, or are subject to the Administrator’s "
+"instructions as to the purposes and methods of data processing (processors) "
+"or independently determine the purposes and methods of their processing "
+"(administrators).\n"
+"             </li>\n"
+"             <li> In order to manage the list of users, the Service Provider "
+"uses the Mailchimp service, where some user data is stored. Mailchimp is a "
+"service for managing the mailing list and sending email messages provided by "
+"Mailchimp Inc. based in the USA. Mailchimp has its own privacy policy, which "
+"is available <span><a href=\"https://mailchimp.com/legal/privacy/\">here</"
+"a></span>.\n"
+"             "
+
+#: templates/base/cookies_policy.html:132
+msgid "PRAWO KONTROLI, DOSTĘPU DO TREŚCI WŁASNYCH DANYCH ORAZ ICH POPRAWIANIA"
+msgstr "RIGHT OF CONTROL, ACCESS TO OWN DATA CONTENTS AND THEIR CORRECTION"
+
+#: templates/base/cookies_policy.html:136
+msgid ""
+"\n"
+"            <li>Osoba, której dane dotyczą, ma prawo dostępu do treści "
+"swoich danych osobowych oraz prawo ich sprostowania, usunięcia, ograniczenia "
+"przetwarzania, prawo do przenoszenia danych, prawo wniesienia sprzeciwu, "
+"prawo do cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem "
+"przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem.\n"
+"\n"
+"            </li>\n"
+"            <li>Podstawy prawne żądania Usługobiorcy:\n"
+"                <ol>\n"
+"                    <li type=\"a\">Dostęp do danych – art. 15 RODO\n"
+"                    </li>\n"
+"                    <li type=\"a\">Sprostowanie danych – art. 16 RODO.\n"
+"                    </li>\n"
+"                    <li type=\"a\">Usunięcie danych (tzw. prawo do bycia "
+"zapomnianym) – art. 17 RODO.\n"
+"                    </li>\n"
+"                    <li type=\"a\">Ograniczenie przetwarzania – art. 18 "
+"RODO.\n"
+"                    </li>\n"
+"                    <li type=\"a\">Przeniesienie danych – art. 20 RODO.\n"
+"                    </li>\n"
+"                    <li type=\"a\">Sprzeciw – art. 21 RODO\n"
+"                    </li>\n"
+"                    <li type=\"a\">Cofnięcie zgody – art. 7 ust. 3 RODO.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li>W celu realizacji uprawnień, o których mowa w pkt 2 można "
+"wysłać stosowną wiadomość  e-mail na adres: naklisze@gmail.com.\n"
+"            </li>\n"
+"            <li>W sytuacji wystąpienia przez Usługobiorcę z uprawnieniem "
+"wynikającym z powyższych praw, Administrator spełnia żądanie albo odmawia "
+"jego spełnienia niezwłocznie, nie później jednak niż w ciągu miesiąca po "
+"jego otrzymaniu. Jeżeli jednak - z uwagi na skomplikowany charakter żądania "
+"lub liczbę żądań – Administrator nie będzie mógł spełnić żądania w ciągu "
+"miesiąca, spełni je w ciągu kolejnych dwóch miesięcy informując Usługobiorcę "
+"uprzednio w terminie miesiąca od otrzymania żądania - o zamierzonym "
+"przedłużeniu terminu oraz jego przyczynach.\n"
+"            </li>\n"
+"            <li>W przypadku stwierdzenia, że przetwarzanie danych osobowych "
+"narusza przepisy RODO, osoba, której dane dotyczą, ma prawo wnieść skargę do "
+"Prezesa Urzędu Ochrony Danych Osobowych.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"            <li> The data subject has the right to access their personal "
+"data and the right to rectify, delete, limit the processing, the right to "
+"data transfer, the right to object, the right to withdraw consent at any "
+"time without affecting the legality of the processing which was made on the "
+"basis of consent before its withdrawal.\n"
+"\n"
+"            </li>\n"
+"            <li> Legal basis of the Customer’s request:\n"
+"                <Ol>\n"
+"                    <li type = \"a\"> Access to data - art. 15 RODO\n"
+"                    </li>\n"
+"                    <li type = \"a\"> Rectification of data - art. 16  "
+"RODO.\n"
+"                    </li>\n"
+"                    <li type = \"a\"> Data removal (so-called right to be "
+"forgotten) - art. 17 RODO.\n"
+"                    </li>\n"
+"                    <li type = \"a\"> Limitation of processing - art. 18 "
+"RODO.\n"
+"                    </li>\n"
+"                    <li type = \"a\"> Transfer of data - art. 20 RODO.\n"
+"                    </li>\n"
+"                    <li type = \"a\"> Opposition - art. 21 RODO\n"
+"                    </li>\n"
+"                    <li type = \"a\"> Withdrawal of consent - art. 7 par. 3 "
+"RODO.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li> In order to exercise the rights referred to in point 2, you "
+"can send an appropriate e-mail to: naklisze@gmail.com.\n"
+"            </li>\n"
+"            <li> In the event of the Client obtaining the right resulting "
+"from the above rights, the Administrator fulfills the request or refuses to "
+"meet it immediately, however not later than within one month after receiving "
+"it. However, if - due to the complexity of the request or the number of "
+"requests - the Administrator will not be able to fulfill the request within "
+"a month, it will meet them within the next two months informing the Customer "
+"about the intended extension and its reasons.\n"
+"            </li>\n"
+"            <li> If it is determined that the processing of personal data "
+"violates the provisions of the GDPR, the data subject has the right to lodge "
+"a complaint with the President of the Office for Personal Data Protection.\n"
+"            </li>\n"
+"            "
+
+#: templates/base/cookies_policy.html:171
+msgid "PLIKI COOKIES"
+msgstr "COOKIES FILES"
+
+#: templates/base/cookies_policy.html:175
+msgid ""
+"\n"
+"            <li>Strona Administratora używa plików „cookies”.\n"
+"            </li>\n"
+"            <li>Instalacja plików „cookies” jest konieczna do prawidłowego "
+"świadczenia usług na stronie internetowej Sklepu. W plikach „cookies\" "
+"znajdują się informacje niezbędne do prawidłowego funkcjonowania strony, a "
+"także dają one także możliwość opracowywania ogólnych statystyk odwiedzin "
+"strony internetowej.\n"
+"            </li>\n"
+"            <li>W ramach strony stosowane są dwa rodzaje plików „cookies”: "
+"„sesyjne” oraz „stałe”.\n"
+"                <ol>\n"
+"                    <li type=\"a\">„Cookies” „sesyjne” są plikami "
+"tymczasowymi, które przechowywane są w urządzeniu końcowym Usługobiorcy do "
+"czasu wylogowania (opuszczenia strony).\n"
+"                    </li>\n"
+"                    <li type=\"a\">„Stałe” pliki „cookies” przechowywane są "
+"w urządzeniu końcowym Usługobiorcy przez czas określony w parametrach plików "
+"„cookies” lub do czasu ich usunięcia przez Usługobiorcę.\n"
+"                    </li>\n"
+"\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li>Administrator wykorzystuje własne pliki cookies w celu "
+"lepszego poznania sposobu interakcji Usługobiorców w zakresie zawartości "
+"strony. Pliki gromadzą informacje o sposobie korzystania ze strony "
+"internetowej przez Usługobiorcę, typie strony, z jakiej Usługobiorca został "
+"przekierowany, oraz liczbie odwiedzin i czasie wizyty Usługobiorcy na "
+"stronie internetowej. Informacje te nie rejestrują konkretnych danych "
+"osobowych Usługobiorcy, lecz służą do opracowania statystyk korzystania ze "
+"strony.\n"
+"            </li>\n"
+"            <li>Administrator wykorzystuje zewnętrzne pliki cookies w celu "
+"zbierania ogólnych i anonimowych danych statycznych za pośrednictwem "
+"narzędzi analitycznych Google Analytics (administrator cookies zewnętrznego: "
+"Google Inc. z siedzibą w USA).\n"
+"            </li>\n"
+"            <li>Usługobiorca ma prawo zadecydowania w zakresie dostępu "
+"plików „cookies” do swojego komputera poprzez ich uprzedni wybór w oknie "
+"swojej przeglądarki.  Szczegółowe informacje o możliwości i sposobach "
+"obsługi plików „cookies” dostępne są w ustawieniach oprogramowania "
+"(przeglądarki internetowej).\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"            <li> The Administrator’s website uses „cookies”.\n"
+"            </li>\n"
+"            <li> Installing „cookies” is necessary for the proper provision "
+"of services on the Store’s website. The „cookies” files contain information "
+"necessary for the proper functioning of the website, and they also give the "
+"opportunity to compile general statistics of website visits.\n"
+"            </li>\n"
+"            <li> As part of the site, two types of „cookie” files are used: "
+"„session” and „permanent”.\n"
+"                <Ol>\n"
+"                    <li type = \"a\"> „Session cookies” are temporary files "
+"that are stored in the Customer’s terminal device until logging out (leaving "
+"the site).\n"
+"                    </li>\n"
+"                    <li type = \"a\"> „Persistent” cookies „are stored in "
+"the Customer’s terminal device for the time specified in the parameters of” "
+"cookies „or until they are removed by the Service Recipient.\n"
+"                    </li>\n"
+"\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li> The administrator uses his own cookies to better understand "
+"how the Customers interact with the content of the site. The files collect "
+"information about the method of using the website by the Service Recipient, "
+"the type of website from which the Recipient was redirected, and the number "
+"of visits and the time of the Customer’s visit to the website. This "
+"information does not record specific personal data of the Service Recipient, "
+"but it is used to develop statistics on the use of the website.\n"
+"            </li>\n"
+"            <li> The administrator uses external cookies to collect general "
+"and anonymous static data via analytical tools of Google Analytics (external "
+"cookie administrator: Google Inc., based in the USA).\n"
+"            </li>\n"
+"            <li> The Customer has the right to decide on the access of "
+"„cookies” to his computer by selecting them in the window of his browser. "
+"Detailed information about the possibilities and ways of handling „cookies” "
+"are available in the software (web browser) settings.\n"
+"            </li>\n"
+"            "
+
+#: templates/base/cookies_policy.html:201 templates/regulations.html:395
+msgid "POSTANOWIENIA KOŃCOWE"
+msgstr "FINAL PROVISIONS"
+
+#: templates/base/cookies_policy.html:205
+msgid ""
+"\n"
+"            <li>Administrator stosuje środki techniczne i organizacyjne "
+"zapewniające ochronę przetwarzanych danych osobowych odpowiednią do zagrożeń "
+"oraz kategorii danych objętych ochroną, a w szczególności zabezpiecza dane "
+"przed ich udostępnieniem osobom nieupoważnionym, zabraniem przez osobę "
+"nieuprawnioną, przetwarzaniem z naruszeniem obowiązujących przepisów oraz "
+"zmianą, utratą, uszkodzeniem lub zniszczeniem.\n"
+"            </li>\n"
+"            <li>Administrator udostępnia odpowiednie środki techniczne "
+"zapobiegające pozyskiwaniu i modyfikowaniu przez osoby nieuprawnione, danych "
+"osobowych przesyłanych drogą elektroniczną.\n"
+"            </li>\n"
+"            <li>W sprawach nieuregulowanych niniejszą Polityką prywatności "
+"stosuje się odpowiednio przepisy RODO oraz inne właściwe przepisy prawa "
+"polskiego.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"             <li> Administrator uses technical and organizational measures "
+"to ensure that personal data being processed is protected against hazards "
+"and categories of data protected, in particular, protects data against "
+"unauthorized access, unauthorized removal, processing in violation of "
+"applicable laws and changes, loss, damage or destruction.\n"
+"             </li>\n"
+"             <li> The administrator provides appropriate technical measures "
+"to prevent the collection and modification of personal data sent "
+"electronically by unauthorized persons.\n"
+"             </li>\n"
+"             <li> In matters not covered by this Privacy Policy, the "
+"provisions of the RODO and other relevant provisions of Polish law shall "
+"apply accordingly.\n"
+"             </li>\n"
+"             "
+
+#: templates/base/footer.html:18
+msgid "Polityka prywatności i cookies"
+msgstr "Privacy policy and cookies"
+
+#: templates/base/footer.html:19
+msgid "Wysyłka"
+msgstr "Shipping"
+
+#: templates/base/footer.html:20
+msgid "Jakość produktów"
+msgstr "Cameras quality"
+
+#: templates/base/footer.html:38
+msgid "Formularz kontaktowy"
+msgstr "Contact form"
+
+#: templates/base/footer.html:39
+msgid "Wyślij e-mail"
+msgstr "E-mail us"
+
+#: templates/base/footer.html:44
+msgid "Obserwuj nas"
+msgstr "Stay with us"
+
+#: templates/base/navbar.html:58
+msgid "Wprowadzenie"
+msgstr "Introduction"
+
+#: templates/base/navbar.html:60
+msgid "Dalmierze"
+msgstr "Rangefinders"
+
+#: templates/base/navbar.html:61
+msgid "Kompakty"
+msgstr "Compacts"
+
+#: templates/base/navbar.html:62
+msgid "Połówkowe"
+msgstr "Half-frame"
+
+#: templates/base/navbar.html:63
+msgid "Średni format"
+msgstr "Medium format"
+
+#: templates/base/navbar.html:113
+msgid "Utwórz konto"
+msgstr "Create account"
+
+#: templates/base/navbar.html:117
+msgid "Ustawienia"
+msgstr "Settings"
+
+#: templates/base/navbar.html:123
+msgid "Wyloguj"
+msgstr "Log out"
+
+#: templates/base/snippets/messanger.html:6
+msgid "Masz jakieś pytania?"
+msgstr "Got any questions?"
+
+#: templates/base/snippets/messanger.html:7
+msgid "Zaloguj się na FB, aby z nami porozmawiać"
+msgstr "Log in to Facebook to chat with us"
+
+#: templates/contact/view.html:4
+msgid "Napisz do nas"
+msgstr "Contact us"
+
+#: templates/contact/view.html:12
+msgid "Wyślij"
+msgstr "Send"
+
+#: templates/home_page.html:21
+msgid "W promocji"
+msgstr "Sale"
+
+#: templates/home_page.html:25
+msgid "Nowości"
+msgstr "New"
+
+#: templates/home_page.html:43
+msgid "Aparaty analogowe są fajne, a my mamy ich duży wybór."
+msgstr "Analog cameras are cool, and we have a large selection of them."
+
+#: templates/home_page.html:45
+msgid "Zapraszamy do zapoznania się z ofertą"
+msgstr "Take a look at our offer"
+
+#: templates/home_page.html:47
+msgid "Sprawdź!"
+msgstr "Check it out!"
+
+#: templates/home_page.html:57
+msgid "Bądź na bieżąco!"
+msgstr "Stay updated!"
+
+#: templates/home_page.html:58
+msgid "Dołącz do naszego Newslettera"
+msgstr "Join our Newsletter"
+
+#: templates/home_page.html:74
+msgid "Aktualnie w promocji"
+msgstr "Currently on sale"
+
+#: templates/home_page.html:98
+msgid "Najnowsze aparaty w ofercie"
+msgstr "Latest:"
+
+#: templates/registration/password_change_done.html:9
+msgid "Hasło zostało zmienione"
+msgstr "Password has been changed"
+
+#: templates/registration/password_change_form.html:12
+msgid "Zapisz"
+msgstr "Save"
+
+#: templates/registration/password_reset_complete.html:11
+msgid "Reset hasła zakończony"
+msgstr "Password reset completed"
+
+#: templates/registration/password_reset_confirm.html:8
+msgid "Podaj nowe hasło"
+msgstr "Enter a new password"
+
+#: templates/registration/password_reset_confirm.html:12
+msgid "Zatwierdź"
+msgstr "Submit"
+
+#: templates/registration/password_reset_done.html:8
+msgid "Wysłano instrukcję zmiany hasła"
+msgstr "A password change instruction has been sent"
+
+#: templates/registration/password_reset_done.html:9
+msgid "Sprawdź swój e-mail"
+msgstr "Check your E-mail"
+
+#: templates/registration/password_reset_done.html:10
+msgid "Jeśli nie znajdziesz wiadomości sprawdź folder SPAM"
+msgstr "If you do not find a message, check the SPAM folder"
+
+#: templates/registration/password_reset_email.html:2
+#: templates/registration/password_reset_email.txt:2
+#, python-format
+msgid ""
+"\n"
+"Witaj,\n"
+"\n"
+"Otrzymaliśmy żądanie resetu hasła w serwisie %(domain)s dla użytkownika "
+"%(user)s\n"
+"\n"
+"Jeżeli to Ty, kliknij w poniższy link aby dokończyć procedurę:\n"
+msgstr ""
+"\n"
+"Hello,\n"
+"We have received a password reset request at service %(domain)s for user "
+"%(user)s\n"
+"\n"
+"If it is you, click on the link below to complete the procedure:\n"
+
+#: templates/registration/password_reset_email.html:14
+msgid ""
+"\n"
+"W przeciwnym wypadku prosimy o zignorowanie tej wiadomości.\n"
+"\n"
+"Pozdrawiamy,\n"
+msgstr ""
+"\n"
+"Otherwise, please ignore this message.\n"
+"\n"
+"Best Regards,\n"
+
+#: templates/registration/password_reset_email.txt:14
+msgid ""
+"\n"
+"W przeciwnym przypadku prosimy o zignorowanie tej wiadomości.\n"
+"\n"
+"Pozdrawiamy\n"
+msgstr ""
+"\n"
+"Otherwise, please ignore this message.\n"
+"\n"
+"Best Regards,\n"
+
+#: templates/registration/password_reset_form.html:9
+msgid "Zresetuj swoje hasło"
+msgstr "Reset your password"
+
+#: templates/registration/password_reset_form.html:10
+msgid "Wprowadź adres e-mail dla którego dokonałeś rejestracji konta"
+msgstr "Enter the e-mail address for which you have registered your account"
+
+#: templates/regulations.html:24
+msgid "REGULAMIN SKLEPU INTERNETOWEGO"
+msgstr "PRIVACY POLICY OF THE ONLINE STORE"
+
+#: templates/regulations.html:30
+msgid "Certyfikat wydany przez serwis"
+msgstr "Certificate issued by the"
+
+#: templates/regulations.html:38
+msgid ""
+"\n"
+"            <li class=\"xli\">Sklep naklisze.pl działa na zasadach "
+"określonych w niniejszym Regulaminie.\n"
+"            </li>\n"
+"            <li class=\"xli\">Regulamin określa warunki zawierania i "
+"rozwiązywania Umów Sprzedaży Produktu oraz tryb postępowania reklamacyjnego, "
+"a także rodzaje i zakres usług świadczonych drogą elektroniczną przez Sklep "
+"naklisze.pl, zasady świadczenia tych usług, warunki zawierania i "
+"rozwiązywania umów o świadczenie usług drogą elektroniczną.\n"
+"            </li>\n"
+"            <li class=\"xli\">Każdy Usługobiorca z chwilą podjęcia czynności "
+"zmierzających do korzystania z Usług Elektronicznych Sklepu naklisze.pl  "
+"zobowiązany jest do przestrzegania postanowień niniejszego Regulaminu.\n"
+"            </li>\n"
+"            <li class=\"xli\">W sprawach nieuregulowanych w niniejszym "
+"Regulaminie mają zastosowanie przepisy:\n"
+"                <ol class=\"xol\">\n"
+"                    <li class=\"xli\">Ustawy o świadczeniu usług drogą "
+"elektroniczną z dnia 18 lipca 2002 r. (Dz. U. Nr 144, poz. 1204 ze zm.),\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Ustawy o prawach konsumenta z dnia 30 "
+"maja 2014 r. (Dz. U. 2014 poz. 827),\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Ustawy o pozasądowym rozwiązywaniu "
+"sporów konsumenckich z dnia 23 września 2016 r. (Dz. U. 2016 poz. 1823),\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Ustawy Kodeks cywilny z dnia 23 "
+"kwietnia 1964 r. (Dz. U. Nr 16, poz. 93 ze zm.) oraz inne właściwe przepisy "
+"prawa polskiego.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"            <li class = \"xli\"> Shop naklisze.pl operates on the terms set "
+"out in these Regulations.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Regulations define the terms and conditions "
+"for concluding and terminating Product Sales Agreements and the complaint "
+"procedure, as well as the types and scope of services provided "
+"electronically by the naklisze.pl Store, the rules for providing these "
+"services, the terms of concluding and terminating service contracts by "
+"electronic means.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Every Recipient is obliged to comply with "
+"the provisions of these Regulations when taking actions to use the "
+"Electronic Services of the naklisze.pl Store.\n"
+"            </li>\n"
+"            <li class = \"xli\"> In matters not covered by these "
+"Regulations, the following provisions shall apply:\n"
+"                <ol class = \"xol\">\n"
+"                    <li class = \"xli\"> Act on the provision of electronic "
+"services of July 18, 2002 (Journal of Laws No. 144, item 1204, as amended),\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> Consumer Rights Act of May 30, 2014 "
+"(Journal of Laws of 2014, item 827),\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> Law on extrajudicial resolution of "
+"consumer disputes of September 23, 2016 (Journal of Laws of 2016, item "
+"1823),\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> Civil Code Act of April 23, 1964 "
+"(Journal of Laws No. 16, item 93, as amended) and other relevant provisions "
+"of Polish law.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            "
+
+#: templates/regulations.html:62
+msgid "DEFINICJE ZAWARTE W REGULAMINIE"
+msgstr "DEFINITIONS CONTAINED IN THE REGULATIONS"
+
+#: templates/regulations.html:66
+msgid ""
+"\n"
+"            <li class=\"xli\">FORMULARZ REJESTRACJI – formularz dostępny na "
+"stronie internetowej naklisze.pl  umożliwiający utworzenie Konta.\n"
+"            </li>\n"
+"            <li class=\"xli\">FORMULARZ ZAMÓWIENIA – formularz dostępny na "
+"stronie internetowej naklisze.pl  umożliwiający złożenie Zamówienia.\n"
+"            </li>\n"
+"            <li class=\"xli\">KLIENT – Usługobiorca będący Konsumentem, "
+"który zamierza zawrzeć lub zawarł Umowę Sprzedaży ze Sprzedawcą.\n"
+"            </li>\n"
+"            <li class=\"xli\">KONSUMENT – osoba fizyczna, która dokonuje z "
+"przedsiębiorcą czynności prawnej niezwiązanej bezpośrednio z jej "
+"działalnością gospodarczą lub zawodową.\n"
+"            </li>\n"
+"            <li class=\"xli\">KONTO – oznaczony indywidualną nazwą (loginem) "
+"oraz hasłem, zbiór zasobów w systemie teleinformatycznym Usługodawcy, w "
+"którym gromadzone są dane Usługobiorcy w tym informacje o złożonych "
+"Zamówieniach.\n"
+"            </li>\n"
+"            <li class=\"xli\">NEWSLETTER – Usługa Elektroniczna pozwalająca "
+"Usługobiorcy na subskrybowanie i otrzymywanie na podany przez Usługobiorcę "
+"adres e-mail bezpłatnych informacji pochodzących od Usługodawcy, dotyczących "
+"Produktów dostępnych w Sklepie.\n"
+"            </li>\n"
+"            <li class=\"xli\">PRODUKT – dostępna w Sklepie rzecz ruchoma "
+"albo usługa, będąca przedmiotem Umowy Sprzedaży między Klientem a "
+"Sprzedawcą.\n"
+"            </li>\n"
+"            <li class=\"xli\">REGULAMIN - niniejszy regulamin Sklepu.\n"
+"            </li>\n"
+"            <li class=\"xli\">SKLEP - Sklep internetowy Usługodawcy "
+"działający pod adresem naklisze.pl.\n"
+"            </li>\n"
+"            <li class=\"xli\">SPRZEDAWCA, USŁUGODAWCA – Marek Biczysko "
+"wykonujący działalność gospodarczą pod firmą MAREK BICZYSKO wpisaną do "
+"Centralnej Ewidencji i Informacji o Działalności Gospodarczej "
+"Rzeczypospolitej Polskiej prowadzonej przez ministra właściwego do spraw "
+"gospodarki, miejsce wykonywania działalności oraz adres do doręczeń: ul. "
+"Lotnicza 145 lok. B60, 54-132 Wrocław, NIP: 7511717671, REGON: 380218730, "
+"adres poczty elektronicznej (e-mail): naklisze@gmail.com, numer telefonu: "
+"+48 880110460\n"
+"            </li>\n"
+"            <li class=\"xli\">UMOWA SPRZEDAŻY – Umowa Sprzedaży Produktu "
+"zawarta między Klientem, a Sprzedawcą za pośrednictwem Sklepu.\n"
+"            </li>\n"
+"            <li class=\"xli\">USŁUGA ELEKTRONICZNA – usługa świadczona drogą "
+"elektroniczną przez Usługodawcę na rzecz Usługobiorcy za pośrednictwem "
+"Sklepu.\n"
+"            </li>\n"
+"            <li class=\"xli\">USŁUGOBIORCA – osoba fizyczna, osoba prawna "
+"albo jednostka organizacyjna nieposiadająca osobowości prawnej, której "
+"ustawa przyznaje zdolność prawną korzystająca z Usługi Elektronicznej.\n"
+"            </li>\n"
+"            <li class=\"xli\">ZAMÓWIENIE - oświadczenie woli Klienta "
+"stanowiące ofertę zawarcia Umowy Sprzedaży Produktu ze Sprzedawcą.\n"
+"            "
+msgstr ""
+"\n"
+"            <li class = \"xli\"> REGISTRATION FORM - a form available on the "
+"naklisze.pl website that allows you to create an Account.\n"
+"            </li>\n"
+"            <li class = \"xli\"> ORDER FORM - a form available on the "
+"naklisze.pl website that allows you to place an Order.\n"
+"            </li>\n"
+"            <li class = \"xli\"> CLIENT - Customer who is a Consumer who "
+"intends to conclude or conclude a Sale Agreement with the Seller.\n"
+"            </li>\n"
+"            <li class = \"xli\"> CONSUMER - a natural person who performs "
+"with the entrepreneur a legal action not related directly to its business or "
+"professional activity.\n"
+"            </li>\n"
+"            <li class = \"xli\"> ACCOUNT - marked with an individual name "
+"(login) and password, a set of resources in the Service Provider’s IT system "
+"in which the Service Recipient’s data, including information on submitted "
+"Orders, is collected.\n"
+"            </li>\n"
+"            <li class = \"xli\"> NEWSLETTER - An Electronic Service that "
+"allows the Recipient to subscribe to and receive free of charge information "
+"from the Service Provider about the Products available in the Store to the e-"
+"mail address provided by the Customer.\n"
+"            </li>\n"
+"            <li class = \"xli\"> PRODUCT - a movable item or service "
+"available in the Store that is the subject of a Sales Agreement between the "
+"Customer and the Seller.\n"
+"            </li>\n"
+"            <li class = \"xli\"> TERMS AND CONDITIONS - these regulations of "
+"the Store.\n"
+"            </li>\n"
+"            <li class = \"xli\"> STORE - Online store of the Service "
+"Provider operating at naklisze.pl.\n"
+"            </li>\n"
+"            <li class = \"xli\"> SELLER, SERVICE PROVIDER - Marek Biczysko "
+"doing business under the name MAREK BICZYSKO entered into the Central "
+"Register and Information on Economic Activity of the Republic of Poland "
+"conducted by the minister responsible for economy, place of business and "
+"address for delivery: ul. Lotnicza 145 B60, 54-132 Wrocław, NIP: 7511717671, "
+"REGON: 380218730, e-mail address (e-mail): naklisze@gmail.com, telephone "
+"number: +48 880110460\n"
+"            </li>\n"
+"            <li class = \"xli\"> SALES AGREEMENT - Product Sales Agreement "
+"concluded between the Customer and the Seller via the Store.\n"
+"            </li>\n"
+"            <li class = \"xli\"> ELECTRONIC SERVICE - a service provided "
+"electronically by the Service Provider to the Customer via the Store.\n"
+"            </li>\n"
+"            <li class = \"xli\"> SERVICE USER - a natural person, a legal "
+"person or an organizational unit without legal personality, the law of which "
+"grants legal capacity using the Electronic Service.\n"
+"            </li>\n"
+"            <li class = \"xli\"> ORDER - Customer’s declaration of will "
+"constituting an offer to conclude a Product Sales Agreement with the "
+"Seller.\n"
+"            "
+
+#: templates/regulations.html:100
+msgid "INFORMACJE DOTYCZĄCE PRODUKTÓW ORAZ ICH ZAMAWIANIA"
+msgstr "INFORMATION ABOUT THE PRODUCTS AND THEIR ORDERING"
+
+#: templates/regulations.html:104
+msgid ""
+"\n"
+"            <li class=\"xli\">Sklep naklisze.pl prowadzi sprzedaż detaliczną "
+"Produktów za pośrednictwem sieci Internet na terenie Polski, wyłącznie na "
+"rzecz Konsumentów.\n"
+"            </li>\n"
+"            <li class=\"xli\">Produkty oferowane w Sklepie są używane albo "
+"nowe, wolne od wad prawnych i zostały legalnie wprowadzone na rynek polski.\n"
+"            </li>\n"
+"            <li class=\"xli\">Informacje znajdujące się na stronach "
+"internetowych Sklepu nie stanowią oferty w rozumieniu przepisów prawa. "
+"Klient, składając Zamówienie, składa ofertę kupna określonego Produktu na "
+"warunkach podanych w jego opisie.\n"
+"            </li>\n"
+"            <li class=\"xli\">Cena Produktu uwidoczniona na stronie "
+"internetowej Sklepu podana jest w złotych polskich (PLN)  i zawiera "
+"wszystkie składniki, w tym podatek VAT. Cena nie zawiera kosztów dostawy.\n"
+"            </li>\n"
+"            <li class=\"xli\">Cena Produktu uwidoczniona na stronie Sklepu "
+"jest wiążąca w chwili złożenia przez Klienta Zamówienia. Cena ta nie ulegnie "
+"zmianie niezależnie od zmian cen w Sklepie, które mogą się pojawić w "
+"odniesieniu do poszczególnych Produktów po złożeniu przez Klienta "
+"Zamówienia.\n"
+"            </li>\n"
+"            <li class=\"xli\">Zamówienia można składać poprzez witrynę "
+"internetową za pomocą Formularza Zamówień (Sklep naklisze.pl) – 24 godziny "
+"na dobę przez cały rok.\n"
+"            </li>\n"
+"            <li class=\"xli\">W celu złożenia Zamówienia, Klient nie ma "
+"obowiązku rejestracji Konta w Sklepie.\n"
+"            </li>\n"
+"            <li class=\"xli\">Warunkiem złożenia Zamówienia w Sklepie przez "
+"Klienta jest zapoznanie się z Regulaminem i akceptacja jego postanowień w "
+"czasie składania Zamówienia.\n"
+"            </li>\n"
+"            <li class=\"xli\">Sklep realizuje Zamówienia złożone od "
+"poniedziałku do piątku w godzinach pracy Sklepu tj. od 10.00 do 16.00 w dni "
+"robocze. Zamówienia złożone w dni robocze po godz. 16.00, w soboty, "
+"niedziele oraz święta, będą rozpatrywane następnego dnia roboczego.\n"
+"            </li>\n"
+"            <li class=\"xli\">Produkty w promocji (wyprzedaży) posiadają "
+"limitowaną liczbę sztuk i Zamówienia na nie będą realizowane według "
+"kolejności ich wpływania aż do wyczerpania się zapasów danego Produktu.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"            <li class = \"xli\"> Shop naklisze.pl conducts retail sales of "
+"Products via the Internet in Poland, exclusively for Consumers.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Products offered in the store are used "
+"either new, free from legal defects and have been legally placed on the "
+"Polish market.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The information on the Store websites does "
+"not constitute an offer within the meaning of the law. By placing an Order, "
+"the Customer submits an offer to buy a specific Product under the conditions "
+"specified in its description.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The price of the Product displayed on the "
+"Store’s website is given in Polish zloty (PLN) and includes all components, "
+"including VAT. The price does not include delivery costs.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The price of the Product displayed on the "
+"Store’s website is binding at the time the Customer places an Order. This "
+"price will not change regardless of the price changes in the Store, which "
+"may occur in relation to particular Products after the Customer places an "
+"Order.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Orders can be placed via the website using "
+"the Order Form (naklisze.pl) - 24 hours a day throughout the year.\n"
+"            </li>\n"
+"            <li class = \"xli\"> In order to place an Order, the Customer is "
+"not obliged to register an Account in the Store.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The condition for placing an Order in the "
+"Store by the Customer is to read the Regulations and accept their provisions "
+"at the time of placing the Order.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The store executes Orders placed from "
+"Monday to Friday during the Store’s working hours, i.e. from 10.00 to 16.00 "
+"on business days. Orders placed on business days after 16.00, on Saturdays, "
+"Sundays and holidays, will be considered on the next business day.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Products in the promotion (sale) have a "
+"limited number of items and Orders will be processed in the order of their "
+"receipt until the stock of a given Product runs out.\n"
+"            </li>\n"
+"            "
+
+#: templates/regulations.html:130
+msgid "ZAWARCIE UMOWY SPRZEDAŻY"
+msgstr "CONCLUSION OF SALE AGREEMENT"
+
+#: templates/regulations.html:134
+msgid ""
+"\n"
+"            <li class=\"xli\">Do zawarcia Umowy Sprzedaży, niezbędne jest "
+"wcześniejsze złożenie przez Klienta Zamówienia udostępnionym przez "
+"Sprzedawcę sposobem, zgodnie z § 3 pkt 6 oraz 8.\n"
+"            </li>\n"
+"            <li class=\"xli\">Po złożeniu Zamówienia Sprzedawca niezwłocznie "
+"potwierdza jego otrzymanie.\n"
+"            </li>\n"
+"            <li class=\"xli\">Dopiero potwierdzenie przyjęcia Zamówienia do "
+"realizacji powoduje związanie Klienta jego Zamówieniem. Potwierdzenie "
+"otrzymania oraz przyjęcie Zamówienia do realizacji następuje poprzez "
+"przesłanie wiadomości e-mail.\n"
+"            </li>\n"
+"            <li class=\"xli\">Potwierdzenie przyjęcia Zamówienia do "
+"realizacji zawiera:\n"
+"                <ol class=\"xol\">\n"
+"                    <li class=\"xli\">potwierdzenie wszystkich istotnych "
+"elementów Zamówienia,\n"
+"                    </li>\n"
+"                    <li class=\"xli\">formularz odstąpienia od umowy,\n"
+"                    </li>\n"
+"                    <li class=\"xli\">niniejszy Regulamin zawierający "
+"pouczenie o prawie do odstąpienia od umowy.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li class=\"xli\">Z chwilą otrzymania przez Klienta wiadomości e-"
+"mail, o której mowa w pkt 4 zostaje zawarta Umowa Sprzedaży między Klientem, "
+"a Sprzedawcą.\n"
+"            </li>\n"
+"            <li class=\"xli\">Każda Umowa Sprzedaży będzie potwierdzana "
+"dowodem zakupu (paragon), który będzie dołączany do Produktu.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"            <li class = \"xli\"> To conclude a Sales Agreement, it is "
+"necessary for the Customer to submit an Order made available by the Seller "
+"in advance, in accordance with § 3 points 6 and 8.\n"
+"            </li>\n"
+"            <li class = \"xli\"> After placing the Order, the Seller "
+"immediately confirms its receipt.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Only confirmation of acceptance of the "
+"Order for implementation causes the Customer to be bound by its Order. "
+"Confirmation of receipt and acceptance of the Order for implementation is "
+"effected by sending an e-mail.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Confirmation of accepting the Order for "
+"execution includes:\n"
+"                <ol class = \"xol\">\n"
+"                    <li class = \"xli\"> confirmation of all important "
+"elements of the Order,\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> withdrawal form,\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> these Regulations containing "
+"instructions on the right to withdraw from the contract.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li class = \"xli\"> Upon receipt by the Customer of the e-mail "
+"referred to in point 4, a Sales Agreement is concluded between the Customer "
+"and the Seller.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Each Sale Agreement will be confirmed by "
+"proof of purchase (receipt), which will be attached to the Product.\n"
+"            </li>\n"
+"            "
+
+#: templates/regulations.html:160
+msgid "SPOSOBY PŁATNOŚCI"
+msgstr "PAYMENT METHODS"
+
+#: templates/regulations.html:164
+msgid ""
+"\n"
+"            <li class=\"xli\">Sprzedawca udostępnia następujący sposób "
+"płatności:\n"
+"- płatność przelewem tradycyjnym na rachunek bankowy Sprzedawcy.\n"
+"W przypadku płatności przelewem tradycyjnym, wpłaty należy dokonać na "
+"rachunek bankowy numer: 94 1140 2004 0000 3102 7763 7066 (Bank mBank S.A.) "
+"MAREK BICZYSKO, ul. Lotnicza 145 lok. B60, 54-132 Wrocław, NIP: 7511717671. "
+"W tytule przelewu należy wpisać \"Zamówienie nr X\", gdzie X to wygenerowany "
+"unikalny numer zamówienia.\n"
+"            </li>\n"
+"            <li class=\"xli\">Klient zobowiązany jest do dokonania zapłaty "
+"ceny z tytułu Umowy Sprzedaży w terminie 7 dni roboczych od dnia jej "
+"zawarcia, chyba że Umowa Sprzedaży stanowi inaczej.\n"
+"            </li>\n"
+"            <li class=\"xli\">Produkt zostanie wysłany dopiero po jego "
+"opłaceniu.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"             <li class = \"xli\"> Seller provides the following payment "
+"method:\n"
+"- payment by traditional bank transfer to the Seller’s bank account.\n"
+"In the case of payment by a traditional transfer, the payment should be made "
+"to the bank account number: 94 1140 2004 0000 3102 7763 7066 (Bank mBank S."
+"A.) MAREK BICZYSKO, ul. Lotnicza 145 B60, 54-132 Wrocław, NIP: 7511717671. "
+"In the transfer title, enter „Order No. X”, where X is the unique order "
+"number generated.\n"
+"             </li>\n"
+"             <li class = \"xli\"> The Customer is obliged to pay the price "
+"under the Purchase Agreement within 7 business days from the date of its "
+"conclusion, unless the Sale Agreement provides otherwise.\n"
+"             </li>\n"
+"             <li class = \"xli\"> The product will be sent only after "
+"payment.\n"
+"             </li>"
+
+#: templates/regulations.html:178
+msgid "KOSZT, TERMIN I SPOSOBY DOSTAWY PRODUKTU"
+msgstr "COST, TIME AND METHODS OF DELIVERY OF THE PRODUCT"
+
+#: templates/regulations.html:182
+msgid ""
+"\n"
+"            <li class=\"xli\">Koszty dostawy Produktu są ustalane w trakcie "
+"procesu składania Zamówienia i są uzależnione od wyboru sposobu płatności "
+"oraz sposobu dostawy zakupionego Produktu.\n"
+"            </li>\n"
+"            <li class=\"xli\">Na termin dostawy Produktu składa się czas "
+"kompletowania Produktu oraz czas dostawy Produktu przez przewoźnika:\n"
+"                <ol class=\"xol\">\n"
+"                    <li class=\"xli\">Czas kompletowania Produktu wynosi 3 "
+"dni robocze.\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Dostawa Produktu przez przewoźnika "
+"następuje w terminie przez niego deklarowanym tj. od 1 do 2 dni roboczych w "
+"przypadku wysyłki krajowej, do 3 tygodni w przypadku wysyłki zagranicznej "
+"(dostawa następuje wyłącznie w dni robocze z wyłączeniem sobót, niedziel i "
+"świąt).\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li class=\"xli\">Zakupione w Sklepie Produkty są wysyłane za "
+"pośrednictwem firmy kurierskiej DPD w przypadku wysyłki wewnątrz Unii "
+"Europejskiej lub Poczty Polskiej poza UE.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"             <li class = \"xli\"> The delivery costs of the Product are "
+"determined during the order placement process and depend on the choice of "
+"payment method and the method of delivery of the purchased Product.\n"
+"             </li>\n"
+"             <li class = \"xli\"> The date of delivery of the Product "
+"consists of the time of completing the Product and the time of delivery of "
+"the Product by the carrier:\n"
+"                 <ol class = \"xol\">\n"
+"                     <li class = \"xli\"> Completion time of the Product is "
+"3 business days.\n"
+"                     </li>\n"
+"                     <li class = \"xli\"> Delivery of the Product by the "
+"carrier takes place on the date declared by him, i.e. from 1 to 2 business "
+"days in case of domestic shipment, up to 3 weeks in case of international "
+"shipment (delivery takes place only on business days excluding Saturdays, "
+"Sundays and holidays).\n"
+"                     </li>\n"
+"                 </ol>\n"
+"             </li>\n"
+"<li class = \"xli\"> Products purchased from the Store are sent via DPD "
+"courier in case of domestic and inside UE shipment and Poczta Polska in case "
+"of international shipment outside UE. \n"
+"             </li>\n"
+"             "
+
+#: templates/regulations.html:200
+msgid "REKLAMACJA PRODUKTU"
+msgstr "PRODUCT COMPLAINT"
+
+#: templates/regulations.html:204
+msgid ""
+"\n"
+"            <li class=\"xli\">Reklamacja z tytułu rękojmi.\n"
+"                <ol class=\"xol\">\n"
+"                    <li class=\"xli\">Podstawa i zakres odpowiedzialności "
+"Sprzedawcy wobec Klienta będącego Konsumentem, z tytułu rękojmi obejmującej "
+"wady fizyczne i prawne, są określone w ustawie Kodeks cywilny z dnia 23 "
+"kwietnia 1964 r. (Dz. U. nr 16, poz. 93 ze zm.).\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Zawiadomienia o wadach dotyczących "
+"Produktu oraz zgłoszenie odpowiedniego żądania można dokonać za "
+"pośrednictwem poczty elektronicznej na adres: naklisze@gmail.com lub "
+"pisemnie na adres: ul. Lotnicza 145 lok. B60, 54-132 Wrocław.\n"
+"                    </li>\n"
+"                    <li class=\"xli\">W powyższej wiadomości w formie "
+"pisemnej lub elektronicznej należy podać jak najwięcej informacji i "
+"okoliczności dotyczących przedmiotu reklamacji, w szczególności rodzaj i "
+"datę wystąpienia nieprawidłowości oraz dane kontaktowe. Podane informacje "
+"znacznie ułatwią i przyspieszą rozpatrzenie reklamacji przez Sprzedawcę.\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Dla oceny wad fizycznych Produktu, "
+"należy go dostarczyć na adres: ul. Lotnicza 145 lok. B60, 54-132 Wrocław.\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Sprzedawca ustosunkuje się do żądania "
+"Klienta niezwłocznie, nie później niż w terminie 14 dni od zgłoszenia.\n"
+"                    </li>\n"
+"                    <li class=\"xli\">W przypadku reklamacji Klienta "
+"będącego Konsumentem – nierozpatrzenie reklamacji w terminie 14 dni od "
+"zgłoszenia jest jednoznaczne z jej uwzględnieniem. W związku z uzasadnioną "
+"reklamacją Klienta będącego Konsumentem Sprzedawca pokrywa koszty odbioru, "
+"dostawy i wymiany Produktu na wolny od wad.\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Odpowiedź na reklamację jest "
+"przekazywana Konsumentowi na papierze lub innym trwałym nośniku.\n"
+"                    </li>\n"
+"                </ol>\n"
+"                "
+msgstr ""
+"\n"
+"                <li class = \"xli\"> Warranty complaint.\n"
+"                <ol class = \"xol\">\n"
+"                    <li class = \"xli\"> The basis and scope of the Seller’s "
+"liability towards the Customer being a Consumer, under the warranty covering "
+"physical and legal defects, are specified in the Civil Code of 23 April 1964 "
+"(Journal of Laws No. 16, item. 93 with changes).\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> Notices about defects regarding the "
+"Product and the submission of a relevant request may be made via email to "
+"the following address: naklisze@gmail.com or in writing to the following "
+"address: ul. Lotnicza 145 B60, 54-132 Wrocław.\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> In the above message in a written "
+"or electronic form should provide as much information and circumstances "
+"regarding the subject of the complaint, in particular the type and date of "
+"occurrence of irregularities and contact details. The information provided "
+"will significantly facilitate and accelerate the complaint handling by the "
+"Seller.\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> For the assessment of physical "
+"defects of the Product, it should be delivered to the following address: ul. "
+"Lotnicza 145 B60, 54-132 Wrocław.\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> The Seller will respond to the "
+"Customer’s request promptly, no later than within 14 days of the "
+"notification.\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> In the case of a complaint of a "
+"Customer who is a Consumer - failure to examine a complaint within 14 days "
+"of the notification is synonymous with its consideration. In connection with "
+"a justified complaint of the Customer being a Consumer, the Seller covers "
+"the costs of collection, delivery and replacement of the Product for free "
+"from defects.\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> The response to the complaint is "
+"passed on to the Consumer on paper or other durable medium.\n"
+"                    </li>\n"
+"                </ol>\n"
+"                "
+
+#: templates/regulations.html:228
+msgid "PRAWO ODSTĄPIENIA OD UMOWY"
+msgstr "THE RIGHT OF WITHDRAWAL FROM THE AGREEMENT"
+
+#: templates/regulations.html:232
+msgid ""
+"\n"
+"            <li class=\"xli\">Z zastrzeżeniem pkt 10 niniejszego paragrafu, "
+"Klient będący jednocześnie Konsumentem, który zawarł umowę na odległość, "
+"może od niej odstąpić bez podania przyczyn, składając stosowne oświadczenie "
+"w terminie 14 dni. Do zachowania tego terminu wystarczy wysłanie "
+"udostępnionego przez Sklep oświadczenia o odstąpieniu od umowy. "
+"Wygenerowanie oświadczenia jest możliwe za pośrednictwem generatora "
+"dokumentów  dostępnego <a href=\"https://www.lexlab.pl/certyfikaty/LWS-"
+"f64e3543cd864993f3e3568f23eebfc0\">TUTAJ</a>.\n"
+"            </li>\n"
+"            <li class=\"xli\">W razie odstąpienia od umowy, Umowa Sprzedaży "
+"jest uważana za niezawartą, a Konsument ma obowiązek zwrócić Produkt "
+"Sprzedawcy lub przekazać go osobie upoważnionej przez Sprzedawcę do odbioru "
+"niezwłocznie, jednak nie później niż 14 dni od dnia, w którym odstąpił od "
+"umowy, chyba że Sprzedawca zaproponował, że sam odbierze Produkt. Do "
+"zachowania terminu wystarczy odesłanie Produktu przed jego upływem.\n"
+"            </li>\n"
+"            <li class=\"xli\">W przypadku odstąpienia od Umowy Sprzedaży "
+"należy dokonać zwrotu Produktu na adres: ul. Lotnicza 145 lok. B60, 54-132 "
+"Wrocław.\n"
+"            </li>\n"
+"            <li class=\"xli\">Konsument ponosi odpowiedzialność za "
+"zmniejszenie wartości Produktu będące wynikiem korzystania z niego w sposób "
+"wykraczający poza konieczny do stwierdzenia charakteru, cech i "
+"funkcjonowania Produktu.\n"
+"            </li>\n"
+"            <li class=\"xli\">Z zastrzeżeniem pkt 6 oraz 8 Sprzedawca dokona "
+"zwrotu wartości Produktu wraz z kosztami jego dostawy przy użyciu takiego "
+"samego sposobu zapłaty, jakiego użył Konsument chyba że Konsument wyraźnie "
+"zgodził się na inny sposób zwrotu, który nie wiąże się dla niego z żadnymi "
+"kosztami.\n"
+"            </li>\n"
+"            <li class=\"xli\">Jeżeli Konsument wybrał sposób dostawy "
+"Produktu inny niż najtańszy zwykły sposób dostarczenia oferowany przez "
+"Sklep, Sprzedawca nie jest zobowiązany do zwrotu Konsumentowi poniesionych "
+"przez niego dodatkowych kosztów.\n"
+"            </li>\n"
+"            <li class=\"xli\">Jeżeli Sprzedawca nie zaproponował, że sam "
+"odbierze Produkt od Konsumenta, może wstrzymać się ze zwrotem płatności "
+"otrzymanych od Konsumenta do chwili otrzymania rzeczy z powrotem lub "
+"dostarczenia przez Konsumenta dowodu jej odesłania, w zależności od tego, "
+"które zdarzenie nastąpi wcześniej.\n"
+"            </li>\n"
+"            <li class=\"xli\">Konsument odstępujący od Umowy Sprzedaży, "
+"zgodnie z pkt 1 niniejszego paragrafu, ponosi jedynie koszty odesłania "
+"Produktu do Sprzedawcy.\n"
+"            </li>\n"
+"            <li class=\"xli\">Termin czternastodniowy, w którym Konsument "
+"może odstąpić od umowy, liczy się od dnia w którym Konsument objął Produkt w "
+"posiadanie, a w przypadku usługi od dnia zawarcia umowy.\n"
+"            </li>\n"
+"            <li class=\"xli\">Prawo odstąpienia od umowy zawartej na "
+"odległość nie przysługuje Konsumentowi w wypadku Umowy Sprzedaży:\n"
+"                <ol class=\"xol\">\n"
+"                    <li class=\"xli\">w której przedmiotem świadczenia jest "
+"rzecz nieprefabrykowana, wyprodukowana według specyfikacji Konsumenta lub "
+"służąca zaspokojeniu jego zindywidualizowanych potrzeb,\n"
+"                    </li>\n"
+"                    <li class=\"xli\">w której przedmiotem świadczenia jest "
+"rzecz dostarczana w zapieczętowanym opakowaniu, której po otwarciu "
+"opakowania nie można zwrócić ze względu na ochronę zdrowia lub ze względów "
+"higienicznych, jeżeli opakowanie zostało otwarte po dostarczeniu,\n"
+"                    </li>\n"
+"                    <li class=\"xli\">w której przedmiotem świadczenia są "
+"rzeczy, które po dostarczeniu, ze względu na swój charakter, "
+"zostają nierozłącznie połączone z innymi rzeczami,\n"
+"                    </li>\n"
+"                    <li class=\"xli\">w której przedmiotem świadczenia jest "
+"usługa, jeżeli Sprzedawca wykonał w pełni usługę za wyraźną zgodą "
+"Konsumenta, który został poinformowany przed rozpoczęciem świadczenia, że po "
+"spełnieniu świadczenia przez Sprzedawcę utraci prawo odstąpienia od umowy.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li class=\"xli\">Prawo odstąpienia od Umowy Sprzedaży "
+"przysługuje zarówno Sprzedawcy, jak i Klientowi (Konsumentowi), w przypadku "
+"niewykonania przez drugą stronę umowy swojego zobowiązania w terminie ściśle "
+"określonym.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"            <li class = \"xli\"> Subject to clause 10 of this paragraph, the "
+"Customer who is also a Consumer who concluded a distance contract may "
+"withdraw from it without giving reasons, by submitting a relevant statement "
+"within 14 days. To comply with this deadline, it is sufficient to send a "
+"statement of withdrawal from the contract made available by the Store. "
+"Generating the statement is possible through the document generator "
+"available <a href=\"https://www.lexlab.pl/certyfikaty/LWS-"
+"f64e3543cd864993f3e3568f23eebfc0\"> HERE </a>.\n"
+"            </li>\n"
+"            <li class = \"xli\"> In the event of withdrawal from the "
+"contract, the Sales Agreement is considered void and the Consumer is obliged "
+"to return the Product to the Seller or give it to the person authorized by "
+"the Seller to receive it immediately, but no later than 14 days from the "
+"date on which he has withdrawn from the contract, unless the Seller has "
+"offered to pick up the Product himself. To meet the deadline, it is enough "
+"to return the Product before its expiry.\n"
+"            </li>\n"
+"            <li class = \"xli\"> In case of withdrawal from the Sales "
+"Agreement, the Product should be returned to the following address: ul. "
+"Lotnicza 145 B60, 54-132 Wrocław.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The consumer is liable for the decrease in "
+"the value of the Product as a result of using it in a way that goes beyond "
+"what is necessary to establish the nature, characteristics and functioning "
+"of the Product.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Subject to points 6 and 8, the Seller will "
+"refund the value of the Product along with the cost of its delivery using "
+"the same method of payment as used by the Consumer unless the consumer has "
+"expressly agreed to a different method of return that is not binding for him "
+"with no costs.\n"
+"            </li>\n"
+"            <li class = \"xli\"> If the Consumer has chosen a method of "
+"delivery of the Product other than the cheapest usual delivery method "
+"offered by the Store, the Seller is not obliged to refund the additional "
+"costs incurred by the Consumer.\n"
+"            </li>\n"
+"            <li class = \"xli\"> If the Seller has not offered to pick up "
+"the Product from the Consumer, he may withhold the refund of payments "
+"received from the Consumer until he receives the item back or the Consumer "
+"provides proof of its return, depending on which event it will happen "
+"sooner.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The Consumer withdrawing from the Sales "
+"Agreement, in accordance with item 1 of this paragraph, bears only the cost "
+"of sending the Product back to the Seller.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The fourteen-day period in which the "
+"consumer may withdraw from the contract, counts from the day on which the "
+"consumer took possession of the product, and in the case of the service from "
+"the date of the contract.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The right to withdraw from a distance "
+"contract is not payable to the Consumer in the case of a Sales Agreement:\n"
+"                <ol class = \"xol\">\n"
+"                    <li class = \"xli\"> in which the subject of the service "
+"is a non-prefabricated item, manufactured according to the Consumer’s "
+"specification or serving to satisfy his individual needs,\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> in which the object of the service "
+"is an item delivered in a sealed package, which after opening the packaging "
+"can not be returned due to health protection or hygiene reasons, if the "
+"packaging was opened after delivery,\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> in which the object of the service "
+"are things that after delivery, due to their nature, are inseparably "
+"connected with other things,\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> in which the object of the service "
+"is a service, if the Seller has fully provided the service with the express "
+"consent of the Consumer who was informed before the provision that he would "
+"lose the right to withdraw from the contract after the performance of the "
+"service.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li class = \"xli\"> The right to withdraw from the Sales "
+"Agreement is vested in both the Seller and the Customer (the Consumer) in "
+"the event of the other party failing to fulfill its obligations within a "
+"strictly specified period.\n"
+"            </li>\n"
+"            "
+
+#: templates/regulations.html:271
+msgid "RODZAJ I ZAKRES USŁUG ELEKTRONICZNYCH"
+msgstr "TYPE AND SCOPE OF ELECTRONIC SERVICES"
+
+#: templates/regulations.html:275
+msgid ""
+"\n"
+"            <li class=\"xli\">Usługodawca umożliwia za pośrednictwem Sklepu "
+"korzystanie z Usług Elektronicznych takich jak:\n"
+"                <ol class=\"xol\">\n"
+"                    <li class=\"xli\">zawieranie Umów Sprzedaży Produktu,\n"
+"                    </li>\n"
+"                    <li class=\"xli\">prowadzenie Konta w Sklepie,\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Newsletter.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li class=\"xli\">Świadczenie Usług Elektronicznych na rzecz "
+"Usługobiorców w Sklepie odbywa się na warunkach określonych w Regulaminie.\n"
+"            </li>\n"
+"            <li class=\"xli\">Usługodawca ma prawo do zamieszczania na "
+"stronie internetowej Sklepu treści reklamowych. Treści te, stanowią "
+"integralną część Sklepu i prezentowanych w nim materiałów.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"             <li class = \"xli\"> The Service Provider allows the use of "
+"Electronic Services via the Store, such as:\n"
+"                 <ol class = \"xol\">\n"
+"                     <li class = \"xli\"> conclusion of Product Sales "
+"Agreements,\n"
+"                     </li>\n"
+"                     <li class = \"xli\"> keeping an account in the store,\n"
+"                     </li>\n"
+"                     <li class = \"xli\"> Newsletter.\n"
+"                     </li>\n"
+"                 </ol>\n"
+"             </li>\n"
+"             <li class = \"xli\"> Provision of Electronic Services to "
+"Service Users in the Store is carried out on the terms specified in the "
+"Regulations.\n"
+"             </li>\n"
+"             <li class = \"xli\"> The Service Provider has the right to post "
+"advertising content on the Store’s website. These contents form an integral "
+"part of the Store and the materials presented therein.\n"
+"             </li>\n"
+"             "
+
+#: templates/regulations.html:295
+msgid ""
+"WARUNKI ŚWIADCZENIA I ZAWIERANIA UMÓW O ŚWIADCZENIE USŁUG ELEKTRONICZNYCH"
+msgstr ""
+"CONDITIONS FOR THE PROVISION AND CONCLUSION OF AGREEMENTS FOR THE PROVISION "
+"OF ELECTRONIC SERVICES"
+
+#: templates/regulations.html:299
+msgid ""
+"\n"
+"            <li class=\"xli\">Świadczenie Usług Elektronicznych określonych "
+"w § 9 pkt 1 Regulaminu przez Usługodawcę jest nieodpłatne.\n"
+"            </li>\n"
+"            <li class=\"xli\">Okres na jaki umowa zostaje zawarta:\n"
+"                <ol class=\"xol\">\n"
+"                    <li class=\"xli\">umowa o świadczenie Usługi "
+"Elektronicznej polegającej na prowadzeniu Konta w Sklepie zawierana jest na "
+"czas nieoznaczony.\n"
+"                    </li>\n"
+"                    <li class=\"xli\">umowa o świadczenie Usługi "
+"Elektronicznej polegającej na umożliwieniu złożenia Zamówienia w Sklepie "
+"zawierana jest na czas oznaczony i ulega rozwiązaniu z chwilą złożenia "
+"Zamówienia albo zaprzestania jego składania przez Usługobiorcę.\n"
+"                    </li>\n"
+"                    <li class=\"xli\">umowa o świadczenie Usługi "
+"Elektronicznej polegającej na korzystaniu z Newslettera zawierana jest na "
+"czas nieoznaczony.\n"
+"                    </li>\n"
+"                </ol>\n"
+"\n"
+"            </li>\n"
+"            <li class=\"xli\">Wymagania techniczne niezbędne do współpracy z "
+"systemem teleinformatycznym, którym posługuje się Usługodawca:\n"
+"                <ol class=\"xol\">\n"
+"                    <li class=\"xli\">komputer (lub urządzenie mobilne) z "
+"dostępem do Internetu,\n"
+"                    </li>\n"
+"                    <li class=\"xli\">dostęp do poczty elektronicznej,\n"
+"                    </li>\n"
+"                    <li class=\"xli\">przeglądarka internetowa,\n"
+"                    </li>\n"
+"                    <li class=\"xli\">włączenie w przeglądarce internetowej "
+"Cookies oraz Javascript.\n"
+"                    </li>\n"
+"                </ol>\n"
+"\n"
+"            </li>\n"
+"            <li class=\"xli\">Usługobiorca zobowiązany jest do korzystania "
+"ze Sklepu w sposób zgodny z prawem i dobrymi obyczajami mając na uwadze "
+"poszanowanie dóbr osobistych i praw własności intelektualnej osób trzecich.\n"
+"            </li>\n"
+"            <li class=\"xli\">Usługobiorca zobowiązany jest do wprowadzania "
+"danych zgodnych ze stanem faktycznym.\n"
+"            </li>\n"
+"            <li class=\"xli\">Usługobiorcę obowiązuje zakaz dostarczania "
+"treści o charakterze bezprawnym.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"            <li class = \"xli\"> The provision of Electronic Services "
+"specified in § 9 point 1 of the Regulations by the Service Provider is free "
+"of charge.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Period for which the contract is "
+"concluded:\n"
+"                <ol class = \"xol\">\n"
+"                    <li class = \"xli\"> the contract for the provision of "
+"Electronic Services consisting in keeping an Account in the Store is "
+"concluded for an indefinite period.\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> the contract for the provision of "
+"Electronic Services consisting in the possibility of placing an order in the "
+"store is concluded for a definite period of time and is terminated upon "
+"submission of the Order or cessation of its submission by the Customer.\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> the contract for the provision of "
+"Electronic Services involving the use of the Newsletter is concluded for an "
+"indefinite period.\n"
+"                    </li>\n"
+"                </ol>\n"
+"\n"
+"            </li>\n"
+"            <li class = \"xli\"> Technical requirements necessary to "
+"cooperate with the ICT system used by the Service Provider:\n"
+"                <ol class = \"xol\">\n"
+"                    <li class = \"xli\"> computer (or mobile device) with "
+"Internet access,\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> access to email,\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> web browser,\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> enable Cookies and Javascript in "
+"the browser.\n"
+"                    </li>\n"
+"                </ol>\n"
+"\n"
+"            </li>\n"
+"            <li class = \"xli\"> The Client is obliged to use the Store in a "
+"manner consistent with the law and morality with respect for personal rights "
+"and intellectual property rights of third parties.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The Client is obliged to enter data "
+"consistent with the actual state.\n"
+"            </li>\n"
+"            <li class = \"xli\"> The recipient is prohibited from providing "
+"unlawful content.\n"
+"            </li>\n"
+"            "
+
+#: templates/regulations.html:337
+msgid "REKLAMACJE ZWIĄZANE ZE ŚWIADCZENIEM USŁUG ELEKTRONICZNYCH"
+msgstr "COMPLAINTS RELATING TO THE PROVISION OF ELECTRONIC SERVICES"
+
+#: templates/regulations.html:341
+msgid ""
+"\n"
+"            <li class=\"xli\">Reklamacje związane ze świadczeniem Usług "
+"Elektronicznych za pośrednictwem Sklepu Usługobiorca może składać za "
+"pośrednictwem poczty elektronicznej na adres: naklisze@gmail.com.\n"
+"            </li>\n"
+"            <li class=\"xli\">W powyższej wiadomości e-mail, należy podać "
+"jak najwięcej informacji i okoliczności dotyczących przedmiotu reklamacji, w "
+"szczególności rodzaj i datę wystąpienia nieprawidłowości oraz dane "
+"kontaktowe. Podane informacje znacznie ułatwią i przyspieszą rozpatrzenie "
+"reklamacji przez Usługodawcę.\n"
+"            </li>\n"
+"            <li class=\"xli\">Rozpatrzenie reklamacji przez Usługodawcę "
+"następuje niezwłocznie, nie później niż w terminie 14 dni.\n"
+"            </li>\n"
+"            <li class=\"xli\">Odpowiedź Usługodawcy w sprawie reklamacji "
+"jest wysyłana na adres e-mail Usługobiorcy podany w zgłoszeniu reklamacyjnym "
+"lub w inny podany przez Usługobiorcę sposób.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"             <li class = \"xli\"> Complaints related to the provision of "
+"Electronic Services via the Store, the Customer may submit via e-mail to the "
+"following address: naklisze@gmail.com.\n"
+"             </li>\n"
+"             <li class = \"xli\"> In the above e-mail, please provide as "
+"much information and circumstances regarding the subject of the complaint, "
+"in particular the type and date of occurrence of irregularities and contact "
+"details. The information provided will significantly simplify and speed up "
+"the consideration of the complaint by the Service Provider.\n"
+"             </li>\n"
+"             <li class = \"xli\"> Consideration of the complaint by the "
+"Service Provider takes place immediately, no later than within 14 days.\n"
+"             </li>\n"
+"             <li class = \"xli\"> The Service Provider’s response to the "
+"complaint is sent to the Customer’s e-mail address provided in the complaint "
+"form or in another way provided by the Client.\n"
+"             </li>\n"
+"             "
+
+#: templates/regulations.html:355
+msgid "WARUNKI ROZWIĄZYWANIA UMÓW O ŚWIADCZENIE USŁUG ELEKTRONICZNYCH"
+msgstr ""
+"CONDITIONS FOR SOLVING CONTRACTS FOR THE PROVISION OF ELECTRONIC SERVICES"
+
+#: templates/regulations.html:359
+msgid ""
+"\n"
+"            <li class=\"xli\">Wypowiedzenie umowy o świadczenie Usługi "
+"Elektronicznej:\n"
+"                <ol class=\"xol\">\n"
+"                    <li class=\"xli\">Wypowiedzeniu może ulec umowa o "
+"świadczenie Usługi Elektronicznej o charakterze ciągłym i bezterminowym (np. "
+"prowadzenie Konta).\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Usługobiorca może wypowiedzieć umowę "
+"ze skutkiem natychmiastowym i bez wskazywania przyczyn poprzez przesłanie "
+"stosownego oświadczenia za pośrednictwem poczty elektronicznej na adres: "
+"naklisze@gmail.com.\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Usługodawca może wypowiedzieć umowę o "
+"świadczenie Usługi Elektronicznej o charakterze ciągłym i bezterminowym w "
+"przypadku, gdy Usługobiorca narusza Regulamin, w szczególności, gdy "
+"dostarcza treści o charakterze bezprawnym po bezskutecznym wcześniejszym "
+"wezwaniu do zaprzestania naruszeń z wyznaczeniem odpowiedniego terminu. "
+"Umowa w takim wypadku wygasa po upływie 7 dni od dnia złożenia oświadczenia "
+"woli o jej wypowiedzeniu (okres wypowiedzenia).\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Wypowiedzenie prowadzi do ustania "
+"stosunku prawnego ze skutkiem na przyszłość.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li class=\"xli\">Usługodawca i Usługobiorca mogą rozwiązać "
+"umowę o świadczenie Usługi Elektronicznej w każdym czasie w drodze "
+"porozumienia stron.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"                <li class = \"xli\"> Termination of the contract for the "
+"provision of Electronic Services:\n"
+"                <ol class = \"xol\">\n"
+"                    <li class = \"xli\"> A contract for the provision of an "
+"Electronic Service of a continuous and unlimited duration (eg Account "
+"keeping) may be terminated.\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> The customer can terminate the "
+"contract with immediate effect and without indicating the reasons by sending "
+"an appropriate statement via e-mail to the following address: naklisze@gmail."
+"com.\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> The Service Provider may terminate "
+"the agreement for the provision of Electronic Services of a continuous and "
+"indefinite nature in the event that the Service User violates the "
+"Regulations, in particular when it provides illegal content after "
+"ineffective prior request to cease infringements with an appointment. In "
+"such a case, the contract expires after 7 days from the date of submitting "
+"the declaration of will on its termination (notice period).\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> Termination leads to the "
+"termination of the legal relationship with effect for the future.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li class = \"xli\"> Service Provider and Service Recipient may "
+"terminate the contract for the provision of Electronic Services at any time "
+"by agreement of the parties.\n"
+"            </li>\n"
+"                "
+
+#: templates/regulations.html:379
+msgid "WŁASNOŚĆ INTELEKTUALNA"
+msgstr "INTELLECTUAL PROPERTY"
+
+#: templates/regulations.html:383
+msgid ""
+"\n"
+"            <li class=\"xli\">Wszystkie treści zamieszczone na stronie "
+"internetowej pod adresem naklisze.pl  korzystają z ochrony prawnoautorskiej "
+"i (z zastrzeżeniem § 14 pkt 3 oraz elementów wykorzystywanych na zasadzie "
+"licencji, przeniesienia praw autorskich lub dozwolonego użytku) są "
+"własnością Marka Biczysko wykonującego działalność gospodarczą pod firmą "
+"MAREK BICZYSKO, ul. Lotnicza 145 lok. B60, 54-132 Wrocław, NIP: 7511717671, "
+"REGON: 380218730. Usługobiorca ponosi pełną odpowiedzialność za szkodę "
+"wyrządzoną Usługodawcy, będącą następstwem użycia jakiejkolwiek zawartości "
+"strony naklisze.pl , bez zgody Usługodawcy.\n"
+"            </li>\n"
+"            <li class=\"xli\">Jakiekolwiek wykorzystanie przez kogokolwiek, "
+"bez wyraźnej pisemnej zgody Usługodawcy, któregokolwiek z elementów "
+"składających się na treść oraz zawartość strony naklisze.pl  stanowi "
+"naruszenie prawa autorskiego przysługującego Usługodawcy i skutkuje "
+"odpowiedzialnością cywilnoprawną oraz karną.\n"
+"            </li>\n"
+"            <li class=\"xli\">Wszystkie nazwy handlowe, nazwy Produktów, "
+"nazwy firm i ich logo użyte na stronie internetowej Sklepu pod adresem "
+"naklisze.pl  należą do ich właścicieli i są używane wyłącznie w celach "
+"identyfikacyjnych. Mogą być one zastrzeżonymi znakami towarowymi. Wszystkie "
+"materiały, opisy i zdjęcia prezentowane na stronie internetowej Sklepu pod "
+"adresem  naklisze.pl  użyte są w celach informacyjnych.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"            <li class = \"xli\"> All content posted on the website naklisze."
+"pl use copyright protection and (subject to § 14 item 3 and elements used "
+"under license, transfer of copyright or fair use) are the property of Marek "
+"Biczysko executing economic activity under the name MAREK BICZYSKO, ul. "
+"Lotnicza 145 B60, 54-132 Wrocław, NIP: 7511717671, REGON: 380218730. The "
+"Service Recipient bears full responsibility for the damage caused to the "
+"Service Provider, resulting from the use of any content naklisze.pl, without "
+"the consent of the Service Provider.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Any use by anyone, without the express "
+"written consent of the Service Provider, any of the elements constituting "
+"the content and content naklisze.pl is a violation of the copyright of the "
+"Service Provider and results in civil and criminal liability.\n"
+"            </li>\n"
+"            <li class = \"xli\"> All trade names, product names, company "
+"names and their logos used on the Store website at naklisze.pl belong to "
+"their owners and are used only for identification purposes. They may be "
+"registered trademarks. All materials, descriptions and photos presented on "
+"the Store’s website at naklisze.pl are used for informational purposes.\n"
+"            </li>\n"
+"            "
+
+#: templates/regulations.html:399
+msgid ""
+"\n"
+"            <li class=\"xli\">Umowy zawierane poprzez Sklep zawierane są "
+"zgodnie z prawem polskim.\n"
+"            </li>\n"
+"            <li class=\"xli\">W przypadku niezgodności jakiejkolwiek części "
+"Regulaminu z obowiązującym prawem, w miejsce zakwestionowanego przepisu "
+"Regulaminu zastosowanie mają właściwe przepisy prawa polskiego.\n"
+"            </li>\n"
+"            <li class=\"xli\">Wszelkie spory wynikłe z Umów Sprzedaży między "
+"Sklepem, a Konsumentami będą rozstrzygane w pierwszej kolejności na drodze "
+"negocjacji, z intencją polubownego zakończenia sporu, z uwzględnieniem "
+"ustawy o pozasądowym rozwiązywaniu sporów konsumenckich. Jeśli jednak nie "
+"byłoby to możliwe, lub też byłoby niesatysfakcjonujące dla którejkolwiek ze "
+"stron, spory będą rozstrzygane przez właściwy sąd powszechny, zgodnie z pkt "
+"4 niniejszego paragrafu.\n"
+"            </li>\n"
+"            <li class=\"xli\">Sądowe rozstrzyganie sporów:\n"
+"                <ol class=\"xol\">\n"
+"                    <li class=\"xli\">Ewentualne spory powstałe pomiędzy "
+"Usługodawcą, a Usługobiorcą (Klientem) będącym jednocześnie Konsumentem "
+"zostają poddane sądom właściwym zgodnie z przepisami kodeksu postępowania "
+"cywilnego z dnia 17 listopada 1964 r. (Dz. U. Nr 43, poz. 296 ze zm.).\n"
+"                    </li>\n"
+"                    <li class=\"xli\">Ewentualne spory powstałe pomiędzy "
+"Usługodawcą, a Usługobiorcą niebędącym jednocześnie Konsumentem zostają "
+"poddane sądowi właściwemu ze względu na siedzibę Usługodawcy.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li class=\"xli\">Klient będący Konsumentem ma również prawo do "
+"skorzystania z pozasądowych sposobów rozstrzygania sporów w szczególności "
+"poprzez złożenie po zakończeniu postępowania reklamacyjnego wniosku o "
+"wszczęcie mediacji lub wniosku o rozpatrzenie sprawy przez sąd polubowny "
+"(wniosek można pobrać na stronie internetowej http://www.uokik.gov.pl/"
+"download.php?plik=6223). Wykaz Stałych Polubownych Sądów Konsumenckich "
+"działających przy Wojewódzkich Inspektoratach Inspekcji Handlowej dostępny "
+"jest na stronie internetowej: http://www.uokik.gov.pl/wazne_adresy."
+"php#faq596. Konsument może skorzystać także z bezpłatnej pomocy powiatowego "
+"(miejskiego) rzecznika konsumentów lub organizacji społecznej, do której "
+"zadań statutowych należy ochrona konsumentów. Pozasądowe dochodzenie "
+"roszczeń po zakończeniu postępowania reklamacyjnego jest bezpłatne.\n"
+"            </li>\n"
+"            <li class=\"xli\">Konsument w celu polubownego rozwiązania sporu "
+"może w szczególności złożyć skargę za pośrednictwem platformy internetowej "
+"ODR (Online Dispute Resolution), dostępnej pod adresem: http://ec.europa.eu/"
+"consumers/odr/.\n"
+"            </li>\n"
+"            "
+msgstr ""
+"\n"
+"            <li class = \"xli\"> Agreements concluded through the Store are "
+"concluded in accordance with Polish law.\n"
+"            </li>\n"
+"            <li class = \"xli\"> In the event of any incompatibility of any "
+"part of the Regulations with applicable law, the relevant provisions of "
+"Polish law apply instead of the challenged provision of the Regulations.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Any disputes arising from the Sale "
+"Agreements between the Store and Consumers will be resolved in the first "
+"place through negotiations, with the intention of amicable settlement of the "
+"dispute, including the Act on Out-of-court resolution of consumer disputes. "
+"However, if it would not be possible or would be unsatisfactory for either "
+"party, disputes will be resolved by the competent common court, in "
+"accordance with item 4 of this paragraph.\n"
+"            </li>\n"
+"            <li class = \"xli\"> Judicial dispute resolution:\n"
+"                <ol class = \"xol\">\n"
+"                    <li class = \"xli\"> Any disputes arising between the "
+"Service Provider and the Customer (the Customer) who is also a Consumer "
+"shall be submitted to the competent courts in accordance with the provisions "
+"of the Code of Civil Procedure of November 17, 1964 (Journal of Laws No. 43, "
+"item 296 with changes).\n"
+"                    </li>\n"
+"                    <li class = \"xli\"> Any disputes arising between the "
+"Service Provider and the Service Recipient who is not a Consumer shall be "
+"submitted to the court competent for the seat of the Service Provider.\n"
+"                    </li>\n"
+"                </ol>\n"
+"            </li>\n"
+"            <li class = \"xli\"> Client being a Consumer also has the right "
+"to use extrajudicial dispute resolution, in particular by submitting a "
+"request for mediation or application for review of the case by the arbitral "
+"tribunal after the complaint procedure is completed (the application can be "
+"downloaded at http: //www.uokik.gov.pl/download.php?plik=6223). The list of "
+"Permanent Consumer Arbitration Courts operating at the Provincial "
+"Inspectorates of the Trade Inspection is available at the following website: "
+"http://www.uokik.gov.pl/wazne_adresy.php#faq596. The consumer may also take "
+"advantage of the free assistance of a consumer ombudsman or social "
+"organization, whose statutory tasks include consumer protection. Out-of-"
+"court claims after the complaint procedure is free.\n"
+"            </li>\n"
+"            <li class = \"xli\"> In order to amicably resolve a dispute, the "
+"consumer may, in particular, file a complaint via the online platform ODR "
+"(Online Dispute Resolution), available at: http://ec.europa.eu/consumers/"
+"odr/.\n"
+"            </li>\n"
+"            "

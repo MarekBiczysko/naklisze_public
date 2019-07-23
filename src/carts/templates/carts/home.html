@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load tags %}
+
+{% block content %}
+
+{% load static %}
+
+{% url 'carts:update' as update_cart_url %}
+{% url 'carts:checkout' as checkout_url %}
+{% url 'carts:check_availability' as check_availability_url %}
+
+
+{% include "carts/snippets/breadcrumbs.html" with page="Koszyk" %}
+
+{% if basket_products %}
+
+    <div class="d-none d-md-block">
+        <div class="container-fluid my-3 d-flex justify-content-center">
+            <div class="row justify-content-center mx-5">
+                {% for product in basket_products %}
+                    <div class="col mx-1 px-0">
+                    {% include "products/snippets/card.html" with instance=product cart=cart card_class='product_card_cart'%}<p>&nbsp</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 littleshadow">
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">{% trans "Produkt" %}</th>
+                            <th scope="col">{% trans "Cena" %}</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          {% for product in basket_products %}
+                            <tr>
+                                <th scope="row">{{ forloop.counter }}</th>
+                                <td><a class="text-dark" href="{{ product.get_absolute_url }}">{{ product.order_title }}</a></td>
+
+                                {% if product.promo_active%}
+                                    <td>{% get_promo_price product.prices %}&emsp;<strike>{% get_regular_price product.prices %}</strike></td>
+                                {% else %}
+                                    <td>{% get_regular_price product.prices %}</td>
+                                {% endif %}
+
+                                <td class="text-right">
+                                    {% if product.is_multiple %}
+                                    {% include "products/snippets/add_another.html" with product=product %}
+                                    {% endif %}
+                                </td>
+
+                                <td class="text-right">
+                                    {% include "products/snippets/remove_from_cart.html" with product=product cart=cart %}
+                                </td>
+                            </tr>
+                          {% endfor %}
+                            <tr>
+                                <th scope="row"></th>
+                                <td><p><strong>{% trans "Suma" %}</strong></p></td>
+                                <td><strong>{{ total_price }}</strong></td>
+                                <td></td>
+                                <td class="text-right">{% include "carts/snippets/checkout_start_button.html" with next_url=checkout_url %}</td>
+                            </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+{% else %}
+
+    <div class="container my-5">
+        <div class="alert alert-secondary my-5 py-5 text-center bigshadow">
+           <h3>{% trans "Twój koszyk jest pusty" %}! :(</h3>
+        </div>
+    </div>
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% load i18n %}
+{% autoescape off %}
+
+{% trans "Witaj" %} {{ user.username }},
+
+{% trans "Kliknij w poniższy link, aby dokończyć proces aktywacji konta" %}:
+
+http://{{ domain }}{% url 'accounts:activation' uidb64=uid token=token %}
+
+{% trans "Pozdrawiamy" %},
+
+naklisze.pl
+
+{% endautoescape %}

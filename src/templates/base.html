@@ -1,0 +1,42 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en" class="bg-light">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    {% block head_title %}{% endblock %}
+    <title>naklisze.pl - aparaty analogowe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="ayU6yvmKIhqLy5zGOCGKeGtxd3yscmd-GEYp3Jd9PeA" />
+      {% include "base/css.html" %}
+      {% include "base/google_analytics.html" %}
+
+  </head>
+
+  <body class="fixedbackground">
+
+    {% include "base/js.html" %}
+
+    {% include "base/infobox.html" %}
+
+    {% include "base/navbar.html" %}
+
+    <!-- {% include "base/carousel.html" %} -->
+
+    {% include "base/msg_bar.html" %}
+
+    {% block content %}{% endblock %}
+
+    {% include "base/carousel_bottom.html" %}
+
+    {% include "base/footer.html" %}
+
+    {% include "base/cookies.html" %}
+
+    {% include "base/snippets/messanger.html" %}
+
+  </body>
+
+</html>
+

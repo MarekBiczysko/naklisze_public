@@ -1,0 +1,5 @@
+{% load i18n %}
+<form class="form" method="POST" action="{% url 'carts:update' %}" > {% csrf_token %}
+    <input type="hidden" name="product" value="{{ product.id }}"/>
+    <button type="submit" class="btn text-info hovershadow" style="background-color:white;"><i class="fas fa-shopping-basket mx-2"></i>{% trans "Do koszyka" %}</button>
+</form>

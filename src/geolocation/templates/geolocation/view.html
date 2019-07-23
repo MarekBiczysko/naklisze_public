@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container my-5">
+    <table style="width:100%">
+        <tr>
+            <th class="mx-1">No.</th>
+            <th>Time</th>
+            <th>User</th>
+            <th>Ip</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>Viewed</th>
+        </tr>
+
+        {% for obj in object_list %}
+
+        <tr>
+            <td class="mx-1">{{ forloop.counter }}.</td>
+            <td>{{obj.date}}</td>
+            <td>{{obj.user}}</td>
+            <td>{{obj.ip}}</td>
+            <td>{{obj.country_name}}</td>
+            <td>{{obj.city}}</td>
+            <td>{{obj.viewed_object}}</td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+</div>
+
+{% endblock %}

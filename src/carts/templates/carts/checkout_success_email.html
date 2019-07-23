@@ -1,0 +1,96 @@
+{% load i18n %}
+{% load tags %}
+
+
+<!DOCTYPE html>
+{% autoescape off %}
+
+<html>
+    <head>
+    </head>
+    <body>
+        <h3>{% trans "Dziękujemy za zakup" %}, </h3>
+
+        <p>{% trans "Zamówienie o numerze" %} <strong>{{ success_order_id }}</strong> {% trans "zostało przekazane do realizacji" %}.</p>
+        <br>
+
+        <h4>{% trans "Zawartość zamówienia" %}:</h4>
+
+
+        {% for product in bought_products %}
+
+        <p>{{ forloop.counter }} : {{ product.order_title }} : {% if product.promo_active%}{% get_promo_price product.prices order.currency %}{% else %}{% get_regular_price product.prices order.currency %}{% endif %}</p>
+
+        {% endfor %}
+
+        <br>
+
+        <p><strong>{% trans "Koszt produktów" %}: </strong>{{ order.products_cost }}</p>
+
+        <p><strong>{% trans "Koszt przesyłki" %}: </strong>{{ order.shipping_price }}</p>
+
+        {% if order.logged_user_promo > 0 %}<p><strong>{% trans "Rabat" %}: </strong>{{ order.logged_user_promo }} %</p>
+        {% endif %}
+
+        <h4>{% trans "Całkowity koszt zamówienia" %}: {{ order.total }}</h4>
+
+        <br>
+
+        <h4>{% trans "Dane kupującego" %}:</h4>
+
+        <p>{{ order.billing_address.print_address }}</p>
+
+        <h4>{% trans "Adres wysyłki" %}:</h4>
+
+        <p>{{ order.shipping_address.print_address }}<p></p>
+
+        <br>
+
+        {% if order.comment %}
+
+            <h4>{% trans "Komentarz" %}:</h4>
+
+            <p>{{ order.comment }}<p></p>
+
+            <br>
+
+        {% endif %}
+
+        <h4>{% trans "Prosimy o dokonanie wpłaty zgodnie z poniższymi danymi" %}:</h4>
+
+        <p><strong>{% trans "Nr konta" %}: </strong>94 1140 2004 0000 3102 7763 7066</p>
+
+        <p><strong>{% trans "Kwota" %}: </strong>{{ success_order_total }}</p>
+
+        <p><strong>{% trans "Tytuł przelewu" %}: </strong>{{ success_user_email }}/{{ success_order_id }}</p>
+
+        <br>
+
+        <p>{% trans "Jeśli posiadasz konto, status swojego zamówienia możesz śledzić w" %} <a href="{{ settings_url }}">{% trans "panelu użytkownika" %}</a>.</p>
+
+
+
+        <p>{% trans "W przeciwnym przypadku możesz utworzyć konto na na adres e-mail" %} <strong>{{ success_user_email }}</strong> <a href="{{ register_url }}">{% trans "klikając tutaj" %}</a>.</p>
+
+
+        <br>
+
+        <p>{% trans "Zamówienie zostanie wysłane kurierem w przeciągu 3 dni roboczych od zaksięgowania wpłaty" %}.</p>
+
+        <br>
+        <p>--</p>
+        <p>{% trans "Pozdrawiamy" %},</p>
+        <p>naklisze.pl</p>
+
+        <br>
+
+        <div>Polub nasz <a href="https://facebook.com/naklisze">fanpage</a> i obserwuj nas na <a href="https://www.instagram.com/naklisze.pl/">Instagramie</a>!</div>
+
+        <br><br>
+        <small>{% trans "W załączniku znajduję się regulamin sklepu oraz formularz reklamacji produktu" %}</small>
+    </body>
+</html>
+
+
+
+{% endautoescape %}

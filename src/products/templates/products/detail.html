@@ -1,0 +1,279 @@
+{% extends "base_prod.html" %}
+{% load i18n %}
+{% load tags %}
+
+{% block head_title %}
+<title>naklisze.pl - aparaty analogowe - {{ object.title }}</title>
+<meta name="description" lang="pl" content="{{object.description|truncatewords:50}}" />
+<meta name=”keywords” content="{{object.tags}} aparaty analogowe aparat analog film camera dalmierz klisza na klisze 35mm kompakt kompaktowy negatyw vintage stary kliszowy połówkowy średni format komis foto fotografia analogowa" />
+{% endblock %}
+
+{% block content %}
+{% load static %}
+
+{% url 'carts:update' as update_cart_url %}
+{% url 'products:offer' as offer_url %}
+
+<script src="{% static 'js/product_detail.js' %}"></script>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item text-info"><a style="color: grey" class="fas fa-home"></a></li>
+      <li class="breadcrumb-item" ><a style="color: grey; text-decoration:none;" href="{{ offer_url }}">{% trans "Oferta" %}</a></li>
+      <li class="breadcrumb-item text-info"><a style="color: grey; text-decoration:none;" href="{{ object.get_category_url }}">{{ object.get_category_name }}</a></li>
+      <li class="breadcrumb-item text-info active">{{ object.title }}</li>
+  </ol>
+</nav>
+
+<div class="container my-5">
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingTitle">
+                <h1 class="mb-4 mt-2 text-center">
+                    {{ object.title }}
+                </h1>
+            </div>
+        </div>
+        <div class="card">
+
+            <div id="collapseOne" class="collapse show stickedCard" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+
+                <div class="row justify-content-center">
+
+                    {% if object.is_camera %}
+
+                        <div class="col-md-3 mx-3 my-3">
+                            <h6 class="text-left">{% trans "W zestawie" %}:</h6>
+                            {% for item in object.set_items %}
+                                <h6 class="text-left text-secondary">- {{ item }}</h6>
+                            {% endfor %}
+                            <div class="d-none d-block d-md-none"><hr></div>
+                        </div>
+
+                    {% endif %}
+
+                    <div class="col-md-4 my-3">
+                        {% for attr in object.print_attr %}
+                            <h6 class="text-left">{{ attr.0 }} : <span class="text-secondary">{{ attr.1 }}</span></h6>
+                        {% endfor %}
+                        <div class="d-none d-block d-md-none"><hr></div>
+                    </div>
+
+                    {% if object.id in cart.product_list %}
+                            <div class="col-4-md col-12-sm mx-3 my-3">
+                                <div class="alert alert-success bigshadow">
+                                    <strong>{% trans "Dobry wybór" %}!</strong>
+                                    {% if object.is_multiple %}
+                                    <div class="row">
+                                        <div class="col-3 ml-2 text-right" style="align-items:center; display:flex;">
+                                            {% include "products/snippets/add_another.html" with product=object %}
+                                        </div>
+                                        <div class="col text-left">
+                                            <p class="my-3">&nbsp; {% trans "kolejny do koszyka" %}</p>
+                                        </div>
+                                    </div>
+                                    {% else %}
+                                        <p class="my-2">{% trans "Produkt znajduje się w Twoim koszyku" %}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                    {% elif object.selled == True %}
+                        <div class="col-4-md col-12-sm mx-3 my-3">
+                            <div class="alert alert-secondary bigshadow">
+                                <strong>{% trans "Produkt jest już niedostępny" %} :(</strong>&emsp;{% trans "Powiadomimy Cię gdy ponownie znajdzie się w naszej ofercie" %}
+                            </div>
+                        </div>
+
+                    {% else %}
+
+                    <div class="col-4-md col-12-sm mx-3 my-3" align="center" style="">
+                        <h6 class="text-left mb-2">{% trans "Cena" %}:</h6>
+                        {% if object.promo_active %}
+                        <div class="my-1">
+                            <span class="text-secondary font-weight-bold" style="top: 5px;">&emsp;<strike>{% get_regular_price object.prices %}</strike></span>
+                            <span class="text-success font-weight-bold" style="top:-20px;">&emsp;{% get_promo_price object.prices %}</span>
+                        </div>
+                        {% else %}
+                            <h5 class="text-success my-2">&emsp;{% get_regular_price object.prices %}</h5>
+                        {% endif %}
+                        {% include "products/snippets/add_to_cart.html" with product=object cart=cart type='detail' %}
+                    </div>
+
+                    {% endif %}
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-dark mx-0" style="text-decoration:none;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    {% trans "Opis i zdjęcia" %}
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+
+                <div class="row my-3">
+                    <div class="col-sm-12 col-lg-6">
+                        <p class="text-justify">{{ object.description|linebreaks }}</p>
+                    </div>
+
+                <div class="col-sm-12 col-lg-6 my-3">
+
+                    <div class="container">
+                    <!-- main slider carousel -->
+                    <div class="row text-center">
+                        <div class="col-md-12" id="slider">
+
+                                <div class="col-md-12" id="carousel-bounding-box">
+                                    <div id="prodGallery" class="carousel slide bigshadow">
+                                        <!-- main slider carousel items -->
+
+
+                                        <div class="carousel-inner">
+                                            {% for image in object.all_images %}
+                                                <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}" data-slide-number="{{ forloop.counter|add:'-1' }}">
+                                                    <img title="{{ object.title }}" alt="{{ object.description }}" src="{{ image.thumbnail.url }}" data-full-img="{{ image.image.url }}" class="prodImgSmall img-responsive rounded mx-auto my-auto d-block" style="max-width:100%;">
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+
+                                        <!-- main slider carousel nav controls -->
+                                        <a class="carousel-control-prev" href="#prodGallery" role="button" data-slide="prev" aria-label="previous">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="sr-only"><i class="fas fa-angle-left"></i></span>
+                                          </a>
+                                          <a class="carousel-control-next" href="#prodGallery" role="button" data-slide="next" aria-label="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="sr-only"><i class="fas fa-angle-right"></i></span>
+                                         </a>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+                    <!--/main slider carousel-->
+
+                    <!-- thumb navigation carousel -->
+                    <div class="row text-center">
+                        <div class="col-md-12 hidden-sm hidden-xs my-2" id="slider-thumbs">
+                            <!-- thumb navigation carousel items -->
+                            <ul class="list-inline">
+                                {% for image in object.all_images %}
+                                    <li class="list-inline-item littleshadow hovershadow">
+                                        <a id="carousel-selector-{{ forloop.counter|add:'-1' }}" class="{% if forloop.counter == 1 %}img_selected{% endif %}">
+                                            <img src="{{ image.thumbnail.url }}" title="{{ object.title }}" alt="{{ object.description|truncatewords:10 }}" class="img-responsive rounded mx-auto my-auto d-block" style="max-width:100px;">
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+        {% if object.is_camera %}
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-dark mx-0 collapsed" style="text-decoration:none;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          {% trans "Dane techniczne" %}
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+
+                        <div class="col-4-md col-12-sm mx-3 my-3 justify-content-center">
+                            {% for pair in object.tuple_spec_table %}
+                                <h6 class="text-left">{{ pair.0 }} : <span class="text-secondary">{{ pair.1 }}</span></h6>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {% if object.all_samples %}
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-dark mx-0 collapsed" style="text-decoration:none;" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          {% trans "Sample" %}
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <p>{% trans "Przykładowe zdjęcia wykonane tym egzemplarzem aparatu" %}:</p>
+                                    <div class="row justify-content-center">
+                                        {% for sample in object.all_samples %}
+                                        <div class="col my-2 mx-auto">
+                                        <img title="{{ object.title }} photo sample" style="max-height:100px; min-height: 60px;" src="{{ sample.thumbnail.url }}" data-full-img="{{ sample.image.url }}" class="prodImgSmall img-responsive rounded mx-auto my-auto d-block littleshadow hovershadow" />
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if object.all_info_links %}
+
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-dark mx-0 collapsed" style="text-decoration:none;" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
+                          {% trans "Dodatkowe informacje" %}
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-12">
+                                    <div class="row">
+                                        <ul>
+                                            {% for link in object.all_info_links %}
+                                                <li><a rel="noreferrer" class="text-secondary" href="{{ link }}" target="_blank">{{ link }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        {% endif %}
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+<div id="overlay"></div>
+
+<div id="overlayContent" style="align-items: center; justify-content: center; position:fixed; top:15px;">
+    <img class="prodImgBig img-fluid rounded mx-auto bigshadow" style="max-width: 80vw; height:auto; width:auto; max-height:80vh; margin:0 auto;" src="" alt=""/>
+</div>
+
+{% endblock %}
