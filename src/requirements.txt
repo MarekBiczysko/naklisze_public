@@ -1,6 +1,6 @@
 certifi==2018.1.18
 chardet==3.0.4
-Django==1.11
+Django==1.11.29
 django-polymorphic==2.0.2
 django-subdomains==2.1.0
 idna==2.6
