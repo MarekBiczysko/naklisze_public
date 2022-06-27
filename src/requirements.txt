@@ -13,4 +13,4 @@ django-modeltranslation==0.12.2
 django-settings-export==1.2.1
 django-money==0.14.3
 django_bot_crawler_blocker==1.0
-mysql-connector-python==8.0.13
+mysql-connector-python==8.0.14
